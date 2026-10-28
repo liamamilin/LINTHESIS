@@ -6,12 +6,14 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).parent
+SITE_URL = "https://liamamilin.github.io/LINTHESIS/"
+URLS = []
 e = html.escape
 
 UI = {
     "zh": dict(
         html_lang="zh-CN", bt=("《", "》"), nav_both=True, switch="EN", switch_label="English version",
-        home_label="LINTHESIS 首页", nav_label="主导航",
+        h_works_short="作品", h_books_short="书籍", home_label="LINTHESIS 首页", nav_label="主导航",
         h_works="Works 作品", h_books="Books 书籍", h_writing="Writing 在线长篇写作", h_lab="Lab 实验室",
         view_all="查看全部 →",
         works_h="Works 作品", works_p="我创造的软件、工具和网站。每一项都有自己的介绍、截图和访问入口。",
@@ -19,7 +21,7 @@ UI = {
         books_pub="出版 Published", books_online="在线教程 Online", books_more="更多在线长篇 →",
         writing_h="Writing 文章", writing_p="持续更新的在线长篇写作，按主题成系列。点开每个系列，进入对应的在线电子书。",
         writing_todo="短文与研究笔记栏目待补。",
-        lab_h="Lab 实验室", lab_p="尚在探索的想法、原型和实验项目。多数仍在演进，说明待补。",
+        lab_h="Lab 实验室", lab_p="尚在探索的想法、原型和实验项目，状态不一，多数仍在演进。",
         about_h="About 关于",
         about_lead="想清楚，写下来，做出来，再分享出去。",
         about_intro="我早期做数据科学、机器学习和统计，写过四本关于 R 与统计分析的书；现在更感兴趣的是 AI、区块链、软件开发、商业与创业。方向在变，做事的方式没变：先把问题想明白，再用文字和作品讲清楚，最后公开出来。",
@@ -40,7 +42,7 @@ UI = {
     ),
     "en": dict(
         html_lang="en", bt=("", ""), nav_both=False, switch="中文", switch_label="中文版",
-        home_label="LINTHESIS home", nav_label="Main navigation",
+        h_works_short="Works", h_books_short="Books", home_label="LINTHESIS home", nav_label="Main navigation",
         h_works="Works", h_books="Books", h_writing="Writing: long-form online", h_lab="Lab",
         view_all="View all →",
         works_h="Works", works_p="Software, tools and websites I have made. Each has its own write-up, screenshots and links.",
@@ -48,7 +50,7 @@ UI = {
         books_pub="Published", books_online="Online guides", books_more="More long-form online →",
         writing_h="Writing", writing_p="Long-form writing published online, grouped into series. Each link opens the matching online book. The books themselves are in Chinese.",
         writing_todo="Short essays and research notes: coming.",
-        lab_h="Lab", lab_p="Ideas, prototypes and experiments still being explored. Most are evolving; descriptions to come.",
+        lab_h="Lab", lab_p="Ideas, prototypes and experiments still being explored. They are at different stages, and most are still evolving.",
         about_h="About",
         about_lead="Think it through, write it down, build it, and share it.",
         about_intro="I started in data science, machine learning and statistics, and wrote four books on R and statistical analysis. What interests me now is AI, blockchain, software development, business and entrepreneurship. The subject has changed; the way I work has not: understand the problem first, explain it with words and with things that work, then put it out in the open.",
@@ -99,6 +101,8 @@ def page(path, title, body, depth, active="", desc=""):
         alt, alt_lang = f'{lb}en/{d}', "en"
     else:
         alt, alt_lang = f'{abase(depth)}{d}', "zh-CN"
+    canon = f'{SITE_URL}{"en/" if LANG == "en" else ""}{d}'
+    URLS.append((canon, f'{SITE_URL}{"" if LANG == "en" else "en/"}{d}'))
     doc = f"""<!doctype html>
 <html lang="{T["html_lang"]}">
 <head>
@@ -106,7 +110,16 @@ def page(path, title, body, depth, active="", desc=""):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
+<link rel="canonical" href="{canon}">
 <link rel="alternate" hreflang="{alt_lang}" href="{alt}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LINTHESIS">
+<meta property="og:title" content="{e(title)}">
+<meta property="og:description" content="{e(desc)}">
+<meta property="og:url" content="{canon}">
+<meta property="og:image" content="{SITE_URL}img/social-card.png">
+<meta property="og:locale" content="{"en_US" if LANG == "en" else "zh_CN"}">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="{ab}brand/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="{ab}css/brand.css">
 <link rel="stylesheet" href="{ab}css/site.css">
@@ -125,6 +138,7 @@ def page(path, title, body, depth, active="", desc=""):
 <footer>
 <img src="{ab}brand/linthesis-structure-symbol.svg" alt="">
 <span>{S["author"]} · {T["footer_extra"]}</span>
+<a href="mailto:{S["email"]}">{S["email"]}</a>
 <span class="sp">{S["tagline_en"]}{zh_tag}</span>
 </footer>
 </div>
@@ -187,8 +201,8 @@ def series_html():
 
 
 def lab_rows():
-    return '<div class="rows">' + "".join(
-        f'<a href="{u}"><b>{e(n)}</b><span>GitHub ↗</span></a>' for n, u in C["lab"]) + "</div>"
+    return '<div class="rows lab">' + "".join(
+        f'<a href="{u}"><div><b>{e(n)}</b><em>{e(d)}</em></div><span>GitHub ↗</span></a>' for n, u, d in C["lab"]) + "</div>"
 
 
 def video_block(item, ab):
@@ -235,7 +249,7 @@ def generate():
         shots = "".join(f'<figure><img src="{ab}{g}" alt="{e(p["title"])} {T["shot_alt"]}" loading="lazy"></figure>' for g in p["gallery"])
         demo = video_block(p, ab) if p.get("video") else ""
         body = f"""<article class="detail">
-<aside><p class="kicker">{e(p["kind"])}</p><h1>{e(p["title"])}</h1><p class="zh">{e(p["sub"])}</p>
+<aside><nav class="crumbs" aria-label="breadcrumb"><a href="../">{T["h_works_short"]}</a> / <span>{e(p["title"])}</span></nav><p class="kicker">{e(p["kind"])}</p><h1>{e(p["title"])}</h1><p class="zh">{e(p["sub"])}</p>
 <dl class="meta">{meta}</dl><div class="btns">{btns}</div></aside>
 <div class="body"><p class="one">{e(p["one_liner"])}</p>
 <h2>{T["s_intro"]}</h2><p>{e(p["intro"])}</p>
@@ -259,7 +273,7 @@ def generate():
         png = " png" if b["cover"].endswith(".png") else ""
         sub = f'<p class="zh">{e(b["sub"])}</p>' if b.get("sub") else ""
         body = f"""<article class="detail">
-<aside><div class="cover-big{png}"><img src="{ab}{b["cover"]}" alt="{e(bt(b["title"]))} {T["cover_alt"]}"></div>
+<aside><nav class="crumbs" aria-label="breadcrumb"><a href="../">{T["h_books_short"]}</a> / <span>{e(bt(b["title"]))}</span></nav><div class="cover-big{png}"><img src="{ab}{b["cover"]}" alt="{e(bt(b["title"]))} {T["cover_alt"]}"></div>
 <dl class="meta">{meta_rows(rows)}</dl><div class="btns"><a class="btn primary" href="{b["link"]}">{T["b_pub"]}</a></div></aside>
 <div class="body"><p class="kicker">{T["kick_book"]}</p><h1>{e(b["title"])}</h1>{sub}
 <h2>{T["s_blurb"]}</h2><p>{e(b["intro"])}</p></div></article>"""
@@ -269,15 +283,14 @@ def generate():
         ab = abase(2)
         rows = [(T["k_format"], T["v_format"]), (T["k_status"], b["status"]), (T["k_lang"], T["v_lang"])]
         body = f"""<article class="detail">
-<aside><p class="kicker">{T["kick_guide"]}</p><h1>{e(b["title"])}</h1><p class="zh">{e(b["sub"])}</p>
+<aside><nav class="crumbs" aria-label="breadcrumb"><a href="../">{T["h_books_short"]}</a> / <span>{e(b["title"])}</span></nav><p class="kicker">{T["kick_guide"]}</p><h1>{e(b["title"])}</h1><p class="zh">{e(b["sub"])}</p>
 <dl class="meta">{meta_rows(rows)}</dl><div class="btns"><a class="btn primary" href="{b["link"]}">{T["b_read"]}</a></div></aside>
 <div class="body"><h2>{T["s_blurb"]}</h2><p>{e(b["intro"])}</p>
 {video_block(b, ab)}<h2>{T["s_home"]}</h2><div class="shots"><figure><img src="{ab}{b["cover"]}" alt="{e(b["title"])} {T["home_alt"]}" loading="lazy"></figure></div></div></article>"""
         page(f"books/{b['slug']}/index.html", f"{b['title']} — {S['title_suffix']}", body, 2, "books", b["intro"])
 
     body = f"""<div class="page-h"><h1>{T["writing_h"]}</h1><p>{T["writing_p"]}</p></div>
-<section class="block">{series_html()}</section>
-<section class="block"><p class="todo">{T["writing_todo"]}</p></section>"""
+<section class="block">{series_html()}</section>"""
     page("writing/index.html", f"{T['writing_h']} — {S['title_suffix']}", body, 1, "writing")
 
     body = f"""<div class="page-h"><h1>{T["lab_h"]}</h1><p>{T["lab_p"]}</p></div>
@@ -314,5 +327,18 @@ def build(lang):
 
 for lg in ("zh", "en"):
     build(lg)
+(ROOT / "sitemap.xml").write_text(
+    '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+    + "".join(f'<url><loc>{u}</loc><xhtml:link rel="alternate" hreflang="{"en" if "/en/" in a else "zh-CN"}" href="{a}"/></url>\n' for u, a in URLS)
+    + "</urlset>\n", encoding="utf-8")
+(ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}sitemap.xml\n", encoding="utf-8")
+(ROOT / "404.html").write_text(f"""<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — LINTHESIS</title><link rel="icon" href="/LINTHESIS/brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/LINTHESIS/css/brand.css"><link rel="stylesheet" href="/LINTHESIS/css/site.css"></head>
+<body><div class="wrap"><header class="top"><a class="logo" href="/LINTHESIS/"><img src="/LINTHESIS/brand/linthesis-structure-horizontal.svg" alt="LINTHESIS"></a></header>
+<main><div class="page-h"><h1>404</h1><p>这个页面不存在。 This page does not exist.</p>
+<div class="btns" style="margin-top:24px"><a class="btn primary" href="/LINTHESIS/">首页</a><a class="btn" href="/LINTHESIS/en/">Home (English)</a></div></div></main></div></body></html>
+""", encoding="utf-8")
 n = len([f for f in ROOT.rglob("index.html") if "_work" not in f.parts])
 print("built", n, "pages")

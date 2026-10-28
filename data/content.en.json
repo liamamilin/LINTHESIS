@@ -45,35 +45,6 @@
       ]
     },
     {
-      "slug": "personalspace",
-      "title": "PersonalSpace",
-      "sub": "A native macOS personal digital space",
-      "kind": "Software / macOS app",
-      "one_liner": "A local-first personal library: read-only access to folders you authorize, search and preview, and reminders for what needs doing.",
-      "status": "In development · local build",
-      "platform": "macOS 26+",
-      "tech": "SwiftUI · AppKit · SQLite / GRDB",
-      "cover": "img/projects/personalspace-1.jpg",
-      "gallery": [
-        "img/projects/personalspace-1.jpg"
-      ],
-      "intro": "A native macOS app with no server, account or online API. Scanning is read-only, managed copies are copies rather than moves, and there is no way to delete source files. Manual workflows keep working when no model is available. Milestones M1–M8 are implemented locally.",
-      "features": [
-        "Native file library with persistent folder authorization",
-        "Search and system preview",
-        "Personal objects, links and managed copies",
-        "Four kinds of matters with on-demand recognition, fact checking, to-dos and local system reminders",
-        "Sensitive markers, backup and restore, quick capture"
-      ],
-      "note": "This is currently a local, ad hoc signed development build. It has not been signed with a Developer ID or notarized.",
-      "links": [
-        [
-          "GitHub",
-          "https://github.com/liamamilin/PersonalSpace"
-        ]
-      ]
-    },
-    {
       "slug": "aide",
       "title": "Aide",
       "sub": "A local AI entry point for the desktop",
@@ -99,34 +70,6 @@
         [
           "GitHub",
           "https://github.com/liamamilin/aide"
-        ]
-      ]
-    },
-    {
-      "slug": "radar",
-      "title": "Radar",
-      "sub": "An information radar",
-      "kind": "Software / macOS app",
-      "one_liner": "Describe what to follow in plain language, collect on a schedule, and get events that link back to the source.",
-      "status": "v0.1",
-      "platform": "macOS 15+",
-      "tech": "SwiftUI · GRDB · FeedKit · SwiftSoup",
-      "cover": "img/projects/radar-1.jpg",
-      "gallery": [
-        "img/projects/radar-1.jpg"
-      ],
-      "intro": "From a plain-language watch, Radar finds and trial-reads sources, collects periodically, keeps a baseline and removes duplicates, then reports events with links to the original. No API key is needed. A new watch only records a baseline; only later content raises alerts.",
-      "features": [
-        "Four collectors: GitHub Releases, GitHub repo discovery, RSS / Atom, static HTML",
-        "Source trial reads and confirmation, feed auto-discovery, CSS selector preview",
-        "Unique event keys for dedup, ETag / 304, rate limits and network errors tracked per source",
-        "Menu bar, system notifications, in-process timer with catch-up on wake",
-        "12 automated tests passing"
-      ],
-      "links": [
-        [
-          "GitHub",
-          "https://github.com/liamamilin/radar-lean"
         ]
       ]
     },
@@ -186,6 +129,63 @@
         [
           "GitHub",
           "https://github.com/liamamilin/atlas"
+        ]
+      ]
+    },
+    {
+      "slug": "personalspace",
+      "title": "PersonalSpace",
+      "sub": "A native macOS personal digital space",
+      "kind": "Software / macOS app",
+      "one_liner": "A local-first personal library: read-only access to folders you authorize, search and preview, and reminders for what needs doing.",
+      "status": "In development · local build",
+      "platform": "macOS 26+",
+      "tech": "SwiftUI · AppKit · SQLite / GRDB",
+      "cover": "img/projects/personalspace-1.jpg",
+      "gallery": [
+        "img/projects/personalspace-1.jpg"
+      ],
+      "intro": "A native macOS app with no server, account or online API. Scanning is read-only, managed copies are copies rather than moves, and there is no way to delete source files. Manual workflows keep working when no model is available. Milestones M1–M8 are implemented locally.",
+      "features": [
+        "Native file library with persistent folder authorization",
+        "Search and system preview",
+        "Personal objects, links and managed copies",
+        "Four kinds of matters with on-demand recognition, fact checking, to-dos and local system reminders",
+        "Sensitive markers, backup and restore, quick capture"
+      ],
+      "note": "This is currently a local, ad hoc signed development build. It has not been signed with a Developer ID or notarized.",
+      "links": [
+        [
+          "GitHub",
+          "https://github.com/liamamilin/PersonalSpace"
+        ]
+      ]
+    },
+    {
+      "slug": "radar",
+      "title": "Radar",
+      "sub": "An information radar",
+      "kind": "Software / macOS app",
+      "one_liner": "Describe what to follow in plain language, collect on a schedule, and get events that link back to the source.",
+      "status": "v0.1",
+      "platform": "macOS 15+",
+      "tech": "SwiftUI · GRDB · FeedKit · SwiftSoup",
+      "cover": "img/projects/radar-1.jpg",
+      "gallery": [
+        "img/projects/radar-1.jpg"
+      ],
+      "intro": "From a plain-language watch, Radar finds and trial-reads sources, collects periodically, keeps a baseline and removes duplicates, then reports events with links to the original. No API key is needed. A new watch only records a baseline; only later content raises alerts.",
+      "features": [
+        "Four collectors: GitHub Releases, GitHub repo discovery, RSS / Atom, static HTML",
+        "Source trial reads and confirmation, feed auto-discovery, CSS selector preview",
+        "Unique event keys for dedup, ETag / 304, rate limits and network errors tracked per source",
+        "Menu bar, system notifications, in-process timer with catch-up on wake",
+        "12 automated tests passing"
+      ],
+      "links": [
+        [
+          "GitHub",
+          "https://github.com/liamamilin/radar-lean"
         ]
       ]
     }
@@ -411,28 +411,34 @@
   ],
   "lab": [
     [
-      "COP",
-      "https://github.com/liamamilin/COP"
+      "COP Studio",
+      "https://github.com/liamamilin/COP",
+      "A local-first learning workspace that turns a topic or a set of sources into a learning artifact: goal → main process → stage → concept × operation."
     ],
     [
-      "goalsift",
-      "https://github.com/liamamilin/goalsift"
+      "GoalSift",
+      "https://github.com/liamamilin/goalsift",
+      "A local-first AI research app: give it a goal, and it finds real resources, matches them one by one, and returns traceable candidate paths."
     ],
     [
       "decision-compiler",
-      "https://github.com/liamamilin/decision-compiler"
+      "https://github.com/liamamilin/decision-compiler",
+      "A structured-judgment engine that helps people think through important real-world decisions in guided conversation."
     ],
     [
-      "mctrl",
-      "https://github.com/liamamilin/mctrl"
+      "Cognitive Language Engineering",
+      "https://github.com/liamamilin/mctrl",
+      "The full system for cognitive language engineering, currently v0.7, with the learning path Principle → Model → interface → operator → language pattern."
     ],
     [
-      "Narrative-Writing-Workbench",
-      "https://github.com/liamamilin/Narrative-Writing-Workbench"
+      "Narrative Writing Workbench",
+      "https://github.com/liamamilin/Narrative-Writing-Workbench",
+      "A research LLM writing system and its desktop workbench, turning the tacit cognition of writing into steps you can inspect."
     ],
     [
-      "ai-research-system-",
-      "https://github.com/liamamilin/ai-research-system-"
+      "AI Research System",
+      "https://github.com/liamamilin/ai-research-system-",
+      "An automated AI research report generator with a web console: define jobs in YAML and an agent searches and writes the report."
     ]
   ]
 }

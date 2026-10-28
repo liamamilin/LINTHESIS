@@ -45,35 +45,6 @@
       "sub": "设计系统图鉴"
     },
     {
-      "slug": "personalspace",
-      "title": "PersonalSpace",
-      "kind": "软件 / macOS 应用",
-      "one_liner": "本地优先的个人资料库：只读授权文件夹，搜索预览，识别事务并提醒。",
-      "status": "开发中 · 本地构建",
-      "platform": "macOS 26+",
-      "tech": "SwiftUI · AppKit · SQLite / GRDB",
-      "cover": "img/projects/personalspace-1.jpg",
-      "gallery": [
-        "img/projects/personalspace-1.jpg"
-      ],
-      "intro": "一个原生 macOS 应用，不依赖服务器、账号或在线 API。扫描只读，托管资料是复制而不是移动，不提供源文件删除功能；模型不可用时，手动流程仍然可用。当前里程碑 M1–M8 的本地能力已实现。",
-      "features": [
-        "原生文件资料库与授权持久化",
-        "搜索与系统预览",
-        "个人对象、关联与托管副本",
-        "四类事务、按需识别、事实校对、待办与本地系统提醒",
-        "敏感标记、备份恢复、快速收纳"
-      ],
-      "note": "目前是本地 ad hoc 签名的开发构建，尚未做 Developer ID 签名和公证。",
-      "links": [
-        [
-          "GitHub",
-          "https://github.com/liamamilin/PersonalSpace"
-        ]
-      ],
-      "sub": "原生 macOS 个人数字空间"
-    },
-    {
       "slug": "aide",
       "title": "Aide",
       "kind": "软件 / macOS 应用",
@@ -101,34 +72,6 @@
         ]
       ],
       "sub": "本地 AI 桌面入口"
-    },
-    {
-      "slug": "radar",
-      "title": "Radar",
-      "kind": "软件 / macOS 应用",
-      "one_liner": "用自然语言建立关注，定期直接采集，给出带原始链接的事件。",
-      "status": "v0.1",
-      "platform": "macOS 15+",
-      "tech": "SwiftUI · GRDB · FeedKit · SwiftSoup",
-      "cover": "img/projects/radar-1.jpg",
-      "gallery": [
-        "img/projects/radar-1.jpg"
-      ],
-      "intro": "从自然语言建立关注，到发现并试读信息源、定期采集、基线与去重，最后给出带原始链接的事件。无需任何 API Key。新建的关注只记录基线，之后出现的新内容才会提醒。",
-      "features": [
-        "四种采集：GitHub Releases、GitHub 仓库发现、RSS / Atom、静态 HTML",
-        "来源试读与确认，Feed 自动发现，CSS 选择器预览",
-        "事件唯一键去重，ETag / 304，限流与网络错误可追踪",
-        "菜单栏、系统通知、进程内定时检查与唤醒补查",
-        "12 项自动化测试通过"
-      ],
-      "links": [
-        [
-          "GitHub",
-          "https://github.com/liamamilin/radar-lean"
-        ]
-      ],
-      "sub": "信息雷达"
     },
     {
       "slug": "research2video",
@@ -188,6 +131,63 @@
       "video": "video/atlas.webm",
       "poster": "video/atlas.jpg",
       "sub": "软件应用类型资料库"
+    },
+    {
+      "slug": "personalspace",
+      "title": "PersonalSpace",
+      "kind": "软件 / macOS 应用",
+      "one_liner": "本地优先的个人资料库：只读授权文件夹，搜索预览，识别事务并提醒。",
+      "status": "开发中 · 本地构建",
+      "platform": "macOS 26+",
+      "tech": "SwiftUI · AppKit · SQLite / GRDB",
+      "cover": "img/projects/personalspace-1.jpg",
+      "gallery": [
+        "img/projects/personalspace-1.jpg"
+      ],
+      "intro": "一个原生 macOS 应用，不依赖服务器、账号或在线 API。扫描只读，托管资料是复制而不是移动，不提供源文件删除功能；模型不可用时，手动流程仍然可用。当前里程碑 M1–M8 的本地能力已实现。",
+      "features": [
+        "原生文件资料库与授权持久化",
+        "搜索与系统预览",
+        "个人对象、关联与托管副本",
+        "四类事务、按需识别、事实校对、待办与本地系统提醒",
+        "敏感标记、备份恢复、快速收纳"
+      ],
+      "note": "目前是本地 ad hoc 签名的开发构建，尚未做 Developer ID 签名和公证。",
+      "links": [
+        [
+          "GitHub",
+          "https://github.com/liamamilin/PersonalSpace"
+        ]
+      ],
+      "sub": "原生 macOS 个人数字空间"
+    },
+    {
+      "slug": "radar",
+      "title": "Radar",
+      "kind": "软件 / macOS 应用",
+      "one_liner": "用自然语言建立关注，定期直接采集，给出带原始链接的事件。",
+      "status": "v0.1",
+      "platform": "macOS 15+",
+      "tech": "SwiftUI · GRDB · FeedKit · SwiftSoup",
+      "cover": "img/projects/radar-1.jpg",
+      "gallery": [
+        "img/projects/radar-1.jpg"
+      ],
+      "intro": "从自然语言建立关注，到发现并试读信息源、定期采集、基线与去重，最后给出带原始链接的事件。无需任何 API Key。新建的关注只记录基线，之后出现的新内容才会提醒。",
+      "features": [
+        "四种采集：GitHub Releases、GitHub 仓库发现、RSS / Atom、静态 HTML",
+        "来源试读与确认，Feed 自动发现，CSS 选择器预览",
+        "事件唯一键去重，ETag / 304，限流与网络错误可追踪",
+        "菜单栏、系统通知、进程内定时检查与唤醒补查",
+        "12 项自动化测试通过"
+      ],
+      "links": [
+        [
+          "GitHub",
+          "https://github.com/liamamilin/radar-lean"
+        ]
+      ],
+      "sub": "信息雷达"
     }
   ],
   "print_books": [
@@ -407,28 +407,34 @@
   ],
   "lab": [
     [
-      "COP",
-      "https://github.com/liamamilin/COP"
+      "COP Studio",
+      "https://github.com/liamamilin/COP",
+      "本地优先的学习工作台：把一个主题或一组资料，变成“目标 → 主流程 → 阶段 → 概念 × 操作”的学习成果。"
     ],
     [
-      "goalsift",
-      "https://github.com/liamamilin/goalsift"
+      "GoalSift",
+      "https://github.com/liamamilin/goalsift",
+      "本地优先的 AI 方案研究应用：输入目标，检索真实资源并逐项匹配，给出可追溯的候选路径。"
     ],
     [
       "decision-compiler",
-      "https://github.com/liamamilin/decision-compiler"
+      "https://github.com/liamamilin/decision-compiler",
+      "结构化判断引擎：通过引导式对话，帮人把重要的现实决策想清楚。"
     ],
     [
-      "mctrl",
-      "https://github.com/liamamilin/mctrl"
+      "认知语言工程 CLE",
+      "https://github.com/liamamilin/mctrl",
+      "认知语言工程的完整体系，当前 v0.7：以 Principle → Model → 接口 → 算子 → 语言模式为学习主线。"
     ],
     [
-      "Narrative-Writing-Workbench",
-      "https://github.com/liamamilin/Narrative-Writing-Workbench"
+      "Narrative Writing Workbench",
+      "https://github.com/liamamilin/Narrative-Writing-Workbench",
+      "研究型 LLM 写作系统和它的桌面工作台：把写作中隐性的认知，拆成可检查的步骤。"
     ],
     [
-      "ai-research-system-",
-      "https://github.com/liamamilin/ai-research-system-"
+      "AI Research System",
+      "https://github.com/liamamilin/ai-research-system-",
+      "自动化 AI 研究报告生成器和 Web 控制台：用 YAML 定义研究任务，由研究智能体检索并成文。"
     ]
   ]
 }

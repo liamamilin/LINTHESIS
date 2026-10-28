@@ -128,3 +128,15 @@ footer .sp{margin-left:auto}
 @media (max-width:860px){.strengths{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr);gap:32px 16px}.detail{grid-template-columns:1fr;gap:32px}.detail aside{position:static}}
 @media (max-width:560px){.wrap{padding:0 16px}.grid,.grid.four,.series{grid-template-columns:1fr}.top{gap:16px}.top .lang{margin-left:0}.hero{padding:40px 0 36px}.hero .stage{gap:12px;flex-wrap:wrap}}
 @media (prefers-reduced-motion:reduce){.tile img{transition:none}}
+
+.crumbs{font-size:14px;color:var(--lt-muted);margin:0 0 20px}
+.crumbs a{text-decoration:none}
+.crumbs a:hover{color:var(--lt-foreground);text-decoration:underline;text-underline-offset:4px}
+.crumbs span{color:var(--lt-foreground)}
+.rows.lab a{align-items:flex-start;padding:18px 0}
+.rows.lab div{max-width:46em}
+.rows.lab em{display:block;font-style:normal;color:var(--lt-muted);margin-top:4px}
+.rows.lab span{white-space:nowrap;padding-top:2px}
+footer a{color:var(--lt-muted);text-decoration:none}
+footer a:hover{color:var(--lt-foreground);text-decoration:underline;text-underline-offset:4px}
+@media (max-width:560px){.top nav span[lang=zh]{display:none}.top nav{gap:16px}.rows.lab a{flex-direction:column;gap:6px}}
