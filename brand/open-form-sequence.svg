@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="515" viewBox="0 0 1440 515" role="img" aria-label="LINTHESIS visual grammar: thought, structure, form in three stages">
+  <rect width="1440" height="515" fill="#F6F3ED"/>
+  <g stroke="#D8D5CF" stroke-width="1" opacity=".72">
+    <path d="M0 60H1440M0 180H1440M0 300H1440M0 420H1440M60 0V515M180 0V515M300 0V515M420 0V515M540 0V515M660 0V515M780 0V515M900 0V515M1020 0V515M1140 0V515M1260 0V515M1380 0V515"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#191B1A">
+    <text x="38" y="41" font-size="15" letter-spacing="4" font-weight="700">LINTHESIS / OPEN FORM LANGUAGE</text>
+    <text x="38" y="485" font-size="15" letter-spacing="3">FROM THOUGHT TO FORM</text>
+    <text x="1192" y="485" font-size="14" letter-spacing="3">LT / 001</text>
+  </g>
+  <path d="M480 90V447M960 90V447" stroke="#191B1A" opacity=".18"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#191B1A" font-size="16" font-weight="700" letter-spacing="3">
+    <text x="38" y="103">01 / THOUGHT</text><text x="518" y="103">02 / STRUCTURE</text><text x="998" y="103">03 / FORM</text>
+  </g>
+  <circle cx="240" cy="255" r="30" fill="#D94D32"/>
+  <path d="M212 315L270 315" stroke="#191B1A" stroke-width="3"/><circle cx="270" cy="315" r="6" fill="#191B1A"/>
+  <path d="M604 348V176H665M604 348H819" stroke="#191B1A" stroke-width="16" fill="none" stroke-linejoin="miter"/>
+  <path d="M650 169A130 130 0 0 1 807 294" stroke="#191B1A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="807" cy="188" r="19" fill="#D94D32"/>
+  <path d="M1080 176H1125V316H1229L1281 368H1080Z" fill="#191B1A"/>
+  <path d="M1154 163A120 120 0 0 1 1294 292" stroke="#191B1A" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <circle cx="1294" cy="180" r="24" fill="#D94D32"/>
+  <path d="M1162 402H1296" stroke="#191B1A" opacity=".35" stroke-width="2"/>
+</svg>

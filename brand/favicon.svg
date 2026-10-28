@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="105" height="105" viewBox="0 0 105 105" role="img" aria-label="LINTHESIS brand logo"><rect width="105" height="105" fill="#F6F3ED"/><g transform="translate(4 4) scale(0.76)">
+  <path d="M25 24 H44 V80 H82 L103 100 H25 Z" fill="#191B1A"/>
+  <path d="M55 18 A47 47 0 0 1 110 69" fill="none" stroke="#191B1A" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="110" cy="25" r="8.5" fill="#D94D32"/>
+  <path d="M54 112 H105" stroke="#191B1A" opacity="0.22" stroke-width="1"/>
+ </g></svg>

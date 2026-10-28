@@ -1,0 +1,423 @@
+{
+  "site": {
+    "name": "LINTHESIS",
+    "tagline_en": "From Thought to Form.",
+    "tagline_zh": "从思考到创造。",
+    "intro": "我在这里展示自己创造的软件、写过的书，以及持续探索的想法。",
+    "author": "米霖 / Liam",
+    "github": "https://github.com/liamamilin",
+    "title_suffix": "LINTHESIS / Personal Studio"
+  },
+  "projects": [
+    {
+      "slug": "lookbook",
+      "title": "Lookbook",
+      "zh": "设计系统图鉴",
+      "kind": "网站 / 工具",
+      "one_liner": "把 80 余套知名产品的设计系统渲染成可以直接看、直接比、直接拿走的页面。",
+      "status": "已上线",
+      "platform": "Web",
+      "tech": "JavaScript",
+      "cover": "img/projects/lookbook.jpg",
+      "gallery": [
+        "img/projects/lookbook.jpg"
+      ],
+      "intro": "每套设计系统都写在一份 DESIGN.md 里，包括颜色、字体、圆角、间距和组件。Lookbook 用这些设计令牌渲染出同一个示例页面，所以不用读文档，就能看出 Stripe、Linear、Notion 这些设计系统用起来是什么样子。",
+      "features": [
+        "浏览：按类别分组，可中英文搜索，按深色或浅色筛选",
+        "预览：每套模板渲染成完整的示例落地页",
+        "拆解：色板、字号层级、圆角与间距、组件定义",
+        "对比：两套设计系统并排比较，可随机抽取",
+        "导出：AI 提示词、CSS 变量、Tailwind 配置等多种格式，一键打包"
+      ],
+      "links": [
+        [
+          "在线体验",
+          "https://liamamilin.github.io/Lookbook/"
+        ],
+        [
+          "GitHub",
+          "https://github.com/liamamilin/Lookbook"
+        ]
+      ]
+    },
+    {
+      "slug": "personalspace",
+      "title": "PersonalSpace",
+      "zh": "原生 macOS 个人数字空间",
+      "kind": "软件 / macOS 应用",
+      "one_liner": "本地优先的个人资料库：只读授权文件夹，搜索预览，识别事务并提醒。",
+      "status": "开发中 · 本地构建",
+      "platform": "macOS 26+",
+      "tech": "SwiftUI · AppKit · SQLite / GRDB",
+      "cover": "img/projects/personalspace-1.jpg",
+      "gallery": [
+        "img/projects/personalspace-1.jpg"
+      ],
+      "intro": "一个原生 macOS 应用，不依赖服务器、账号或在线 API。扫描只读，托管资料是复制而不是移动，不提供源文件删除功能；模型不可用时，手动流程仍然可用。当前里程碑 M1–M8 的本地能力已实现。",
+      "features": [
+        "原生文件资料库与授权持久化",
+        "搜索与系统预览",
+        "个人对象、关联与托管副本",
+        "四类事务、按需识别、事实校对、待办与本地系统提醒",
+        "敏感标记、备份恢复、快速收纳"
+      ],
+      "note": "目前是本地 ad hoc 签名的开发构建，尚未做 Developer ID 签名和公证。",
+      "links": [
+        [
+          "GitHub",
+          "https://github.com/liamamilin/PersonalSpace"
+        ]
+      ]
+    },
+    {
+      "slug": "aide",
+      "title": "Aide",
+      "zh": "本地 AI 桌面入口",
+      "kind": "软件 / macOS 应用",
+      "one_liner": "按下 ⌘⌃L，说出你想做的事，或先选中文本。本地 Ollama 模型，不上传。",
+      "status": "开发中",
+      "platform": "macOS 14+ · Apple silicon",
+      "tech": "SwiftUI / AppKit · Python · Ollama",
+      "cover": "img/projects/aide-1.jpg",
+      "gallery": [
+        "img/projects/aide-1.jpg",
+        "img/projects/aide-2.jpg",
+        "img/projects/aide-pet.gif"
+      ],
+      "intro": "SwiftUI / AppKit 外壳，加上一个无界面的 Python 核心。快捷键唤起 Quick Panel，用本地桌面工具执行请求；选中文本可以翻译、解释、总结、改写；框选截图会带着图片开启一段新对话。会改动数据的操作，都先给出确认。",
+      "features": [
+        "Quick Panel：⌘⌃L 一句话调用本地桌面工具",
+        "选中文本后选择动作，或输入自己的指令",
+        "⌘⌃S 框选截图并附带到新对话",
+        "Workspace：对话历史与搜索、流式 Markdown、重新生成",
+        "修改类操作先显示具体动作，经确认才执行"
+      ],
+      "links": [
+        [
+          "GitHub",
+          "https://github.com/liamamilin/aide"
+        ]
+      ]
+    },
+    {
+      "slug": "radar",
+      "title": "Radar",
+      "zh": "信息雷达",
+      "kind": "软件 / macOS 应用",
+      "one_liner": "用自然语言建立关注，定期直接采集，给出带原始链接的事件。",
+      "status": "v0.1",
+      "platform": "macOS 15+",
+      "tech": "SwiftUI · GRDB · FeedKit · SwiftSoup",
+      "cover": "img/projects/radar-1.jpg",
+      "gallery": [
+        "img/projects/radar-1.jpg"
+      ],
+      "intro": "从自然语言建立关注，到发现并试读信息源、定期采集、基线与去重，最后给出带原始链接的事件。无需任何 API Key。新建的关注只记录基线，之后出现的新内容才会提醒。",
+      "features": [
+        "四种采集：GitHub Releases、GitHub 仓库发现、RSS / Atom、静态 HTML",
+        "来源试读与确认，Feed 自动发现，CSS 选择器预览",
+        "事件唯一键去重，ETag / 304，限流与网络错误可追踪",
+        "菜单栏、系统通知、进程内定时检查与唤醒补查",
+        "12 项自动化测试通过"
+      ],
+      "links": [
+        [
+          "GitHub",
+          "https://github.com/liamamilin/radar-lean"
+        ]
+      ]
+    },
+    {
+      "slug": "research2video",
+      "title": "研映 Research2Video",
+      "zh": "从研究到视频",
+      "kind": "软件 / 工作流",
+      "one_liner": "从资料调研、研究报告和文稿，到配音、画面、字幕、视频与发布管理的本地工作流。",
+      "status": "开发中",
+      "platform": "本地服务 · Web 控制台",
+      "tech": "Python · FastAPI · Remotion · React",
+      "cover": "img/projects/research2video-1.jpg",
+      "gallery": [
+        "img/projects/research2video-1.jpg",
+        "img/projects/research2video-2.jpg"
+      ],
+      "intro": "由两个模块组成：研究控制台负责研究任务、信息源、周期调度、文稿配方和视频工作流；AutoVideo 负责配音、视觉规划、Remotion 渲染、字幕、片头片尾和成片交付。",
+      "features": [
+        "研究任务、信息源与周期调度",
+        "文稿配方与视频工作流管理控制台",
+        "配音、视觉规划、字幕与片头片尾",
+        "Remotion 渲染与成片交付、发布管理"
+      ],
+      "links": [
+        [
+          "GitHub",
+          "https://github.com/liamamilin/Research2Video"
+        ]
+      ]
+    },
+    {
+      "slug": "atlas",
+      "title": "Application Atlas",
+      "zh": "软件应用类型资料库",
+      "kind": "软件 / 资料库",
+      "one_liner": "1,805 个软件类型、29 个大域的资料库及本地工作台。",
+      "status": "开发中",
+      "platform": "Web · 本地 API",
+      "tech": "React · TypeScript · Vite · Python",
+      "cover": "img/projects/atlas-1.jpg",
+      "gallery": [
+        "img/projects/atlas-1.jpg",
+        "img/projects/atlas-2.jpg"
+      ],
+      "intro": "英文档案是内容真相源，配套研究笔记、分类目录和持久化的翻译记录。在此之上有一个模板工厂：从场景模板导出标准开发包，再交给 AI 实现并验证浏览器旅程。",
+      "features": [
+        "1,805 个类型、29 个大域、270 个目录节点、33 个产品实例",
+        "正式英文档案，对应研究笔记与边界依据",
+        "本地草稿 API 与 React 前端工作台",
+        "模板工厂：个人收藏夹、个人预算、会议笔记等试用场景"
+      ],
+      "links": [
+        [
+          "GitHub",
+          "https://github.com/liamamilin/atlas"
+        ]
+      ]
+    }
+  ],
+  "print_books": [
+    {
+      "slug": "r-data-analysis",
+      "title": "深入浅出R语言数据分析",
+      "year": 2020,
+      "publisher": "清华大学出版社",
+      "isbn": "9787302543886",
+      "cover": "img/books/r-analysis.jpg",
+      "intro": "介绍数据分析方法与常用模型，并用 R 完成案例：数据获取与网络爬取、预处理与探索、生存分析、主成分分析、线性与逻辑回归、聚类、关联规则、随机森林、支持向量机、神经网络、文本挖掘、社交网络分析等。适合 R 语言入门与进阶读者，以及数据科学相关从业者。",
+      "link": "http://www.tup.com.cn/bookscenter/book_08573301.html"
+    },
+    {
+      "slug": "r-data-visualization",
+      "title": "R语言数据可视化实战",
+      "year": 2021,
+      "publisher": "机械工业出版社",
+      "isbn": "",
+      "cover": "img/books/r-viz.png",
+      "intro": "从多个维度讲解 R 语言数据可视化技术，通过 500 多个可视化示例，全面展示 30 多类统计图形的绘制。",
+      "link": "https://www.hzmedia.com.cn/books11121329"
+    },
+    {
+      "slug": "r-statistics",
+      "title": "R语言统计分析实战",
+      "year": 2023,
+      "publisher": "北京理工大学出版社",
+      "isbn": "9787576328219",
+      "cover": "img/books/r-stats.jpg",
+      "intro": "以应用为重点，介绍 R 语言常用包的使用方法，以及多种统计方法和统计机器学习模型的实现。全书共 11 章，分为 R 语言基础、统计分析、统计分析应用（商业 A/B 测试、营销分析、信用评分模型开发）、可重复性研究与 Shiny 数据可视化四篇。",
+      "link": "https://book.douban.com/subject/36632913/"
+    },
+    {
+      "slug": "spss",
+      "title": "SPSS入门与数据分析实践",
+      "year": 2025,
+      "publisher": "化学工业出版社",
+      "isbn": "",
+      "cover": "img/books/spss.png",
+      "intro": "全程操作步骤图解，引导统计分析思路，基于案例边学边练，并赠送讲解视频与素材。",
+      "link": "http://jx.tsxcfw.com/bookshow.asp?id=2914368"
+    }
+  ],
+  "ebooks": [
+    {
+      "slug": "codex-mastery",
+      "title": "驾驭 Codex",
+      "sub": "不只是使用，学会驾驭 Codex",
+      "cover": "img/ebooks/codex-mastery.jpg",
+      "status": "在线阅读 · v1.0",
+      "intro": "把模糊想法变成可验证的成果。理解它的行动，保留你的判断，在失败时找回方向。8 个递进学习部分、28 章课程、7 种互动学习体验、5 类实战任务。",
+      "link": "https://liamamilin.github.io/codex-mastery/"
+    },
+    {
+      "slug": "claude-mastery",
+      "title": "驾驭 Claude",
+      "sub": "不只会提问，更能掌控完成",
+      "cover": "img/ebooks/claude-mastery.jpg",
+      "status": "在线阅读 · 写作中",
+      "intro": "从第一次打开 Claude Code Desktop，到组织复杂项目、识别错误假设、验证真正的交付。规划为 8 大部分、32 章，当前已开放 2 章示范正文。非官方独立教育项目。",
+      "link": "https://liamamilin.github.io/claude-mastery/"
+    },
+    {
+      "slug": "llm-infer",
+      "title": "大模型 Inference 工程实践",
+      "sub": "从模型文件，到可用服务",
+      "cover": "img/ebooks/llm-infer.jpg",
+      "status": "在线阅读",
+      "intro": "不用大模型起步，用一套小模型实验，建立推理工程的完整能力。每章对应真实实验和运行证据；内容覆盖 Prefill、Decode、TTFT、TPOT、吞吐量、量化、缓存和并发。",
+      "link": "https://liamamilin.github.io/llm-infer/"
+    }
+  ],
+  "series": [
+    {
+      "name": "数据科学与分析",
+      "items": [
+        [
+          "Python 数据科学",
+          "https://liamamilin.github.io/PythonDatascience/"
+        ],
+        [
+          "R 数据科学",
+          "https://liamamilin.github.io/DataScienceInR/"
+        ],
+        [
+          "R 语言流程挖掘",
+          "https://liamamilin.github.io/ProcessMiningRBook/"
+        ],
+        [
+          "数据科学工具箱",
+          "https://liamamilin.github.io/DatascienceToolbox/"
+        ],
+        [
+          "DATA to VIZ",
+          "https://liamamilin.github.io/From-Data-to-Viz/"
+        ],
+        [
+          "指标体系建设",
+          "https://liamamilin.github.io/Indicator_system/"
+        ],
+        [
+          "AB 测试实战",
+          "https://liamamilin.github.io/AB-tutorial/"
+        ],
+        [
+          "数据仓库开发总结",
+          "https://liamamilin.github.io/Data-Warehouse/"
+        ],
+        [
+          "ODPS SQL",
+          "https://liamamilin.github.io/ODPS_SQL/"
+        ]
+      ]
+    },
+    {
+      "name": "大模型与 Agent",
+      "items": [
+        [
+          "大模型",
+          "https://liamamilin.github.io/LLM/"
+        ],
+        [
+          "动手做大模型",
+          "https://liamamilin.github.io/Practical-LLM/"
+        ],
+        [
+          "Agent",
+          "https://liamamilin.github.io/agent_tutorial/"
+        ],
+        [
+          "Agent 课程",
+          "https://liamamilin.github.io/Agent-Engineering-From-Runtime-to-Production/"
+        ],
+        [
+          "PyTorch",
+          "https://liamamilin.github.io/PyTorch-tutorial/"
+        ],
+        [
+          "模型压缩",
+          "https://liamamilin.github.io/LLM-Compression/"
+        ],
+        [
+          "Prompt tutorial",
+          "https://liamamilin.github.io/TutorialOfPrompt/"
+        ],
+        [
+          "Vibe coding",
+          "https://liamamilin.github.io/vibe-coding-2026/"
+        ],
+        [
+          "opencode",
+          "https://liamamilin.github.io/opencode_tutorial/"
+        ],
+        [
+          "AI Engineer",
+          "https://liamamilin.github.io/AI-Engineer/"
+        ]
+      ]
+    },
+    {
+      "name": "Architecture 系列",
+      "items": [
+        [
+          "Intelligence Architecture（V0–V8）",
+          "https://liamamilin.github.io/Foundations-of-System-Blueprint/"
+        ],
+        [
+          "LLM Architecture（Vol I–VIII）",
+          "https://liamamilin.github.io/Model-Foundations/"
+        ],
+        [
+          "Structural Architecture（V1–V8）",
+          "https://liamamilin.github.io/Structure-as-Carrier/"
+        ],
+        [
+          "World Architecture",
+          "https://liamamilin.github.io/Discipline-Architecture/"
+        ]
+      ]
+    },
+    {
+      "name": "语言、自我与人际",
+      "items": [
+        [
+          "Language Architecture",
+          "https://liamamilin.github.io/Common-Sense/"
+        ],
+        [
+          "Self Architecture（V1–V9）",
+          "https://liamamilin.github.io/Self-Understanding/"
+        ],
+        [
+          "Human Interaction Architecture（V1–V10）",
+          "https://liamamilin.github.io/Seeing-People/"
+        ],
+        [
+          "Cognitive Language Engineering",
+          "https://liamamilin.github.io/cognitive-language-engineering/"
+        ],
+        [
+          "English for Reality",
+          "https://liamamilin.github.io/English-for-Reality/"
+        ],
+        [
+          "IELTS domain language",
+          "https://liamamilin.github.io/IELTS_DOMAIN_LANG/"
+        ]
+      ]
+    }
+  ],
+  "lab": [
+    [
+      "COP",
+      "https://github.com/liamamilin/COP"
+    ],
+    [
+      "goalsift",
+      "https://github.com/liamamilin/goalsift"
+    ],
+    [
+      "decision-compiler",
+      "https://github.com/liamamilin/decision-compiler"
+    ],
+    [
+      "mctrl",
+      "https://github.com/liamamilin/mctrl"
+    ],
+    [
+      "Narrative-Writing-Workbench",
+      "https://github.com/liamamilin/Narrative-Writing-Workbench"
+    ],
+    [
+      "ai-research-system-",
+      "https://github.com/liamamilin/ai-research-system-"
+    ]
+  ]
+}
