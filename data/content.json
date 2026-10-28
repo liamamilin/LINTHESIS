@@ -39,7 +39,9 @@
           "GitHub",
           "https://github.com/liamamilin/Lookbook"
         ]
-      ]
+      ],
+      "video": "video/lookbook.webm",
+      "poster": "video/lookbook.jpg"
     },
     {
       "slug": "personalspace",
@@ -167,8 +169,9 @@
       "tech": "React · TypeScript · Vite · Python",
       "cover": "img/projects/atlas-1.jpg",
       "gallery": [
-        "img/projects/atlas-1.jpg",
-        "img/projects/atlas-2.jpg"
+        "img/projects/atlas-3.jpg",
+        "img/projects/atlas-4.jpg",
+        "img/projects/atlas-1.jpg"
       ],
       "intro": "英文档案是内容真相源，配套研究笔记、分类目录和持久化的翻译记录。在此之上有一个模板工厂：从场景模板导出标准开发包，再交给 AI 实现并验证浏览器旅程。",
       "features": [
@@ -182,7 +185,9 @@
           "GitHub",
           "https://github.com/liamamilin/atlas"
         ]
-      ]
+      ],
+      "video": "video/atlas.webm",
+      "poster": "video/atlas.jpg"
     }
   ],
   "print_books": [
@@ -235,7 +240,9 @@
       "cover": "img/ebooks/codex-mastery.jpg",
       "status": "在线阅读 · v1.0",
       "intro": "把模糊想法变成可验证的成果。理解它的行动，保留你的判断，在失败时找回方向。8 个递进学习部分、28 章课程、7 种互动学习体验、5 类实战任务。",
-      "link": "https://liamamilin.github.io/codex-mastery/"
+      "link": "https://liamamilin.github.io/codex-mastery/",
+      "video": "video/codex-mastery.webm",
+      "poster": "video/codex-mastery.jpg"
     },
     {
       "slug": "claude-mastery",
@@ -244,7 +251,9 @@
       "cover": "img/ebooks/claude-mastery.jpg",
       "status": "在线阅读 · 写作中",
       "intro": "从第一次打开 Claude Code Desktop，到组织复杂项目、识别错误假设、验证真正的交付。规划为 8 大部分、32 章，当前已开放 2 章示范正文。非官方独立教育项目。",
-      "link": "https://liamamilin.github.io/claude-mastery/"
+      "link": "https://liamamilin.github.io/claude-mastery/",
+      "video": "video/claude-mastery.webm",
+      "poster": "video/claude-mastery.jpg"
     },
     {
       "slug": "llm-infer",
@@ -253,7 +262,9 @@
       "cover": "img/ebooks/llm-infer.jpg",
       "status": "在线阅读",
       "intro": "不用大模型起步，用一套小模型实验，建立推理工程的完整能力。每章对应真实实验和运行证据；内容覆盖 Prefill、Decode、TTFT、TPOT、吞吐量、量化、缓存和并发。",
-      "link": "https://liamamilin.github.io/llm-infer/"
+      "link": "https://liamamilin.github.io/llm-infer/",
+      "video": "video/llm-infer.webm",
+      "poster": "video/llm-infer.jpg"
     }
   ],
   "series": [

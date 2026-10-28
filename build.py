@@ -74,6 +74,11 @@ def sec(n, title, link=None, text="查看全部 →"):
     return f'<div class="sec-h"><span class="n">{n}</span><h2>{title}</h2>{a}</div>'
 
 
+def video_block(item, base):
+    return (f'<h2>演示</h2><div class="shots"><figure><video controls muted playsinline preload="metadata" '
+            f'poster="{base}{item["poster"]}" src="{base}{item["video"]}"></video></figure></div>')
+
+
 def fill(s, depth):
     return s.replace("{b}", "../" * depth)
 
@@ -140,13 +145,14 @@ for p in C["projects"]:
     feats = "".join(f"<li>{e(f)}</li>" for f in p["features"])
     note = f'<h2>说明</h2><p class="note">{e(p["note"])}</p>' if p.get("note") else ""
     shots = "".join(f'<figure><img src="../../{g}" alt="{e(p["title"])} 截图" loading="lazy"></figure>' for g in p["gallery"])
+    demo = video_block(p, "../../") if p.get("video") else ""
     body = f"""<article class="detail">
 <aside><p class="kicker">{e(p["kind"])}</p><h1>{e(p["title"])}</h1><p class="zh">{e(p["zh"])}</p>
 <dl class="meta">{meta}</dl><div class="btns">{btns}</div></aside>
 <div class="body"><p class="one">{e(p["one_liner"])}</p>
 <h2>介绍</h2><p>{e(p["intro"])}</p>
 <h2>核心功能</h2><ul>{feats}</ul>{note}
-<h2>截图</h2><div class="shots">{shots}</div></div></article>"""
+{demo}<h2>截图</h2><div class="shots">{shots}</div></div></article>"""
     page(f"works/{p['slug']}/index.html", f"{p['title']} — {S['title_suffix']}", body, 2, "works", p["one_liner"])
 
 # ---------- books ----------
@@ -177,7 +183,7 @@ for b in C["ebooks"]:
 <aside><p class="kicker">BOOK / GUIDE</p><h1>{e(b["title"])}</h1><p class="zh">{e(b["sub"])}</p>
 <dl class="meta">{m}</dl><div class="btns"><a class="btn primary" href="{b["link"]}">在线阅读 ↗</a></div></aside>
 <div class="body"><h2>简介</h2><p>{e(b["intro"])}</p>
-<h2>预览</h2><div class="shots"><figure><img src="../../{b["cover"]}" alt="《{e(b["title"])}》首页截图" loading="lazy"></figure></div></div></article>"""
+{video_block(b, "../../")}<h2>首页</h2><div class="shots"><figure><img src="../../{b["cover"]}" alt="《{e(b["title"])}》首页截图" loading="lazy"></figure></div></div></article>"""
     page(f"books/{b['slug']}/index.html", f"{b['title']} — {S['title_suffix']}", body, 2, "books", b["intro"])
 
 # ---------- writing / lab / about ----------
@@ -198,4 +204,4 @@ body = f"""<div class="page-h"><h1>About 关于</h1></div>
 <p class="todo">联系方式待补。</p></div>"""
 page("about/index.html", f"About — {S['title_suffix']}", body, 1, "about")
 
-print("built", len(list(ROOT.rglob("index.html"))), "pages")
+print("built", len([f for f in ROOT.rglob("index.html") if "_work" not in f.parts]), "pages")

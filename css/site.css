@@ -86,7 +86,7 @@ dl.meta dd{margin:0;text-align:right}
 .note{padding:14px 18px;background:var(--lt-accent-soft);border-radius:6px;max-width:var(--lt-reading-max)}
 .shots{display:grid;gap:24px;margin-top:8px}
 .shots figure{margin:0;background:#E9E5DC;border-radius:6px;overflow:hidden}
-.shots img{width:100%;height:auto}
+.shots img,.shots video{width:100%;height:auto;display:block}
 .cover-big{background:#E9E5DC;border-radius:6px;padding:12%;display:grid;place-items:center;margin-bottom:24px}
 .cover-big img{max-height:420px;width:auto;box-shadow:0 18px 36px -16px rgba(25,27,26,.5)}
 .cover-big.png img{box-shadow:none;filter:drop-shadow(0 18px 20px rgba(25,27,26,.3))}
