@@ -140,3 +140,11 @@ footer .sp{margin-left:auto}
 footer a{color:var(--lt-muted);text-decoration:none}
 footer a:hover{color:var(--lt-foreground);text-decoration:underline;text-underline-offset:4px}
 @media (max-width:560px){.top nav span[lang=zh]{display:none}.top nav{gap:16px}.rows.lab a{flex-direction:column;gap:6px}}
+
+.music-p{color:var(--lt-muted);max-width:36em;margin:-12px 0 24px}
+.music{display:grid;grid-template-columns:repeat(3,1fr);gap:32px 24px}
+.music figure{margin:0}
+.music video{width:100%;aspect-ratio:1/1;background:#E9E5DC;border-radius:6px;display:block;object-fit:cover}
+.music figcaption{margin-top:10px;font-weight:500}
+@media (max-width:860px){.music{grid-template-columns:repeat(2,1fr);gap:24px 16px}}
+@media (max-width:560px){.music{grid-template-columns:1fr}}

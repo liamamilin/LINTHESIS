@@ -21,6 +21,7 @@ UI = {
         books_pub="出版 Published", books_online="在线教程 Online", books_more="更多在线长篇 →",
         writing_h="Writing 文章", writing_p="持续更新的在线长篇写作，按主题成系列。点开每个系列，进入对应的在线电子书。",
         writing_todo="短文与研究笔记栏目待补。",
+        music_h="AI 音乐", music_p="用 AI 创作的歌曲和 MV，这里放了其中几首。", repo_h="开源实验",
         lab_h="Lab 实验室", lab_p="尚在探索的想法、原型和实验项目，状态不一，多数仍在演进。",
         about_h="About 关于",
         about_lead="想清楚，写下来，做出来，再分享出去。",
@@ -50,6 +51,7 @@ UI = {
         books_pub="Published", books_online="Online guides", books_more="More long-form online →",
         writing_h="Writing", writing_p="Long-form writing published online, grouped into series. Each link opens the matching online book. The books themselves are in Chinese.",
         writing_todo="Short essays and research notes: coming.",
+        music_h="AI Music", music_p="Songs and music videos made with AI. A small selection is here.", repo_h="Open-source experiments",
         lab_h="Lab", lab_p="Ideas, prototypes and experiments still being explored. They are at different stages, and most are still evolving.",
         about_h="About",
         about_lead="Think it through, write it down, build it, and share it.",
@@ -205,6 +207,12 @@ def lab_rows():
         f'<a href="{u}"><div><b>{e(n)}</b><em>{e(d)}</em></div><span>GitHub ↗</span></a>' for n, u, d in C["lab"]) + "</div>"
 
 
+def music_grid(ab):
+    return '<div class="music">' + "".join(
+        f'<figure><video controls playsinline preload="none" poster="{ab}img/music/{k}.jpg" src="{ab}video/music/{k}.mp4"></video>'
+        f'<figcaption>{e(t)}</figcaption></figure>' for k, t in C["music"]) + "</div>"
+
+
 def video_block(item, ab):
     return (f'<h2>{T["s_demo"]}</h2><div class="shots"><figure><video controls muted playsinline preload="metadata" '
             f'poster="{ab}{item["poster"]}" src="{ab}{item["video"]}"></video></figure></div>')
@@ -294,7 +302,8 @@ def generate():
     page("writing/index.html", f"{T['writing_h']} — {S['title_suffix']}", body, 1, "writing")
 
     body = f"""<div class="page-h"><h1>{T["lab_h"]}</h1><p>{T["lab_p"]}</p></div>
-<section class="block">{lab_rows()}</section>"""
+<section class="block">{sec("01", T["music_h"])}<p class="music-p">{T["music_p"]}</p>{music_grid(abase(1))}</section>
+<section class="block">{sec("02", T["repo_h"])}{lab_rows()}</section>"""
     page("lab/index.html", f"{T['lab_h']} — {S['title_suffix']}", body, 1, "lab")
 
     brand = T["about_brand"].format(en=S["tagline_en"], zh=S["tagline_zh"]).strip()

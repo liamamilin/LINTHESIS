@@ -440,5 +440,31 @@
       "https://github.com/liamamilin/ai-research-system-",
       "An automated AI research report generator with a web console: define jobs in YAML and an agent searches and writes the report."
     ]
+  ],
+  "music": [
+    [
+      "m03",
+      "三点钟的潮汐"
+    ],
+    [
+      "m13",
+      "灯塔不倒"
+    ],
+    [
+      "m17",
+      "阳光停在手心"
+    ],
+    [
+      "m11",
+      "没写完的诗"
+    ],
+    [
+      "m06",
+      "凌晨三点的街头"
+    ],
+    [
+      "m01",
+      "Maximum Overload"
+    ]
   ]
 }
