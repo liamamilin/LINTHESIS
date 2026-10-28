@@ -83,8 +83,7 @@
       "cover": "img/projects/aide-1.jpg",
       "gallery": [
         "img/projects/aide-1.jpg",
-        "img/projects/aide-2.jpg",
-        "img/projects/aide-pet.gif"
+        "img/projects/aide-2.jpg"
       ],
       "intro": "SwiftUI / AppKit 外壳，加上一个无界面的 Python 核心。快捷键唤起 Quick Panel，用本地桌面工具执行请求；选中文本可以翻译、解释、总结、改写；框选截图会带着图片开启一段新对话。会改动数据的操作，都先给出确认。",
       "features": [

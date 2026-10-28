@@ -19,12 +19,29 @@
       "platform": "Web",
       "tech": "JavaScript",
       "cover": "img/projects/lookbook.jpg",
-      "gallery": ["img/projects/lookbook.jpg"],
+      "gallery": [
+        "img/projects/lookbook.jpg"
+      ],
       "video": "video/lookbook.webm",
       "poster": "video/lookbook.jpg",
       "intro": "Each design system lives in a single DESIGN.md: colors, type, radii, spacing and components. Lookbook renders the same sample page from those tokens, so you can see what Stripe, Linear or Notion feel like without reading the spec.",
-      "features": ["Browse: grouped by category, searchable in Chinese or English, filterable by dark or light", "Preview: every template rendered as a complete sample landing page", "Inspect: palette, type scale, radii and spacing, and every component definition", "Compare: put two design systems side by side, or draw two at random", "Export: AI prompts, CSS variables, Tailwind config and more, bundled in one click"],
-      "links": [["Live demo", "https://liamamilin.github.io/Lookbook/"], ["GitHub", "https://github.com/liamamilin/Lookbook"]]
+      "features": [
+        "Browse: grouped by category, searchable in Chinese or English, filterable by dark or light",
+        "Preview: every template rendered as a complete sample landing page",
+        "Inspect: palette, type scale, radii and spacing, and every component definition",
+        "Compare: put two design systems side by side, or draw two at random",
+        "Export: AI prompts, CSS variables, Tailwind config and more, bundled in one click"
+      ],
+      "links": [
+        [
+          "Live demo",
+          "https://liamamilin.github.io/Lookbook/"
+        ],
+        [
+          "GitHub",
+          "https://github.com/liamamilin/Lookbook"
+        ]
+      ]
     },
     {
       "slug": "personalspace",
@@ -36,11 +53,24 @@
       "platform": "macOS 26+",
       "tech": "SwiftUI · AppKit · SQLite / GRDB",
       "cover": "img/projects/personalspace-1.jpg",
-      "gallery": ["img/projects/personalspace-1.jpg"],
+      "gallery": [
+        "img/projects/personalspace-1.jpg"
+      ],
       "intro": "A native macOS app with no server, account or online API. Scanning is read-only, managed copies are copies rather than moves, and there is no way to delete source files. Manual workflows keep working when no model is available. Milestones M1–M8 are implemented locally.",
-      "features": ["Native file library with persistent folder authorization", "Search and system preview", "Personal objects, links and managed copies", "Four kinds of matters with on-demand recognition, fact checking, to-dos and local system reminders", "Sensitive markers, backup and restore, quick capture"],
+      "features": [
+        "Native file library with persistent folder authorization",
+        "Search and system preview",
+        "Personal objects, links and managed copies",
+        "Four kinds of matters with on-demand recognition, fact checking, to-dos and local system reminders",
+        "Sensitive markers, backup and restore, quick capture"
+      ],
       "note": "This is currently a local, ad hoc signed development build. It has not been signed with a Developer ID or notarized.",
-      "links": [["GitHub", "https://github.com/liamamilin/PersonalSpace"]]
+      "links": [
+        [
+          "GitHub",
+          "https://github.com/liamamilin/PersonalSpace"
+        ]
+      ]
     },
     {
       "slug": "aide",
@@ -52,10 +82,24 @@
       "platform": "macOS 14+ · Apple silicon",
       "tech": "SwiftUI / AppKit · Python · Ollama",
       "cover": "img/projects/aide-1.jpg",
-      "gallery": ["img/projects/aide-1.jpg", "img/projects/aide-2.jpg", "img/projects/aide-pet.gif"],
+      "gallery": [
+        "img/projects/aide-1.jpg",
+        "img/projects/aide-2.jpg"
+      ],
       "intro": "A SwiftUI / AppKit shell around a headless Python core. A hotkey opens the Quick Panel, which runs requests with local desktop tools. Selected text can be translated, explained, summarized or rewritten, and a screenshot region opens a new chat with the image attached. Anything that changes data asks for confirmation first.",
-      "features": ["Quick Panel: ⌘⌃L runs a request with local desktop tools", "Pick an action for selected text, or type your own instruction", "⌘⌃S captures a region into a new chat", "Workspace: chat history and search, streaming Markdown, regenerate", "Changes show the exact action and run only after you confirm"],
-      "links": [["GitHub", "https://github.com/liamamilin/aide"]]
+      "features": [
+        "Quick Panel: ⌘⌃L runs a request with local desktop tools",
+        "Pick an action for selected text, or type your own instruction",
+        "⌘⌃S captures a region into a new chat",
+        "Workspace: chat history and search, streaming Markdown, regenerate",
+        "Changes show the exact action and run only after you confirm"
+      ],
+      "links": [
+        [
+          "GitHub",
+          "https://github.com/liamamilin/aide"
+        ]
+      ]
     },
     {
       "slug": "radar",
@@ -67,10 +111,23 @@
       "platform": "macOS 15+",
       "tech": "SwiftUI · GRDB · FeedKit · SwiftSoup",
       "cover": "img/projects/radar-1.jpg",
-      "gallery": ["img/projects/radar-1.jpg"],
+      "gallery": [
+        "img/projects/radar-1.jpg"
+      ],
       "intro": "From a plain-language watch, Radar finds and trial-reads sources, collects periodically, keeps a baseline and removes duplicates, then reports events with links to the original. No API key is needed. A new watch only records a baseline; only later content raises alerts.",
-      "features": ["Four collectors: GitHub Releases, GitHub repo discovery, RSS / Atom, static HTML", "Source trial reads and confirmation, feed auto-discovery, CSS selector preview", "Unique event keys for dedup, ETag / 304, rate limits and network errors tracked per source", "Menu bar, system notifications, in-process timer with catch-up on wake", "12 automated tests passing"],
-      "links": [["GitHub", "https://github.com/liamamilin/radar-lean"]]
+      "features": [
+        "Four collectors: GitHub Releases, GitHub repo discovery, RSS / Atom, static HTML",
+        "Source trial reads and confirmation, feed auto-discovery, CSS selector preview",
+        "Unique event keys for dedup, ETag / 304, rate limits and network errors tracked per source",
+        "Menu bar, system notifications, in-process timer with catch-up on wake",
+        "12 automated tests passing"
+      ],
+      "links": [
+        [
+          "GitHub",
+          "https://github.com/liamamilin/radar-lean"
+        ]
+      ]
     },
     {
       "slug": "research2video",
@@ -82,10 +139,23 @@
       "platform": "Local services · Web console",
       "tech": "Python · FastAPI · Remotion · React",
       "cover": "img/projects/research2video-1.jpg",
-      "gallery": ["img/projects/research2video-1.jpg", "img/projects/research2video-2.jpg"],
+      "gallery": [
+        "img/projects/research2video-1.jpg",
+        "img/projects/research2video-2.jpg"
+      ],
       "intro": "Two modules. The research console handles research tasks, sources, scheduling, script recipes and the video workflow. AutoVideo handles voice-over, visual planning, Remotion rendering, subtitles, intros and outros, and final delivery.",
-      "features": ["Research tasks, sources and scheduled runs", "Script recipes and a management console for the video workflow", "Voice-over, visual planning, subtitles, intros and outros", "Remotion rendering, final delivery and publishing management"],
-      "links": [["GitHub", "https://github.com/liamamilin/Research2Video"]]
+      "features": [
+        "Research tasks, sources and scheduled runs",
+        "Script recipes and a management console for the video workflow",
+        "Voice-over, visual planning, subtitles, intros and outros",
+        "Remotion rendering, final delivery and publishing management"
+      ],
+      "links": [
+        [
+          "GitHub",
+          "https://github.com/liamamilin/Research2Video"
+        ]
+      ]
     },
     {
       "slug": "atlas",
@@ -97,12 +167,26 @@
       "platform": "Web · local API",
       "tech": "React · TypeScript · Vite · Python",
       "cover": "img/projects/atlas-1.jpg",
-      "gallery": ["img/projects/atlas-3.jpg", "img/projects/atlas-4.jpg", "img/projects/atlas-1.jpg"],
+      "gallery": [
+        "img/projects/atlas-3.jpg",
+        "img/projects/atlas-4.jpg",
+        "img/projects/atlas-1.jpg"
+      ],
       "video": "video/atlas.webm",
       "poster": "video/atlas.jpg",
       "intro": "The English entries are the source of truth, backed by research notes, a category tree and persisted translations. On top sits a template factory that exports a standard development pack from a scenario template, hands it to an AI to implement, and verifies the browser journeys.",
-      "features": ["1,805 types, 29 domains, 270 directory nodes, 33 product instances", "Formal English entries with matching research notes and boundaries", "Local drafts API and a React workbench", "Template factory with trial scenarios such as bookmarks, personal budget and meeting notes"],
-      "links": [["GitHub", "https://github.com/liamamilin/atlas"]]
+      "features": [
+        "1,805 types, 29 domains, 270 directory nodes, 33 product instances",
+        "Formal English entries with matching research notes and boundaries",
+        "Local drafts API and a React workbench",
+        "Template factory with trial scenarios such as bookmarks, personal budget and meeting notes"
+      ],
+      "links": [
+        [
+          "GitHub",
+          "https://github.com/liamamilin/atlas"
+        ]
+      ]
     }
   ],
   "print_books": [
@@ -189,27 +273,165 @@
   "series": [
     {
       "name": "Data science and analytics",
-      "items": [["Python Data Science", "https://liamamilin.github.io/PythonDatascience/"], ["R Data Science", "https://liamamilin.github.io/DataScienceInR/"], ["Process Mining in R", "https://liamamilin.github.io/ProcessMiningRBook/"], ["Data Science Toolbox", "https://liamamilin.github.io/DatascienceToolbox/"], ["DATA to VIZ", "https://liamamilin.github.io/From-Data-to-Viz/"], ["Building a Metric System", "https://liamamilin.github.io/Indicator_system/"], ["A/B Testing in Practice", "https://liamamilin.github.io/AB-tutorial/"], ["Data Warehouse Development Notes", "https://liamamilin.github.io/Data-Warehouse/"], ["ODPS SQL", "https://liamamilin.github.io/ODPS_SQL/"]]
+      "items": [
+        [
+          "Python Data Science",
+          "https://liamamilin.github.io/PythonDatascience/"
+        ],
+        [
+          "R Data Science",
+          "https://liamamilin.github.io/DataScienceInR/"
+        ],
+        [
+          "Process Mining in R",
+          "https://liamamilin.github.io/ProcessMiningRBook/"
+        ],
+        [
+          "Data Science Toolbox",
+          "https://liamamilin.github.io/DatascienceToolbox/"
+        ],
+        [
+          "DATA to VIZ",
+          "https://liamamilin.github.io/From-Data-to-Viz/"
+        ],
+        [
+          "Building a Metric System",
+          "https://liamamilin.github.io/Indicator_system/"
+        ],
+        [
+          "A/B Testing in Practice",
+          "https://liamamilin.github.io/AB-tutorial/"
+        ],
+        [
+          "Data Warehouse Development Notes",
+          "https://liamamilin.github.io/Data-Warehouse/"
+        ],
+        [
+          "ODPS SQL",
+          "https://liamamilin.github.io/ODPS_SQL/"
+        ]
+      ]
     },
     {
       "name": "LLMs and agents",
-      "items": [["Large Language Models", "https://liamamilin.github.io/LLM/"], ["Hands-on LLMs", "https://liamamilin.github.io/Practical-LLM/"], ["Agent", "https://liamamilin.github.io/agent_tutorial/"], ["Agent Course", "https://liamamilin.github.io/Agent-Engineering-From-Runtime-to-Production/"], ["PyTorch", "https://liamamilin.github.io/PyTorch-tutorial/"], ["Model Compression", "https://liamamilin.github.io/LLM-Compression/"], ["Prompt Tutorial", "https://liamamilin.github.io/TutorialOfPrompt/"], ["Vibe Coding", "https://liamamilin.github.io/vibe-coding-2026/"], ["opencode", "https://liamamilin.github.io/opencode_tutorial/"], ["AI Engineer", "https://liamamilin.github.io/AI-Engineer/"]]
+      "items": [
+        [
+          "Large Language Models",
+          "https://liamamilin.github.io/LLM/"
+        ],
+        [
+          "Hands-on LLMs",
+          "https://liamamilin.github.io/Practical-LLM/"
+        ],
+        [
+          "Agent",
+          "https://liamamilin.github.io/agent_tutorial/"
+        ],
+        [
+          "Agent Course",
+          "https://liamamilin.github.io/Agent-Engineering-From-Runtime-to-Production/"
+        ],
+        [
+          "PyTorch",
+          "https://liamamilin.github.io/PyTorch-tutorial/"
+        ],
+        [
+          "Model Compression",
+          "https://liamamilin.github.io/LLM-Compression/"
+        ],
+        [
+          "Prompt Tutorial",
+          "https://liamamilin.github.io/TutorialOfPrompt/"
+        ],
+        [
+          "Vibe Coding",
+          "https://liamamilin.github.io/vibe-coding-2026/"
+        ],
+        [
+          "opencode",
+          "https://liamamilin.github.io/opencode_tutorial/"
+        ],
+        [
+          "AI Engineer",
+          "https://liamamilin.github.io/AI-Engineer/"
+        ]
+      ]
     },
     {
       "name": "Architecture series",
-      "items": [["Intelligence Architecture (V0–V8)", "https://liamamilin.github.io/Foundations-of-System-Blueprint/"], ["LLM Architecture (Vol I–VIII)", "https://liamamilin.github.io/Model-Foundations/"], ["Structural Architecture (V1–V8)", "https://liamamilin.github.io/Structure-as-Carrier/"], ["World Architecture", "https://liamamilin.github.io/Discipline-Architecture/"]]
+      "items": [
+        [
+          "Intelligence Architecture (V0–V8)",
+          "https://liamamilin.github.io/Foundations-of-System-Blueprint/"
+        ],
+        [
+          "LLM Architecture (Vol I–VIII)",
+          "https://liamamilin.github.io/Model-Foundations/"
+        ],
+        [
+          "Structural Architecture (V1–V8)",
+          "https://liamamilin.github.io/Structure-as-Carrier/"
+        ],
+        [
+          "World Architecture",
+          "https://liamamilin.github.io/Discipline-Architecture/"
+        ]
+      ]
     },
     {
       "name": "Language, self and people",
-      "items": [["Language Architecture", "https://liamamilin.github.io/Common-Sense/"], ["Self Architecture (V1–V9)", "https://liamamilin.github.io/Self-Understanding/"], ["Human Interaction Architecture (V1–V10)", "https://liamamilin.github.io/Seeing-People/"], ["Cognitive Language Engineering", "https://liamamilin.github.io/cognitive-language-engineering/"], ["English for Reality", "https://liamamilin.github.io/English-for-Reality/"], ["IELTS Domain Language", "https://liamamilin.github.io/IELTS_DOMAIN_LANG/"]]
+      "items": [
+        [
+          "Language Architecture",
+          "https://liamamilin.github.io/Common-Sense/"
+        ],
+        [
+          "Self Architecture (V1–V9)",
+          "https://liamamilin.github.io/Self-Understanding/"
+        ],
+        [
+          "Human Interaction Architecture (V1–V10)",
+          "https://liamamilin.github.io/Seeing-People/"
+        ],
+        [
+          "Cognitive Language Engineering",
+          "https://liamamilin.github.io/cognitive-language-engineering/"
+        ],
+        [
+          "English for Reality",
+          "https://liamamilin.github.io/English-for-Reality/"
+        ],
+        [
+          "IELTS Domain Language",
+          "https://liamamilin.github.io/IELTS_DOMAIN_LANG/"
+        ]
+      ]
     }
   ],
   "lab": [
-    ["COP", "https://github.com/liamamilin/COP"],
-    ["goalsift", "https://github.com/liamamilin/goalsift"],
-    ["decision-compiler", "https://github.com/liamamilin/decision-compiler"],
-    ["mctrl", "https://github.com/liamamilin/mctrl"],
-    ["Narrative-Writing-Workbench", "https://github.com/liamamilin/Narrative-Writing-Workbench"],
-    ["ai-research-system-", "https://github.com/liamamilin/ai-research-system-"]
+    [
+      "COP",
+      "https://github.com/liamamilin/COP"
+    ],
+    [
+      "goalsift",
+      "https://github.com/liamamilin/goalsift"
+    ],
+    [
+      "decision-compiler",
+      "https://github.com/liamamilin/decision-compiler"
+    ],
+    [
+      "mctrl",
+      "https://github.com/liamamilin/mctrl"
+    ],
+    [
+      "Narrative-Writing-Workbench",
+      "https://github.com/liamamilin/Narrative-Writing-Workbench"
+    ],
+    [
+      "ai-research-system-",
+      "https://github.com/liamamilin/ai-research-system-"
+    ]
   ]
 }
