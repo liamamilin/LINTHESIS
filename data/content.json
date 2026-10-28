@@ -12,7 +12,6 @@
     {
       "slug": "lookbook",
       "title": "Lookbook",
-      "zh": "设计系统图鉴",
       "kind": "网站 / 工具",
       "one_liner": "把 80 余套知名产品的设计系统渲染成可以直接看、直接比、直接拿走的页面。",
       "status": "已上线",
@@ -41,12 +40,12 @@
         ]
       ],
       "video": "video/lookbook.webm",
-      "poster": "video/lookbook.jpg"
+      "poster": "video/lookbook.jpg",
+      "sub": "设计系统图鉴"
     },
     {
       "slug": "personalspace",
       "title": "PersonalSpace",
-      "zh": "原生 macOS 个人数字空间",
       "kind": "软件 / macOS 应用",
       "one_liner": "本地优先的个人资料库：只读授权文件夹，搜索预览，识别事务并提醒。",
       "status": "开发中 · 本地构建",
@@ -70,12 +69,12 @@
           "GitHub",
           "https://github.com/liamamilin/PersonalSpace"
         ]
-      ]
+      ],
+      "sub": "原生 macOS 个人数字空间"
     },
     {
       "slug": "aide",
       "title": "Aide",
-      "zh": "本地 AI 桌面入口",
       "kind": "软件 / macOS 应用",
       "one_liner": "按下 ⌘⌃L，说出你想做的事，或先选中文本。本地 Ollama 模型，不上传。",
       "status": "开发中",
@@ -100,12 +99,12 @@
           "GitHub",
           "https://github.com/liamamilin/aide"
         ]
-      ]
+      ],
+      "sub": "本地 AI 桌面入口"
     },
     {
       "slug": "radar",
       "title": "Radar",
-      "zh": "信息雷达",
       "kind": "软件 / macOS 应用",
       "one_liner": "用自然语言建立关注，定期直接采集，给出带原始链接的事件。",
       "status": "v0.1",
@@ -128,12 +127,12 @@
           "GitHub",
           "https://github.com/liamamilin/radar-lean"
         ]
-      ]
+      ],
+      "sub": "信息雷达"
     },
     {
       "slug": "research2video",
       "title": "研映 Research2Video",
-      "zh": "从研究到视频",
       "kind": "软件 / 工作流",
       "one_liner": "从资料调研、研究报告和文稿，到配音、画面、字幕、视频与发布管理的本地工作流。",
       "status": "开发中",
@@ -156,12 +155,12 @@
           "GitHub",
           "https://github.com/liamamilin/Research2Video"
         ]
-      ]
+      ],
+      "sub": "从研究到视频"
     },
     {
       "slug": "atlas",
       "title": "Application Atlas",
-      "zh": "软件应用类型资料库",
       "kind": "软件 / 资料库",
       "one_liner": "1,805 个软件类型、29 个大域的资料库及本地工作台。",
       "status": "开发中",
@@ -187,7 +186,8 @@
         ]
       ],
       "video": "video/atlas.webm",
-      "poster": "video/atlas.jpg"
+      "poster": "video/atlas.jpg",
+      "sub": "软件应用类型资料库"
     }
   ],
   "print_books": [

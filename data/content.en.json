@@ -1,0 +1,215 @@
+{
+  "site": {
+    "name": "LINTHESIS",
+    "tagline_en": "From Thought to Form.",
+    "tagline_zh": "",
+    "intro": "Software I build, books I have written, and ideas I keep exploring.",
+    "author": "Mi Lin / Liam",
+    "github": "https://github.com/liamamilin",
+    "title_suffix": "LINTHESIS / Personal Studio"
+  },
+  "projects": [
+    {
+      "slug": "lookbook",
+      "title": "Lookbook",
+      "sub": "A visual index of design systems",
+      "kind": "Website / Tool",
+      "one_liner": "Over 80 design systems from well-known products, rendered as pages you can browse, compare and take away.",
+      "status": "Live",
+      "platform": "Web",
+      "tech": "JavaScript",
+      "cover": "img/projects/lookbook.jpg",
+      "gallery": ["img/projects/lookbook.jpg"],
+      "video": "video/lookbook.webm",
+      "poster": "video/lookbook.jpg",
+      "intro": "Each design system lives in a single DESIGN.md: colors, type, radii, spacing and components. Lookbook renders the same sample page from those tokens, so you can see what Stripe, Linear or Notion feel like without reading the spec.",
+      "features": ["Browse: grouped by category, searchable in Chinese or English, filterable by dark or light", "Preview: every template rendered as a complete sample landing page", "Inspect: palette, type scale, radii and spacing, and every component definition", "Compare: put two design systems side by side, or draw two at random", "Export: AI prompts, CSS variables, Tailwind config and more, bundled in one click"],
+      "links": [["Live demo", "https://liamamilin.github.io/Lookbook/"], ["GitHub", "https://github.com/liamamilin/Lookbook"]]
+    },
+    {
+      "slug": "personalspace",
+      "title": "PersonalSpace",
+      "sub": "A native macOS personal digital space",
+      "kind": "Software / macOS app",
+      "one_liner": "A local-first personal library: read-only access to folders you authorize, search and preview, and reminders for what needs doing.",
+      "status": "In development · local build",
+      "platform": "macOS 26+",
+      "tech": "SwiftUI · AppKit · SQLite / GRDB",
+      "cover": "img/projects/personalspace-1.jpg",
+      "gallery": ["img/projects/personalspace-1.jpg"],
+      "intro": "A native macOS app with no server, account or online API. Scanning is read-only, managed copies are copies rather than moves, and there is no way to delete source files. Manual workflows keep working when no model is available. Milestones M1–M8 are implemented locally.",
+      "features": ["Native file library with persistent folder authorization", "Search and system preview", "Personal objects, links and managed copies", "Four kinds of matters with on-demand recognition, fact checking, to-dos and local system reminders", "Sensitive markers, backup and restore, quick capture"],
+      "note": "This is currently a local, ad hoc signed development build. It has not been signed with a Developer ID or notarized.",
+      "links": [["GitHub", "https://github.com/liamamilin/PersonalSpace"]]
+    },
+    {
+      "slug": "aide",
+      "title": "Aide",
+      "sub": "A local AI entry point for the desktop",
+      "kind": "Software / macOS app",
+      "one_liner": "Press ⌘⌃L and say what you want, or select text first. Local Ollama models, nothing uploaded.",
+      "status": "In development",
+      "platform": "macOS 14+ · Apple silicon",
+      "tech": "SwiftUI / AppKit · Python · Ollama",
+      "cover": "img/projects/aide-1.jpg",
+      "gallery": ["img/projects/aide-1.jpg", "img/projects/aide-2.jpg", "img/projects/aide-pet.gif"],
+      "intro": "A SwiftUI / AppKit shell around a headless Python core. A hotkey opens the Quick Panel, which runs requests with local desktop tools. Selected text can be translated, explained, summarized or rewritten, and a screenshot region opens a new chat with the image attached. Anything that changes data asks for confirmation first.",
+      "features": ["Quick Panel: ⌘⌃L runs a request with local desktop tools", "Pick an action for selected text, or type your own instruction", "⌘⌃S captures a region into a new chat", "Workspace: chat history and search, streaming Markdown, regenerate", "Changes show the exact action and run only after you confirm"],
+      "links": [["GitHub", "https://github.com/liamamilin/aide"]]
+    },
+    {
+      "slug": "radar",
+      "title": "Radar",
+      "sub": "An information radar",
+      "kind": "Software / macOS app",
+      "one_liner": "Describe what to follow in plain language, collect on a schedule, and get events that link back to the source.",
+      "status": "v0.1",
+      "platform": "macOS 15+",
+      "tech": "SwiftUI · GRDB · FeedKit · SwiftSoup",
+      "cover": "img/projects/radar-1.jpg",
+      "gallery": ["img/projects/radar-1.jpg"],
+      "intro": "From a plain-language watch, Radar finds and trial-reads sources, collects periodically, keeps a baseline and removes duplicates, then reports events with links to the original. No API key is needed. A new watch only records a baseline; only later content raises alerts.",
+      "features": ["Four collectors: GitHub Releases, GitHub repo discovery, RSS / Atom, static HTML", "Source trial reads and confirmation, feed auto-discovery, CSS selector preview", "Unique event keys for dedup, ETag / 304, rate limits and network errors tracked per source", "Menu bar, system notifications, in-process timer with catch-up on wake", "12 automated tests passing"],
+      "links": [["GitHub", "https://github.com/liamamilin/radar-lean"]]
+    },
+    {
+      "slug": "research2video",
+      "title": "Research2Video",
+      "sub": "研映 · From research to video",
+      "kind": "Software / Workflow",
+      "one_liner": "A local workflow from research and drafting through voice-over, visuals, subtitles and video to publishing.",
+      "status": "In development",
+      "platform": "Local services · Web console",
+      "tech": "Python · FastAPI · Remotion · React",
+      "cover": "img/projects/research2video-1.jpg",
+      "gallery": ["img/projects/research2video-1.jpg", "img/projects/research2video-2.jpg"],
+      "intro": "Two modules. The research console handles research tasks, sources, scheduling, script recipes and the video workflow. AutoVideo handles voice-over, visual planning, Remotion rendering, subtitles, intros and outros, and final delivery.",
+      "features": ["Research tasks, sources and scheduled runs", "Script recipes and a management console for the video workflow", "Voice-over, visual planning, subtitles, intros and outros", "Remotion rendering, final delivery and publishing management"],
+      "links": [["GitHub", "https://github.com/liamamilin/Research2Video"]]
+    },
+    {
+      "slug": "atlas",
+      "title": "Application Atlas",
+      "sub": "A library of software application types",
+      "kind": "Software / Library",
+      "one_liner": "A library and local workbench covering 1,805 software types across 29 top-level domains.",
+      "status": "In development",
+      "platform": "Web · local API",
+      "tech": "React · TypeScript · Vite · Python",
+      "cover": "img/projects/atlas-1.jpg",
+      "gallery": ["img/projects/atlas-3.jpg", "img/projects/atlas-4.jpg", "img/projects/atlas-1.jpg"],
+      "video": "video/atlas.webm",
+      "poster": "video/atlas.jpg",
+      "intro": "The English entries are the source of truth, backed by research notes, a category tree and persisted translations. On top sits a template factory that exports a standard development pack from a scenario template, hands it to an AI to implement, and verifies the browser journeys.",
+      "features": ["1,805 types, 29 domains, 270 directory nodes, 33 product instances", "Formal English entries with matching research notes and boundaries", "Local drafts API and a React workbench", "Template factory with trial scenarios such as bookmarks, personal budget and meeting notes"],
+      "links": [["GitHub", "https://github.com/liamamilin/atlas"]]
+    }
+  ],
+  "print_books": [
+    {
+      "slug": "r-data-analysis",
+      "title": "Deep Dive into Data Analysis with R",
+      "sub": "深入浅出R语言数据分析",
+      "year": 2020,
+      "publisher": "Tsinghua University Press",
+      "isbn": "9787302543886",
+      "cover": "img/books/r-analysis.jpg",
+      "intro": "Covers data analysis methods and common models, then works through case studies in R: data acquisition and web scraping, preprocessing and exploration, survival analysis, principal component analysis, linear and logistic regression, clustering, association rules, random forests, support vector machines, neural networks, text mining and social network analysis. Written for beginner and advanced R users and for data science practitioners.",
+      "link": "http://www.tup.com.cn/bookscenter/book_08573301.html"
+    },
+    {
+      "slug": "r-data-visualization",
+      "title": "Data Visualization with R in Practice",
+      "sub": "R语言数据可视化实战",
+      "year": 2021,
+      "publisher": "China Machine Press",
+      "isbn": "",
+      "cover": "img/books/r-viz.png",
+      "intro": "A multi-angle guide to data visualization in R, with more than 500 worked examples covering over 30 families of statistical graphics.",
+      "link": "https://www.hzmedia.com.cn/books11121329"
+    },
+    {
+      "slug": "r-statistics",
+      "title": "Statistical Analysis with R in Practice",
+      "sub": "R语言统计分析实战",
+      "year": 2023,
+      "publisher": "Beijing Institute of Technology Press",
+      "isbn": "9787576328219",
+      "cover": "img/books/r-stats.jpg",
+      "intro": "Application-first coverage of commonly used R packages and the implementation of statistical methods and statistical machine learning models. Eleven chapters in four parts: R basics, statistical analysis, applications (business A/B testing, marketing analytics, credit scoring), and reproducible research with Shiny visualization.",
+      "link": "https://book.douban.com/subject/36632913/"
+    },
+    {
+      "slug": "spss",
+      "title": "Getting Started with SPSS and Data Analysis in Practice",
+      "sub": "SPSS入门与数据分析实践",
+      "year": 2025,
+      "publisher": "Chemical Industry Press",
+      "isbn": "",
+      "cover": "img/books/spss.png",
+      "intro": "Step-by-step illustrated operations, guidance on statistical thinking, learning by doing through cases, and companion videos and materials.",
+      "link": "http://jx.tsxcfw.com/bookshow.asp?id=2914368"
+    }
+  ],
+  "ebooks": [
+    {
+      "slug": "codex-mastery",
+      "title": "Mastering Codex",
+      "sub": "驾驭 Codex · Not just using it, but steering it",
+      "cover": "img/ebooks/codex-mastery.jpg",
+      "status": "Read online · v1.0",
+      "intro": "Turn vague ideas into verifiable results. Understand what it does, keep your own judgment, and find your way back when it goes wrong. Eight progressive parts, 28 chapters, 7 kinds of interactive learning and 5 kinds of practical tasks.",
+      "video": "video/codex-mastery.webm",
+      "poster": "video/codex-mastery.jpg",
+      "link": "https://liamamilin.github.io/codex-mastery/"
+    },
+    {
+      "slug": "claude-mastery",
+      "title": "Mastering Claude",
+      "sub": "驾驭 Claude · Not just asking, but getting it done",
+      "cover": "img/ebooks/claude-mastery.jpg",
+      "status": "Read online · in progress",
+      "intro": "From first opening Claude Code Desktop to organizing complex projects, spotting wrong assumptions and verifying real deliverables. Planned as 8 parts and 32 chapters; 2 sample chapters are open now. An unofficial, independent educational project.",
+      "video": "video/claude-mastery.webm",
+      "poster": "video/claude-mastery.jpg",
+      "link": "https://liamamilin.github.io/claude-mastery/"
+    },
+    {
+      "slug": "llm-infer",
+      "title": "LLM Inference Engineering in Practice",
+      "sub": "大模型 Inference 工程实践 · From model files to a working service",
+      "cover": "img/ebooks/llm-infer.jpg",
+      "status": "Read online",
+      "intro": "Start with a small model, not a big one, and build the full range of inference engineering through experiments. Each chapter is tied to a real experiment and its run evidence. Covers prefill, decode, TTFT, TPOT, throughput, quantization, caching and concurrency.",
+      "video": "video/llm-infer.webm",
+      "poster": "video/llm-infer.jpg",
+      "link": "https://liamamilin.github.io/llm-infer/"
+    }
+  ],
+  "series": [
+    {
+      "name": "Data science and analytics",
+      "items": [["Python Data Science", "https://liamamilin.github.io/PythonDatascience/"], ["R Data Science", "https://liamamilin.github.io/DataScienceInR/"], ["Process Mining in R", "https://liamamilin.github.io/ProcessMiningRBook/"], ["Data Science Toolbox", "https://liamamilin.github.io/DatascienceToolbox/"], ["DATA to VIZ", "https://liamamilin.github.io/From-Data-to-Viz/"], ["Building a Metric System", "https://liamamilin.github.io/Indicator_system/"], ["A/B Testing in Practice", "https://liamamilin.github.io/AB-tutorial/"], ["Data Warehouse Development Notes", "https://liamamilin.github.io/Data-Warehouse/"], ["ODPS SQL", "https://liamamilin.github.io/ODPS_SQL/"]]
+    },
+    {
+      "name": "LLMs and agents",
+      "items": [["Large Language Models", "https://liamamilin.github.io/LLM/"], ["Hands-on LLMs", "https://liamamilin.github.io/Practical-LLM/"], ["Agent", "https://liamamilin.github.io/agent_tutorial/"], ["Agent Course", "https://liamamilin.github.io/Agent-Engineering-From-Runtime-to-Production/"], ["PyTorch", "https://liamamilin.github.io/PyTorch-tutorial/"], ["Model Compression", "https://liamamilin.github.io/LLM-Compression/"], ["Prompt Tutorial", "https://liamamilin.github.io/TutorialOfPrompt/"], ["Vibe Coding", "https://liamamilin.github.io/vibe-coding-2026/"], ["opencode", "https://liamamilin.github.io/opencode_tutorial/"], ["AI Engineer", "https://liamamilin.github.io/AI-Engineer/"]]
+    },
+    {
+      "name": "Architecture series",
+      "items": [["Intelligence Architecture (V0–V8)", "https://liamamilin.github.io/Foundations-of-System-Blueprint/"], ["LLM Architecture (Vol I–VIII)", "https://liamamilin.github.io/Model-Foundations/"], ["Structural Architecture (V1–V8)", "https://liamamilin.github.io/Structure-as-Carrier/"], ["World Architecture", "https://liamamilin.github.io/Discipline-Architecture/"]]
+    },
+    {
+      "name": "Language, self and people",
+      "items": [["Language Architecture", "https://liamamilin.github.io/Common-Sense/"], ["Self Architecture (V1–V9)", "https://liamamilin.github.io/Self-Understanding/"], ["Human Interaction Architecture (V1–V10)", "https://liamamilin.github.io/Seeing-People/"], ["Cognitive Language Engineering", "https://liamamilin.github.io/cognitive-language-engineering/"], ["English for Reality", "https://liamamilin.github.io/English-for-Reality/"], ["IELTS Domain Language", "https://liamamilin.github.io/IELTS_DOMAIN_LANG/"]]
+    }
+  ],
+  "lab": [
+    ["COP", "https://github.com/liamamilin/COP"],
+    ["goalsift", "https://github.com/liamamilin/goalsift"],
+    ["decision-compiler", "https://github.com/liamamilin/decision-compiler"],
+    ["mctrl", "https://github.com/liamamilin/mctrl"],
+    ["Narrative-Writing-Workbench", "https://github.com/liamamilin/Narrative-Writing-Workbench"],
+    ["ai-research-system-", "https://github.com/liamamilin/ai-research-system-"]
+  ]
+}
