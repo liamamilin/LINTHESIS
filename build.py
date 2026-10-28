@@ -21,17 +21,16 @@ UI = {
         writing_todo="短文与研究笔记栏目待补。",
         lab_h="Lab 实验室", lab_p="尚在探索的想法、原型和实验项目。多数仍在演进，说明待补。",
         about_h="About 关于",
-        about_lead="我长期做数据分析，现在把更多时间放在 AI 与软件开发上。",
-        about_p1="早些年，我的实践和写作集中在数据科学、机器学习和统计：写过四本关于 R 语言与统计分析的书，也把 Python、数据仓库、A/B 测试、指标体系这些做法整理成在线教程。",
-        about_p2="现在，我更感兴趣的是 AI、区块链、软件开发、商业与创业。这些方向有一个共同点：它们都在把想法变成能运行、能被使用的东西。所以我开始自己动手做软件，并把使用 AI 编码工具的经验写成《驾驭 Codex》《驾驭 Claude》。",
-        then_h="过去", now_h="现在",
-        then_items=["数据科学", "机器学习", "统计"],
-        now_items=["AI", "区块链", "软件开发", "商业", "创业"],
-        then_link=("books/", "看这几本书 →"), now_link=("works/", "看我做的软件 →"),
-        do_h="我做什么",
-        do_rows=[("Software", "原生 macOS 应用、工作流和网站", "works/"), ("Books", "出版的书，和在线教程", "books/"), ("Writing", "按主题成系列的在线长篇", "writing/")],
+        about_lead="想清楚，写下来，做出来，再分享出去。",
+        about_intro="我早期做数据科学、机器学习和统计，写过四本关于 R 与统计分析的书；现在更感兴趣的是 AI、区块链、软件开发、商业与创业。方向在变，做事的方式没变：先把问题想明白，再用文字和作品讲清楚，最后公开出来。",
+        strengths=[
+            ("01", "认知", "Cognition", "先理解，再动手。", "我花很多时间研究思考本身：怎样观察一个问题，怎样拆解结构，怎样做判断。这些想法被整理成《认知语言工程》，以及自我、人际、结构等系列。", "writing/", "看这些系列 →"),
+            ("02", "写作", "Writing", "把复杂的东西讲清楚。", "四本已出版的书，加上 100 多本在线电子书，从 R 与统计，到 AI、架构与语言，持续更新。", "books/", "看我的书 →"),
+            ("03", "创造", "Creating", "把想法做成能用的东西。", "原生 macOS 应用、本地工作流、设计系统图鉴……我自己做软件，也用 AI 编码工具把它们做出来，并把方法写成教程。", "works/", "看我做的软件 →"),
+            ("04", "分享", "Sharing", "做出来的，公开出来。", "电子书在线阅读，项目代码公开在 GitHub，过程和方法也一并写出来，希望能帮到走在同一条路上的人。", "https://github.com/liamamilin", "GitHub ↗"),
+        ],
         about_brand="LINTHESIS 是这些创作共用的署名：把思考、知识与技术，变成可用的作品。{en} {zh}",
-        about_todo="联系方式待补。",
+        about_contact="联系我",
         k_status="状态", k_platform="平台", k_tech="技术", k_author="作者", k_pub="出版社", k_year="出版年份",
         k_isbn="ISBN", k_format="形式", k_lang="语言", v_format="在线电子书", v_lang="中文", v_author="米霖",
         s_intro="介绍", s_feat="核心功能", s_note="说明", s_demo="演示", s_shots="截图", s_blurb="简介", s_home="首页",
@@ -51,17 +50,16 @@ UI = {
         writing_todo="Short essays and research notes: coming.",
         lab_h="Lab", lab_p="Ideas, prototypes and experiments still being explored. Most are evolving; descriptions to come.",
         about_h="About",
-        about_lead="I spent years in data analysis. Now I spend more of my time on AI and software.",
-        about_p1="Earlier on, my practice and writing centered on data science, machine learning and statistics. I wrote four books on R and statistical analysis, and turned Python, data warehousing, A/B testing and metric systems into online guides.",
-        about_p2="What interests me now is AI, blockchain, software development, business and entrepreneurship. They share one thing: each turns an idea into something that runs and gets used. So I started building software myself, and wrote up what I learned from AI coding tools as Mastering Codex and Mastering Claude.",
-        then_h="Before", now_h="Now",
-        then_items=["Data science", "Machine learning", "Statistics"],
-        now_items=["AI", "Blockchain", "Software development", "Business", "Entrepreneurship"],
-        then_link=("books/", "See the books →"), now_link=("works/", "See the software →"),
-        do_h="What I make",
-        do_rows=[("Software", "Native macOS apps, workflows and websites", "works/"), ("Books", "Published books and online guides", "books/"), ("Writing", "Long-form online writing, grouped into series", "writing/")],
+        about_lead="Think it through, write it down, build it, and share it.",
+        about_intro="I started in data science, machine learning and statistics, and wrote four books on R and statistical analysis. What interests me now is AI, blockchain, software development, business and entrepreneurship. The subject has changed; the way I work has not: understand the problem first, explain it with words and with things that work, then put it out in the open.",
+        strengths=[
+            ("01", "Cognition", "认知", "Understand first, then build.", "I spend a lot of time studying thinking itself: how to look at a problem, take a structure apart, and make a judgment. Those ideas became Cognitive Language Engineering and the series on self, people and structure.", "writing/", "See the series →"),
+            ("02", "Writing", "写作", "Make the complicated clear.", "Four published books and more than a hundred online books, from R and statistics to AI, architecture and language, still growing.", "books/", "See the books →"),
+            ("03", "Creating", "创造", "Turn ideas into things that work.", "Native macOS apps, local workflows, a visual index of design systems. I build the software myself, with AI coding tools, and write the method up as guides.", "works/", "See the software →"),
+            ("04", "Sharing", "分享", "What I make, I put out in the open.", "Books you can read online, code public on GitHub, and the process and method written down too, in the hope it helps others on the same road.", "https://github.com/liamamilin", "GitHub ↗"),
+        ],
         about_brand="LINTHESIS is the shared byline for all of this: turning thought, knowledge and technology into work that is usable. {en}",
-        about_todo="Contact details to come.",
+        about_contact="Get in touch",
         k_status="Status", k_platform="Platform", k_tech="Stack", k_author="Author", k_pub="Publisher", k_year="Year",
         k_isbn="ISBN", k_format="Format", k_lang="Language", v_format="Online book", v_lang="Chinese", v_author="Mi Lin",
         s_intro="About", s_feat="Features", s_note="Note", s_demo="Demo", s_shots="Screenshots", s_blurb="Description", s_home="Home page",
@@ -287,22 +285,21 @@ def generate():
     page("lab/index.html", f"{T['lab_h']} — {S['title_suffix']}", body, 1, "lab")
 
     brand = T["about_brand"].format(en=S["tagline_en"], zh=S["tagline_zh"]).strip()
-    chips = lambda items: "".join(f"<li>{e(i)}</li>" for i in items)
-    do_rows = "".join(f'<a href="{lbase(1)}{href}"><b>{e(k)}</b><span>{e(v)}</span></a>' for k, v, href in T["do_rows"])
+
+    def strength(n, label, alt, head, text, href, link):
+        h = href if href.startswith("http") else f"{lbase(1)}{href}"
+        return (f'<div class="strength"><p class="s-label"><span>{n}</span> {e(label)}'
+                f'{" · " + e(alt) if alt else ""}</p><h2>{e(head)}</h2><p>{e(text)}</p><a href="{h}">{e(link)}</a></div>')
+
+    cards = "".join(strength(*x) for x in T["strengths"])
     body = f"""<div class="page-h"><h1>{T["about_h"]}</h1></div>
 <div class="about">
 <p class="about-lead">{T["about_lead"]}</p>
-<p>{T["about_p1"]}</p>
-<p>{T["about_p2"]}</p>
-<div class="then-now">
-<div><h3>{T["then_h"]}</h3><ul class="chips">{chips(T["then_items"])}</ul><a href="{lbase(1)}{T["then_link"][0]}">{T["then_link"][1]}</a></div>
-<div><h3>{T["now_h"]}</h3><ul class="chips">{chips(T["now_items"])}</ul><a href="{lbase(1)}{T["now_link"][0]}">{T["now_link"][1]}</a></div>
-</div>
-<h3 class="sub-h">{T["do_h"]}</h3>
-<div class="rows">{do_rows}</div>
+<p class="about-intro">{T["about_intro"]}</p>
+<div class="strengths">{cards}</div>
 <p class="brand-line">{brand}</p>
 <div class="btns"><a class="btn primary" href="{S["github"]}">GitHub ↗</a></div>
-<p class="todo">{T["about_todo"]}</p></div>"""
+<p class="contact"><span>{T["about_contact"]}</span> <a href="mailto:{S["email"]}">{S["email"]}</a></p></div>"""
     page("about/index.html", f"{T['about_h']} — {S['title_suffix']}", body, 1, "about")
 
 
