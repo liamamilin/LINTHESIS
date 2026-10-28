@@ -103,14 +103,24 @@ dl.meta dd{margin:0;text-align:right}
 .page-h h1{font-size:clamp(36px,5vw,64px);letter-spacing:-.03em;margin:0;font-weight:600;line-height:1.05}
 .page-h p{color:var(--lt-muted);max-width:36em;font-size:18px;margin:16px 0 0}
 .todo{color:var(--lt-muted);padding:12px 0}
-.about{max-width:var(--lt-reading-max);padding:48px 0}
+.about{max-width:760px;padding:32px 0 24px}
 .about p{font-size:18px}
+.about .about-lead{font-family:var(--lt-font-display);font-size:clamp(26px,3.4vw,40px);line-height:1.25;letter-spacing:-.02em;font-weight:600;margin:0 0 32px}
+.then-now{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:40px 0}
+.then-now>div{border-top:1px solid var(--lt-foreground);padding-top:14px}
+.then-now h3,.sub-h{font-size:var(--lt-type-label);letter-spacing:.12em;text-transform:uppercase;color:var(--lt-accent-text);font-weight:500;margin:0 0 12px}
+.then-now a{color:var(--lt-muted);text-decoration:none;font-size:15px}
+.then-now a:hover{color:var(--lt-foreground);text-decoration:underline;text-underline-offset:4px}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;padding:0}
+.chips li{padding:4px 12px;border:1px solid var(--lt-line);border-radius:999px;font-size:15px}
+.sub-h{margin-top:40px}
+.brand-line{color:var(--lt-muted);font-size:16px!important;margin:32px 0 20px}
 
 footer{margin-top:96px;border-top:1px solid var(--lt-line);padding:32px 0 56px;color:var(--lt-muted);display:flex;gap:24px;flex-wrap:wrap;align-items:center}
 footer img{height:28px;width:auto}
 footer .sp{margin-left:auto}
 
 @media (max-width:1100px){.grid.four{grid-template-columns:repeat(2,1fr)}.series{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:860px){.grid{grid-template-columns:repeat(2,1fr);gap:32px 16px}.detail{grid-template-columns:1fr;gap:32px}.detail aside{position:static}}
+@media (max-width:860px){.then-now{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr);gap:32px 16px}.detail{grid-template-columns:1fr;gap:32px}.detail aside{position:static}}
 @media (max-width:560px){.wrap{padding:0 16px}.grid,.grid.four,.series{grid-template-columns:1fr}.top{gap:16px}.top .lang{margin-left:0}.hero{padding:40px 0 36px}.hero .stage{gap:12px;flex-wrap:wrap}}
 @media (prefers-reduced-motion:reduce){.tile img{transition:none}}

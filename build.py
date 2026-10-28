@@ -21,8 +21,16 @@ UI = {
         writing_todo="短文与研究笔记栏目待补。",
         lab_h="Lab 实验室", lab_p="尚在探索的想法、原型和实验项目。多数仍在演进，说明待补。",
         about_h="About 关于",
-        about_1="{author}。写过四本关于 R 语言与统计分析的书，也把 AI 编码工具的使用经验写成在线教程，同时做自己想用的软件。",
-        about_2="LINTHESIS 是这些创作共用的署名：把思考、知识与技术，变成可用的作品。{en} {zh}",
+        about_lead="我长期做数据分析，现在把更多时间放在 AI 与软件开发上。",
+        about_p1="早些年，我的实践和写作集中在数据科学、机器学习和统计：写过四本关于 R 语言与统计分析的书，也把 Python、数据仓库、A/B 测试、指标体系这些做法整理成在线教程。",
+        about_p2="现在，我更感兴趣的是 AI、区块链、软件开发、商业与创业。这些方向有一个共同点：它们都在把想法变成能运行、能被使用的东西。所以我开始自己动手做软件，并把使用 AI 编码工具的经验写成《驾驭 Codex》《驾驭 Claude》。",
+        then_h="过去", now_h="现在",
+        then_items=["数据科学", "机器学习", "统计"],
+        now_items=["AI", "区块链", "软件开发", "商业", "创业"],
+        then_link=("books/", "看这几本书 →"), now_link=("works/", "看我做的软件 →"),
+        do_h="我做什么",
+        do_rows=[("Software", "原生 macOS 应用、工作流和网站", "works/"), ("Books", "出版的书，和在线教程", "books/"), ("Writing", "按主题成系列的在线长篇", "writing/")],
+        about_brand="LINTHESIS 是这些创作共用的署名：把思考、知识与技术，变成可用的作品。{en} {zh}",
         about_todo="联系方式待补。",
         k_status="状态", k_platform="平台", k_tech="技术", k_author="作者", k_pub="出版社", k_year="出版年份",
         k_isbn="ISBN", k_format="形式", k_lang="语言", v_format="在线电子书", v_lang="中文", v_author="米霖",
@@ -43,8 +51,16 @@ UI = {
         writing_todo="Short essays and research notes: coming.",
         lab_h="Lab", lab_p="Ideas, prototypes and experiments still being explored. Most are evolving; descriptions to come.",
         about_h="About",
-        about_1="{author}. I have written four books on R and statistical analysis, turned my experience with AI coding tools into online guides, and build software I want to use myself.",
-        about_2="LINTHESIS is the shared byline for all of this: turning thought, knowledge and technology into work that is usable. {en}",
+        about_lead="I spent years in data analysis. Now I spend more of my time on AI and software.",
+        about_p1="Earlier on, my practice and writing centered on data science, machine learning and statistics. I wrote four books on R and statistical analysis, and turned Python, data warehousing, A/B testing and metric systems into online guides.",
+        about_p2="What interests me now is AI, blockchain, software development, business and entrepreneurship. They share one thing: each turns an idea into something that runs and gets used. So I started building software myself, and wrote up what I learned from AI coding tools as Mastering Codex and Mastering Claude.",
+        then_h="Before", now_h="Now",
+        then_items=["Data science", "Machine learning", "Statistics"],
+        now_items=["AI", "Blockchain", "Software development", "Business", "Entrepreneurship"],
+        then_link=("books/", "See the books →"), now_link=("works/", "See the software →"),
+        do_h="What I make",
+        do_rows=[("Software", "Native macOS apps, workflows and websites", "works/"), ("Books", "Published books and online guides", "books/"), ("Writing", "Long-form online writing, grouped into series", "writing/")],
+        about_brand="LINTHESIS is the shared byline for all of this: turning thought, knowledge and technology into work that is usable. {en}",
         about_todo="Contact details to come.",
         k_status="Status", k_platform="Platform", k_tech="Stack", k_author="Author", k_pub="Publisher", k_year="Year",
         k_isbn="ISBN", k_format="Format", k_lang="Language", v_format="Online book", v_lang="Chinese", v_author="Mi Lin",
@@ -270,12 +286,21 @@ def generate():
 <section class="block">{lab_rows()}</section>"""
     page("lab/index.html", f"{T['lab_h']} — {S['title_suffix']}", body, 1, "lab")
 
-    a1 = T["about_1"].format(author=S["author"])
-    a2 = T["about_2"].format(en=S["tagline_en"], zh=S["tagline_zh"]).strip()
+    brand = T["about_brand"].format(en=S["tagline_en"], zh=S["tagline_zh"]).strip()
+    chips = lambda items: "".join(f"<li>{e(i)}</li>" for i in items)
+    do_rows = "".join(f'<a href="{lbase(1)}{href}"><b>{e(k)}</b><span>{e(v)}</span></a>' for k, v, href in T["do_rows"])
     body = f"""<div class="page-h"><h1>{T["about_h"]}</h1></div>
 <div class="about">
-<p>{a1}</p>
-<p>{a2}</p>
+<p class="about-lead">{T["about_lead"]}</p>
+<p>{T["about_p1"]}</p>
+<p>{T["about_p2"]}</p>
+<div class="then-now">
+<div><h3>{T["then_h"]}</h3><ul class="chips">{chips(T["then_items"])}</ul><a href="{lbase(1)}{T["then_link"][0]}">{T["then_link"][1]}</a></div>
+<div><h3>{T["now_h"]}</h3><ul class="chips">{chips(T["now_items"])}</ul><a href="{lbase(1)}{T["now_link"][0]}">{T["now_link"][1]}</a></div>
+</div>
+<h3 class="sub-h">{T["do_h"]}</h3>
+<div class="rows">{do_rows}</div>
+<p class="brand-line">{brand}</p>
 <div class="btns"><a class="btn primary" href="{S["github"]}">GitHub ↗</a></div>
 <p class="todo">{T["about_todo"]}</p></div>"""
     page("about/index.html", f"{T['about_h']} — {S['title_suffix']}", body, 1, "about")
