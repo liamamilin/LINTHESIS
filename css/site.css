@@ -149,5 +149,4 @@ footer a:hover{color:var(--lt-foreground);text-decoration:underline;text-underli
 @media (max-width:860px){.music{grid-template-columns:repeat(2,1fr);gap:24px 16px}}
 @media (max-width:560px){.music{grid-template-columns:1fr}}
 
-.hero.solo{border-bottom:0;padding-bottom:24px}
-.hero.solo p.lead{font-size:clamp(18px,2vw,23px);line-height:1.65;max-width:32em}
+.hero p.lead{font-size:clamp(18px,2vw,23px);line-height:1.65;max-width:32em}
