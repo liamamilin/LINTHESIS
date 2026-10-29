@@ -226,21 +226,13 @@ def generate():
     tl = S["tagline_zh"]
     zh_p = f'<p class="zh">{tl}</p>' if tl else ""
     home = f"""
-<section class="hero">
+<section class="hero solo">
 <div class="stage"><span><i></i>01 / Thought</span><span>02 / Structure</span><span>03 / Form</span></div>
 <h1>{S["tagline_en"]}</h1>
 {zh_p}
 <p class="lead">{S["intro"]}</p>
 <div class="tags"><a href="works/">Software</a><a href="books/">Books</a><a href="writing/">Writing</a><a href="lab/">Experiments</a></div>
 </section>
-<section class="block">{sec("01", T["h_works"], "works/")}
-<div class="grid">{project_cards(0)}</div></section>
-<section class="block">{sec("02", T["h_books"], "books/")}
-<div class="grid four">{book_cards(0)}</div></section>
-<section class="block">{sec("03", T["h_writing"], "writing/")}
-{series_html()}</section>
-<section class="block">{sec("04", T["h_lab"], "lab/")}
-{lab_rows()}</section>
 """
     page("index.html", f'{S["name"]} — {S["tagline_en"]}', fill(home, 0), 0)
 
