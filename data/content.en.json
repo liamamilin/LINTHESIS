@@ -9,6 +9,11 @@
     "title_suffix": "LINTHESIS / Personal Studio",
     "email": "lin.mi.official@gmail.com"
   },
+  "home": {
+    "lead": "lookbook",
+    "secondary": ["aide", "atlas"],
+    "lab_count": 3
+  },
   "projects": [
     {
       "slug": "lookbook",
@@ -23,7 +28,84 @@
       "gallery": [
         "img/projects/lookbook.jpg"
       ],
-      "video": "video/lookbook.webm",
+      "feature": {
+      "problem": "A design system is usually just a document: colors, type, radii and components described in prose. It is hard to see what it feels like in use, and harder still to compare a few of them. Lookbook renders those specs as pages, then turns them into formats you can copy into a project.",
+      "numbers": [
+        [
+          "80+",
+          "design systems"
+        ],
+        [
+          "10",
+          "categories"
+        ],
+        [
+          "2",
+          "interface languages"
+        ]
+      ],
+      "walk": [
+        [
+          "img/projects/lookbook.jpg",
+          "Browse",
+          "Grouped by category, searchable in Chinese or English, filterable by dark or light.",
+          "The gallery: every card carries a brand palette and a one-line summary."
+        ],
+        [
+          "img/projects/lookbook-preview.jpg",
+          "Preview",
+          "Every template rendered as a complete sample landing page: navigation, hero, buttons, cards and footer.",
+          "Stripe as an example: a page rendered from its design tokens."
+        ],
+        [
+          "img/projects/lookbook-tokens.jpg",
+          "Inspect",
+          "Palette, type scale, radii and spacing, and every component definition. Click a color to copy it.",
+          "Stripe as an example: all the colors in its tokens."
+        ],
+        [
+          "img/projects/lookbook-compare.jpg",
+          "Compare",
+          "Put two design systems side by side on the same page, swap them, or draw two at random.",
+          "Stripe next to 1win: the same page, different design systems."
+        ],
+        [
+          "img/projects/lookbook-export.jpg",
+          "Export",
+          "AI prompts, CSS variables, Tailwind config and more, bundled in one click.",
+          "Stripe as an example: the export tab with a ready-made AI prompt."
+        ]
+      ],
+      "use": [
+        "Hand it to an AI coding assistant such as Claude, Cursor or v0 and have it build interfaces in the chosen style",
+        "Drop the CSS variables or Tailwind config into your own project",
+        "Import into Figma's Tokens Studio (W3C Design Tokens JSON)",
+        "Keep DESIGN.md in the project root so your coding assistant can always refer to it"
+      ],
+      "tech": [
+        [
+          "Data",
+          "Each design system is one DESIGN.md; categories and summaries live in CATALOG.md, which drives the cards and filters."
+        ],
+        [
+          "Rendering",
+          "One sample landing page rendered from each set of design tokens, so the systems are actually comparable."
+        ],
+        [
+          "Front end",
+          "Vite and plain JavaScript, output as a static site."
+        ],
+        [
+          "Export",
+          "Formats are bundled into a .zip in the browser, with no backend."
+        ],
+        [
+          "Quality",
+          "Automated tests cover data parsing, every page render, export formats and text contrast; GitHub Actions deploys on push to main."
+        ]
+      ]
+    },
+    "video": "video/lookbook.webm",
       "poster": "video/lookbook.jpg",
       "intro": "Each design system lives in a single DESIGN.md: colors, type, radii, spacing and components. Lookbook renders the same sample page from those tokens, so you can see what Stripe, Linear or Notion feel like without reading the spec.",
       "features": [

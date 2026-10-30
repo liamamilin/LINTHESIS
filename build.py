@@ -10,68 +10,7 @@ SITE_URL = "https://liamamilin.github.io/LINTHESIS/"
 URLS = []
 e = html.escape
 
-UI = {
-    "zh": dict(
-        html_lang="zh-CN", bt=("《", "》"), nav_both=True, switch="EN", switch_label="English version",
-        h_works_short="作品", h_books_short="书籍", home_label="LINTHESIS 首页", nav_label="主导航",
-        h_works="Works 作品", h_books="Books 书籍", h_writing="Writing 在线长篇写作", h_lab="Lab 实验室",
-        view_all="查看全部 →",
-        works_h="Works 作品", works_p="我创造的软件、工具和网站。每一项都有自己的介绍、截图和访问入口。",
-        books_h="Books 书籍", books_p="已出版的纸质书，以及持续更新的在线教程。",
-        books_pub="出版 Published", books_online="在线教程 Online", books_more="更多在线长篇 →",
-        writing_h="Writing 文章", writing_p="持续更新的在线长篇写作，按主题成系列。点开每个系列，进入对应的在线电子书。",
-        writing_todo="短文与研究笔记栏目待补。",
-        music_h="AI 音乐", music_p="用 AI 创作的歌曲和 MV，这里放了其中几首。", repo_h="开源实验",
-        lab_h="Lab 实验室", lab_p="尚在探索的想法、原型和实验项目，状态不一，多数仍在演进。",
-        about_h="About 关于",
-        about_lead="想清楚，写下来，做出来，再分享出去。",
-        about_intro="我早期做数据科学、机器学习和统计，写过四本关于 R 与统计分析的书；现在更感兴趣的是 AI、区块链、软件开发、商业与创业。方向在变，做事的方式没变：先把问题想明白，再用文字和作品讲清楚，最后公开出来。",
-        strengths=[
-            ("01", "认知", "Cognition", "先理解，再动手。", "我花很多时间研究思考本身：怎样观察一个问题，怎样拆解结构，怎样做判断。这些想法被整理成《认知语言工程》，以及自我、人际、结构等系列。", "writing/", "看这些系列 →"),
-            ("02", "写作", "Writing", "把复杂的东西讲清楚。", "四本已出版的书，加上 100 多本在线电子书，从 R 与统计，到 AI、架构与语言，持续更新。", "books/", "看我的书 →"),
-            ("03", "创造", "Creating", "把想法做成能用的东西。", "原生 macOS 应用、本地工作流、设计系统图鉴……我自己做软件，也用 AI 编码工具把它们做出来，并把方法写成教程。", "works/", "看我做的软件 →"),
-            ("04", "分享", "Sharing", "做出来的，公开出来。", "电子书在线阅读，项目代码公开在 GitHub，过程和方法也一并写出来，希望能帮到走在同一条路上的人。", "https://github.com/liamamilin", "GitHub ↗"),
-        ],
-        about_brand="LINTHESIS 是这些创作共用的署名：把思考、知识与技术，变成可用的作品。{en} {zh}",
-        about_contact="联系我",
-        k_status="状态", k_platform="平台", k_tech="技术", k_author="作者", k_pub="出版社", k_year="出版年份",
-        k_isbn="ISBN", k_format="形式", k_lang="语言", v_format="在线电子书", v_lang="中文", v_author="米霖",
-        s_intro="介绍", s_feat="核心功能", s_note="说明", s_demo="演示", s_shots="截图", s_blurb="简介", s_home="首页",
-        b_pub="出版社 / 购买页 ↗", b_read="在线阅读 ↗", shot_alt="截图", cover_alt="封面", home_alt="首页截图",
-        kick_book="BOOK / 出版", kick_guide="BOOK / GUIDE", gh="GitHub ↗", hero_tags=True,
-        online="电子书", footer_extra="A LINTHESIS Project", title_book="《{t}》",
-    ),
-    "en": dict(
-        html_lang="en", bt=("", ""), nav_both=False, switch="中文", switch_label="中文版",
-        h_works_short="Works", h_books_short="Books", home_label="LINTHESIS home", nav_label="Main navigation",
-        h_works="Works", h_books="Books", h_writing="Writing: long-form online", h_lab="Lab",
-        view_all="View all →",
-        works_h="Works", works_p="Software, tools and websites I have made. Each has its own write-up, screenshots and links.",
-        books_h="Books", books_p="Published print books, and online guides that keep growing.",
-        books_pub="Published", books_online="Online guides", books_more="More long-form online →",
-        writing_h="Writing", writing_p="Long-form writing published online, grouped into series. Each link opens the matching online book. The books themselves are in Chinese.",
-        writing_todo="Short essays and research notes: coming.",
-        music_h="AI Music", music_p="Songs and music videos made with AI. A small selection is here.", repo_h="Open-source experiments",
-        lab_h="Lab", lab_p="Ideas, prototypes and experiments still being explored. They are at different stages, and most are still evolving.",
-        about_h="About",
-        about_lead="Think it through, write it down, build it, and share it.",
-        about_intro="I started in data science, machine learning and statistics, and wrote four books on R and statistical analysis. What interests me now is AI, blockchain, software development, business and entrepreneurship. The subject has changed; the way I work has not: understand the problem first, explain it with words and with things that work, then put it out in the open.",
-        strengths=[
-            ("01", "Cognition", "认知", "Understand first, then build.", "I spend a lot of time studying thinking itself: how to look at a problem, take a structure apart, and make a judgment. Those ideas became Cognitive Language Engineering and the series on self, people and structure.", "writing/", "See the series →"),
-            ("02", "Writing", "写作", "Make the complicated clear.", "Four published books and more than a hundred online books, from R and statistics to AI, architecture and language, still growing.", "books/", "See the books →"),
-            ("03", "Creating", "创造", "Turn ideas into things that work.", "Native macOS apps, local workflows, a visual index of design systems. I build the software myself, with AI coding tools, and write the method up as guides.", "works/", "See the software →"),
-            ("04", "Sharing", "分享", "What I make, I put out in the open.", "Books you can read online, code public on GitHub, and the process and method written down too, in the hope it helps others on the same road.", "https://github.com/liamamilin", "GitHub ↗"),
-        ],
-        about_brand="LINTHESIS is the shared byline for all of this: turning thought, knowledge and technology into work that is usable. {en}",
-        about_contact="Get in touch",
-        k_status="Status", k_platform="Platform", k_tech="Stack", k_author="Author", k_pub="Publisher", k_year="Year",
-        k_isbn="ISBN", k_format="Format", k_lang="Language", v_format="Online book", v_lang="Chinese", v_author="Mi Lin",
-        s_intro="About", s_feat="Features", s_note="Note", s_demo="Demo", s_shots="Screenshots", s_blurb="Description", s_home="Home page",
-        b_pub="Publisher page ↗", b_read="Read online ↗", shot_alt="screenshot", cover_alt="cover", home_alt="home page screenshot",
-        kick_book="BOOK / PUBLISHED", kick_guide="BOOK / GUIDE", gh="GitHub ↗", hero_tags=True,
-        online="Online book", footer_extra="A LINTHESIS Project", title_book="{t}",
-    ),
-}
+UI = json.loads((ROOT / "data" / "ui.json").read_text(encoding="utf-8"))
 NAV = [("works", "Works", "作品"), ("books", "Books", "书籍"), ("writing", "Writing", "文章"),
        ("lab", "Lab", "实验室"), ("about", "About", "关于")]
 
@@ -184,17 +123,21 @@ def project_cards(depth):
         for p in C["projects"])
 
 
-def book_cards(depth):
+def book_cards(depth, ebooks=True):
     lb = lbase(depth)
     out = ""
     for b in C["print_books"]:
         out += card(f'{lb}books/{b["slug"]}/', b["cover"], bt(b["title"]), f'{b["publisher"]} · {b["year"]}', "book")
-    for b in C["ebooks"]:
+    for b in C["ebooks"] if ebooks else []:
         out += card(f'{lb}books/{b["slug"]}/', b["cover"], bt(b["title"]), f'{T["online"]} · {b["status"]}')
     return out
 
 
-def series_html():
+def series_html(compact=False):
+    if compact:
+        return '<div class="series compact">' + "".join(
+            f'<a href="writing/"><b>{e(s["name"])}</b><span>{T["series_count"].format(n=len(s["items"]))}</span></a>'
+            for s in C["series"]) + "</div>"
     cols = ""
     for s in C["series"]:
         lis = "".join(f'<li><a href="{u}">{e(n)}</a></li>' for n, u in s["items"])
@@ -202,9 +145,9 @@ def series_html():
     return f'<div class="series">{cols}</div>'
 
 
-def lab_rows():
+def lab_rows(limit=None):
     return '<div class="rows lab">' + "".join(
-        f'<a href="{u}"><div><b>{e(n)}</b><em>{e(d)}</em></div><span>GitHub ↗</span></a>' for n, u, d in C["lab"]) + "</div>"
+        f'<a href="{u}"><div><b>{e(n)}</b><em>{e(d)}</em></div><span>GitHub ↗</span></a>' for n, u, d in C["lab"][:limit]) + "</div>"
 
 
 def music_grid(ab):
@@ -222,25 +165,79 @@ def meta_rows(rows):
     return "".join(f"<div><dt>{k}</dt><dd>{e(v)}</dd></div>" for k, v in rows)
 
 
+def project(slug):
+    return next(p for p in C["projects"] if p["slug"] == slug)
+
+
+def home_works():
+    """Selected work: one lead project, two secondary, the rest as a text list."""
+    h = C["home"]
+    lead, second = project(h["lead"]), [project(s) for s in h["secondary"]]
+    rest = [p for p in C["projects"] if p["slug"] not in [h["lead"], *h["secondary"]]]
+    nums = "".join(f'<div><b>{e(n)}</b><span>{e(t)}</span></div>' for n, t in lead.get("feature", {}).get("numbers", []))
+    lead_html = (f'<a class="lead-card" href="works/{lead["slug"]}/"><div class="lead-shot"><img src="{abase(0)}{lead["cover"]}" alt="{e(lead["title"])}"></div>'
+                 f'<div class="lead-info"><div><p class="kicker">{e(lead["kind"])} · {e(lead["status"])}</p><h3>{e(lead["title"])}<span>{e(lead["sub"])}</span></h3></div>'
+                 f'<p>{e(lead["one_liner"])}</p><div class="nums">{nums}</div><span class="go">{T["open_project"]}</span></div></a>')
+    sec_html = "".join(
+        f'<a class="card wide" href="works/{p["slug"]}/"><div class="tile"><img src="{abase(0)}{p["cover"]}" alt="" loading="lazy"></div>'
+        f'<div class="cap"><b>{e(p["title"])} · {e(p["sub"])}</b><span>{e(p["kind"])} · {e(p["status"])}</span><em>{e(p["one_liner"])}</em></div></a>'
+        for p in second)
+    more = " · ".join(f'<a href="works/{p["slug"]}/">{e(p["title"])}</a>' for p in rest)
+    return (f'<section class="block roomy">{sec("01", T["h_selected"], "works/", T["all_works"])}{lead_html}'
+            f'<div class="grid two">{sec_html}</div>'
+            f'<p class="more"><span>{T["more_works"]}</span> {more} <a class="all" href="works/">{T["all_works"]}</a></p></section>')
+
+
+def feature_detail(p, ab):
+    """Editorial layout for projects that carry a `feature` block in the JSON."""
+    f = p["feature"]
+    btns = "".join(f'<a class="btn{" primary" if i == 0 else ""}" href="{u}">{e(n)} ↗</a>' for i, (n, u) in enumerate(p["links"]))
+    meta = "".join(f"<div><dt>{k}</dt><dd>{e(v)}</dd></div>" for k, v in
+                   [(T["k_status"], p["status"]), (T["k_platform"], p["platform"]), (T["k_tech"], p["tech"])])
+    nums = "".join(f'<div><b>{e(n)}</b><span>{e(t)}</span></div>' for n, t in f["numbers"])
+    walk = "".join(
+        f'<figure class="step"><div class="step-img"><img src="{ab}{img}" alt="{e(p["title"])} · {e(name)}" loading="lazy"></div>'
+        f'<figcaption><span class="n">{i:02d}</span><h3>{e(name)}</h3><p>{e(text)}</p><em>{e(cap)}</em></figcaption></figure>'
+        for i, (img, name, text, cap) in enumerate(f["walk"], 1))
+    use = "".join(f"<li>{e(x)}</li>" for x in f["use"])
+    tech = "".join(f"<div><dt>{e(k)}</dt><dd>{e(v)}</dd></div>" for k, v in f["tech"])
+    video = (f'<div class="demo"><video controls muted playsinline preload="none" poster="{ab}{p["poster"]}" src="{ab}{p["video"]}"></video></div>'
+             if p.get("video") else "")
+    return f"""<article class="feature">
+<header class="f-head"><nav class="crumbs" aria-label="breadcrumb"><a href="../">{T["h_works_short"]}</a> / <span>{e(p["title"])}</span></nav>
+<p class="kicker">{e(p["kind"])}</p><h1>{e(p["title"])}</h1><p class="zh">{e(p["sub"])}</p>
+<p class="one">{e(p["one_liner"])}</p><div class="btns">{btns}</div></header>
+{video}
+<div class="nums wide">{nums}</div>
+<section class="f-sec"><h2>{T["f_what"]}</h2><div><p>{e(p["intro"])}</p></div></section>
+<section class="f-sec"><h2>{T["f_problem"]}</h2><div><p>{e(f["problem"])}</p></div></section>
+<section class="f-sec steps"><h2>{T["f_see"]}</h2><div class="walk">{walk}</div></section>
+<section class="f-sec"><h2>{T["f_use"]}</h2><div><ul class="plain">{use}</ul></div></section>
+<section class="f-sec"><h2>{T["f_tech"]}</h2><div><dl class="tech">{tech}</dl><dl class="meta">{meta}</dl></div></section>
+<section class="f-cta"><h2>{T["f_cta"]}</h2><div class="btns">{btns}</div></section>
+</article>"""
+
+
 def generate():
     tl = S["tagline_zh"]
     zh_p = f'<p class="zh">{tl}</p>' if tl else ""
+    stage = "".join(f"<span>{'<i></i>' if i == 0 else ''}{e(s)}</span>" for i, s in enumerate(T["hero_stage"]))
+    ctas = "".join(f'<a class="btn{" primary" if i == 0 else ""}" href="{h}">{e(t)}</a>' for i, (h, t) in enumerate(T["hero_cta"]))
     home = f"""
 <section class="hero">
-<div class="stage"><span><i></i>01 / Thought</span><span>02 / Structure</span><span>03 / Form</span></div>
+<div class="stage">{stage}</div>
 <h1>{S["tagline_en"]}</h1>
 {zh_p}
-<p class="lead">{S["intro"]}</p>
-<div class="tags"><a href="works/">Software</a><a href="books/">Books</a><a href="writing/">Writing</a><a href="lab/">Experiments</a></div>
+<div class="hero-foot"><p class="lead">{S["intro"]}</p><div class="btns">{ctas}</div></div>
 </section>
-<section class="block">{sec("01", T["h_works"], "works/")}
-<div class="grid">{project_cards(0)}</div></section>
-<section class="block">{sec("02", T["h_books"], "books/")}
-<div class="grid four">{book_cards(0)}</div></section>
-<section class="block">{sec("03", T["h_writing"], "writing/")}
-{series_html()}</section>
-<section class="block">{sec("04", T["h_lab"], "lab/")}
-{lab_rows()}</section>
+{home_works()}
+<section class="block roomy">{sec("02", T["h_books"], "books/")}
+<div class="grid four">{book_cards(0, ebooks=False)}</div>
+<p class="more"><a href="books/">{T["books_count"].format(n=len(C["ebooks"]))}</a></p></section>
+<section class="block roomy">{sec("03", T["h_writing"], "writing/")}
+{series_html(compact=True)}</section>
+<section class="block roomy">{sec("04", T["h_lab"], "lab/")}
+{lab_rows(C["home"]["lab_count"])}</section>
 """
     page("index.html", f'{S["name"]} — {S["tagline_en"]}', fill(home, 0), 0)
 
@@ -250,6 +247,9 @@ def generate():
 
     for p in C["projects"]:
         ab = abase(2)
+        if p.get("feature"):
+            page(f"works/{p['slug']}/index.html", f"{p['title']} — {S['title_suffix']}", feature_detail(p, ab), 2, "works", p["one_liner"])
+            continue
         meta = meta_rows([(T["k_status"], p["status"]), (T["k_platform"], p["platform"]), (T["k_tech"], p["tech"])])
         btns = "".join(f'<a class="btn{" primary" if i == 0 else ""}" href="{u}">{e(n)} ↗</a>' for i, (n, u) in enumerate(p["links"]))
         feats = "".join(f"<li>{e(f)}</li>" for f in p["features"])
