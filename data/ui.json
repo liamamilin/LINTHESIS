@@ -126,7 +126,6 @@
     "more_works": "其他作品",
     "open_project": "查看项目 →",
     "books_count": "{n} 本在线电子书 →",
-    "series_count": "{n} 本",
     "f_what": "这是什么",
     "f_problem": "解决什么问题",
     "f_see": "你能看到什么",
@@ -134,7 +133,28 @@
     "f_tech": "关键设计与技术",
     "f_demo": "演示",
     "f_cta": "亲自试一试",
-    "f_demo_cap": "真实操作录屏"
+    "f_demo_cap": "真实操作录屏",
+    "stage": {
+      "live": "已上线",
+      "dev": "开发中",
+      "early": "早期版本"
+    },
+    "stage_note": {
+      "live": "已上线，可以直接访问。",
+      "dev": "仍在开发中，功能和界面会继续变化，不是正式发布的产品。",
+      "early": "早期版本，功能有限，仍在完善。"
+    },
+    "h_stage": {
+      "live": "已上线",
+      "dev": "开发中",
+      "early": "早期版本"
+    },
+    "h_featured": "精选阅读",
+    "featured_p": "第一次来，可以从这几本开始。",
+    "h_catalog": "完整目录",
+    "read": "阅读 ↗",
+    "s_shots2": "界面截图",
+    "s_stack": "技术与平台"
   },
   "en": {
     "html_lang": "en",
@@ -263,7 +283,6 @@
     "more_works": "More work",
     "open_project": "View project →",
     "books_count": "{n} online books →",
-    "series_count": "{n} books",
     "f_what": "What it is",
     "f_problem": "The problem",
     "f_see": "What you can see",
@@ -271,6 +290,27 @@
     "f_tech": "Design and technology",
     "f_demo": "Demo",
     "f_cta": "Try it yourself",
-    "f_demo_cap": "Screen recording of the real site"
+    "f_demo_cap": "Screen recording of the real site",
+    "stage": {
+      "live": "Live",
+      "dev": "In development",
+      "early": "Early version"
+    },
+    "stage_note": {
+      "live": "Live and open to use.",
+      "dev": "Still in development. Features and interface keep changing; this is not a released product.",
+      "early": "An early version with limited features, still being refined."
+    },
+    "h_stage": {
+      "live": "Live",
+      "dev": "In development",
+      "early": "Early version"
+    },
+    "h_featured": "Start here",
+    "featured_p": "If you are new here, begin with these.",
+    "h_catalog": "Full catalogue",
+    "read": "Read ↗",
+    "s_shots2": "Screenshots",
+    "s_stack": "Stack and platform"
   }
 }

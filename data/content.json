@@ -12,11 +12,13 @@
   "home": {
     "lead": "lookbook",
     "secondary": ["aide", "atlas"],
-    "lab_count": 3
+    "lab_count": 3,
+    "writing_count": 4
   },
   "projects": [
     {
       "slug": "lookbook",
+    "stage": "live",
       "title": "Lookbook",
       "kind": "网站 / 工具",
       "one_liner": "把 80 余套知名产品的设计系统渲染成可以直接看、直接比、直接拿走的页面。",
@@ -128,6 +130,7 @@
     },
     {
       "slug": "aide",
+    "stage": "dev",
       "title": "Aide",
       "kind": "软件 / macOS 应用",
       "one_liner": "按下 ⌘⌃L，说出你想做的事，或先选中文本。本地 Ollama 模型，不上传。",
@@ -157,6 +160,7 @@
     },
     {
       "slug": "research2video",
+    "stage": "dev",
       "title": "研映 Research2Video",
       "kind": "软件 / 工作流",
       "one_liner": "从资料调研、研究报告和文稿，到配音、画面、字幕、视频与发布管理的本地工作流。",
@@ -185,6 +189,7 @@
     },
     {
       "slug": "atlas",
+    "stage": "dev",
       "title": "Application Atlas",
       "kind": "软件 / 资料库",
       "one_liner": "1,805 个软件类型、29 个大域的资料库及本地工作台。",
@@ -216,6 +221,7 @@
     },
     {
       "slug": "personalspace",
+    "stage": "dev",
       "title": "PersonalSpace",
       "kind": "软件 / macOS 应用",
       "one_liner": "本地优先的个人资料库：只读授权文件夹，搜索预览，识别事务并提醒。",
@@ -245,6 +251,7 @@
     },
     {
       "slug": "radar",
+    "stage": "early",
       "title": "Radar",
       "kind": "软件 / macOS 应用",
       "one_liner": "用自然语言建立关注，定期直接采集，给出带原始链接的事件。",
@@ -347,6 +354,48 @@
       "link": "https://liamamilin.github.io/llm-infer/",
       "video": "video/llm-infer.webm",
       "poster": "video/llm-infer.jpg"
+    }
+  ],
+  "writing_featured": [
+    {
+      "url": "https://liamamilin.github.io/cognitive-language-engineering/",
+      "theme": "认知",
+      "desc": "让语言更有效地服务于思考、表达、协作与行动：七项原则、四个模型，以及可以直接调用的算子。"
+    },
+    {
+      "url": "https://liamamilin.github.io/Agent-Engineering-From-Runtime-to-Production/",
+      "theme": "Agent",
+      "desc": "设计、实现、调试、评估和生产化 Agent 系统，不依赖框架抽象，直接理解底层机制。"
+    },
+    {
+      "url": "https://liamamilin.github.io/agent_tutorial/",
+      "theme": "Agent",
+      "desc": "从第一个 API 调用开始，一章一章做到工具、记忆、RAG、多智能体协作和评估，共 12 章。"
+    },
+    {
+      "url": "https://liamamilin.github.io/Practical-LLM/",
+      "theme": "大模型",
+      "desc": "第一部分从零实现 Tokenizer、Transformer 和预训练，第二部分是微调实战。"
+    },
+    {
+      "url": "https://liamamilin.github.io/vibe-coding-2026/",
+      "theme": "AI 编程",
+      "desc": "用 AI 开发个人工具：从把需求写成 Prompt，到环境搭建、界面、数据库和后端 API。"
+    },
+    {
+      "url": "https://liamamilin.github.io/Foundations-of-System-Blueprint/",
+      "theme": "架构",
+      "desc": "这个系列的开篇：为什么代码不等于系统，以及缺少系统蓝图的代价（英文）。"
+    },
+    {
+      "url": "https://liamamilin.github.io/Self-Understanding/",
+      "theme": "自我",
+      "desc": "把自我当作被认识的对象：为什么自我难以看清，如何把欲望、恐惧和需要当作自我的证据（英文）。"
+    },
+    {
+      "url": "https://liamamilin.github.io/AB-tutorial/",
+      "theme": "数据分析",
+      "desc": "从 AB 测试的作用和应用，到正态、二项、Beta 分布等统计基础。"
     }
   ],
   "series": [

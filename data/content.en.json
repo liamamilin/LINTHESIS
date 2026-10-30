@@ -12,11 +12,13 @@
   "home": {
     "lead": "lookbook",
     "secondary": ["aide", "atlas"],
-    "lab_count": 3
+    "lab_count": 3,
+    "writing_count": 4
   },
   "projects": [
     {
       "slug": "lookbook",
+    "stage": "live",
       "title": "Lookbook",
       "sub": "A visual index of design systems",
       "kind": "Website / Tool",
@@ -128,6 +130,7 @@
     },
     {
       "slug": "aide",
+    "stage": "dev",
       "title": "Aide",
       "sub": "A local AI entry point for the desktop",
       "kind": "Software / macOS app",
@@ -157,6 +160,7 @@
     },
     {
       "slug": "research2video",
+    "stage": "dev",
       "title": "Research2Video",
       "sub": "研映 · From research to video",
       "kind": "Software / Workflow",
@@ -185,6 +189,7 @@
     },
     {
       "slug": "atlas",
+    "stage": "dev",
       "title": "Application Atlas",
       "sub": "A library of software application types",
       "kind": "Software / Library",
@@ -216,6 +221,7 @@
     },
     {
       "slug": "personalspace",
+    "stage": "dev",
       "title": "PersonalSpace",
       "sub": "A native macOS personal digital space",
       "kind": "Software / macOS app",
@@ -245,6 +251,7 @@
     },
     {
       "slug": "radar",
+    "stage": "early",
       "title": "Radar",
       "sub": "An information radar",
       "kind": "Software / macOS app",
@@ -351,6 +358,48 @@
       "video": "video/llm-infer.webm",
       "poster": "video/llm-infer.jpg",
       "link": "https://liamamilin.github.io/llm-infer/"
+    }
+  ],
+  "writing_featured": [
+    {
+      "url": "https://liamamilin.github.io/cognitive-language-engineering/",
+      "theme": "Cognition",
+      "desc": "Language that serves thinking, expression, collaboration and action: seven principles, four models, and operators you can apply directly."
+    },
+    {
+      "url": "https://liamamilin.github.io/Agent-Engineering-From-Runtime-to-Production/",
+      "theme": "Agents",
+      "desc": "How to design, build, debug, evaluate and productionize agent systems, understanding the mechanics without leaning on framework abstractions."
+    },
+    {
+      "url": "https://liamamilin.github.io/agent_tutorial/",
+      "theme": "Agents",
+      "desc": "From a first API call to tools, memory, RAG, multi-agent collaboration and evaluation, in 12 chapters."
+    },
+    {
+      "url": "https://liamamilin.github.io/Practical-LLM/",
+      "theme": "LLMs",
+      "desc": "Part one builds the tokenizer, transformer and pretraining from scratch; part two is hands-on fine-tuning."
+    },
+    {
+      "url": "https://liamamilin.github.io/vibe-coding-2026/",
+      "theme": "AI coding",
+      "desc": "Building personal tools with AI: from turning a need into a prompt to setup, UI, databases and backend APIs."
+    },
+    {
+      "url": "https://liamamilin.github.io/Foundations-of-System-Blueprint/",
+      "theme": "Architecture",
+      "desc": "The opening of this series: why code is not the system, and what a missing system blueprint costs."
+    },
+    {
+      "url": "https://liamamilin.github.io/Self-Understanding/",
+      "theme": "Self",
+      "desc": "Treating the self as an object of knowledge: why it is hard to see, and how desire, fear and need serve as evidence of it."
+    },
+    {
+      "url": "https://liamamilin.github.io/AB-tutorial/",
+      "theme": "Data analysis",
+      "desc": "From what A/B testing is for and where it applies, to the statistics behind it: normal, binomial and beta distributions."
     }
   ],
   "series": [
