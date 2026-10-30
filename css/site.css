@@ -259,3 +259,17 @@ dl.tech dd{margin:0}
   .chip{margin-left:6px}
 }
 .gal img{max-height:640px;object-fit:cover;object-position:top}
+
+/* ---- P2: reading list hierarchy, related links ---- */
+.reads .theme i{font-style:normal;margin-right:10px;color:var(--lt-muted)}
+.reads b{font-size:22px;line-height:1.25}
+.reads.single{grid-template-columns:1fr;max-width:44em}
+.reads.single a{grid-template-columns:1fr}
+.reads.single a:nth-last-child(2){border-bottom:0}
+.reads.single a:last-child{border-bottom:1px solid var(--lt-line)}
+@media (max-width:860px){
+  .reads a{grid-template-columns:1fr;padding:20px 0}
+  .reads .go{grid-row:auto;grid-column:1;margin-top:8px}
+  .reads b{font-size:20px}
+}
+@media (max-width:900px){.top{gap:24px}.top nav{gap:20px}.top nav span[lang=zh]{display:none}}

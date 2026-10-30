@@ -19,6 +19,24 @@
     {
       "slug": "lookbook",
     "stage": "live",
+    "cta": "try",
+    "related": [
+      [
+        "writing",
+        "https://liamamilin.github.io/vibe-coding-2026/",
+        "Lookbook's exported prompts and CSS variables exist to pin down a style when you build interfaces with AI; this guide covers building interfaces and products with AI."
+      ],
+      [
+        "books",
+        "claude-mastery",
+        "The prompts can be handed to AI coding assistants such as Claude; this online book is about mastering Claude Code."
+      ],
+      [
+        "works",
+        "atlas",
+        "Also a browsable, searchable library for one kind of thing: design systems here, software types there."
+      ]
+    ],
       "title": "Lookbook",
       "sub": "A visual index of design systems",
       "kind": "Website / Tool",
@@ -131,6 +149,24 @@
     {
       "slug": "aide",
     "stage": "dev",
+    "cta": "follow",
+    "related": [
+      [
+        "works",
+        "personalspace",
+        "Also a local-first macOS app: no online service needed, and data stays on the machine."
+      ],
+      [
+        "lab",
+        "https://github.com/liamamilin/goalsift",
+        "Another local-first AI application."
+      ],
+      [
+        "writing",
+        "https://liamamilin.github.io/agent_tutorial/",
+        "Aide lets a local model call desktop tools; this guide covers giving an agent a tool system."
+      ]
+    ],
       "title": "Aide",
       "sub": "A local AI entry point for the desktop",
       "kind": "Software / macOS app",
@@ -161,6 +197,24 @@
     {
       "slug": "research2video",
     "stage": "dev",
+    "cta": "follow",
+    "related": [
+      [
+        "lab",
+        "https://github.com/liamamilin/ai-research-system-",
+        "It generates AI research reports automatically, and research reports are one starting point of the Research2Video workflow."
+      ],
+      [
+        "lab",
+        "https://github.com/liamamilin/Narrative-Writing-Workbench",
+        "Research2Video turns material into a script; this project breaks the implicit thinking in writing into checkable steps."
+      ],
+      [
+        "works",
+        "atlas",
+        "Also a local workbench: Atlas for a library, this one for research to finished video."
+      ]
+    ],
       "title": "Research2Video",
       "sub": "研映 · From research to video",
       "kind": "Software / Workflow",
@@ -190,6 +244,24 @@
     {
       "slug": "atlas",
     "stage": "dev",
+    "cta": "follow",
+    "related": [
+      [
+        "works",
+        "lookbook",
+        "The same idea of a browsable library, for design systems."
+      ],
+      [
+        "writing",
+        "https://liamamilin.github.io/vibe-coding-2026/",
+        "Atlas's template factory hands a dev pack to AI to implement; this guide covers going from need to prompt to product."
+      ],
+      [
+        "books",
+        "codex-mastery",
+        "A dev pack is handed to AI to implement and verify; this online book is about steering Codex toward verifiable results."
+      ]
+    ],
       "title": "Application Atlas",
       "sub": "A library of software application types",
       "kind": "Software / Library",
@@ -222,6 +294,7 @@
     {
       "slug": "personalspace",
     "stage": "dev",
+    "cta": "follow",
       "title": "PersonalSpace",
       "sub": "A native macOS personal digital space",
       "kind": "Software / macOS app",
@@ -252,6 +325,7 @@
     {
       "slug": "radar",
     "stage": "early",
+    "cta": "explore",
       "title": "Radar",
       "sub": "An information radar",
       "kind": "Software / macOS app",

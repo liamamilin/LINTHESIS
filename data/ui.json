@@ -132,7 +132,6 @@
     "f_use": "可以在哪里使用",
     "f_tech": "关键设计与技术",
     "f_demo": "演示",
-    "f_cta": "亲自试一试",
     "f_demo_cap": "真实操作录屏",
     "stage": {
       "live": "已上线",
@@ -154,7 +153,20 @@
     "h_catalog": "完整目录",
     "read": "阅读 ↗",
     "s_shots2": "界面截图",
-    "s_stack": "技术与平台"
+    "s_stack": "技术与平台",
+    "cta_title": {
+      "try": "亲自试一试",
+      "download": "下载与安装",
+      "follow": "查看开发进展",
+      "explore": "探索这个项目"
+    },
+    "f_related": "相关内容",
+    "rel_kind": {
+      "works": "作品",
+      "books": "书籍",
+      "writing": "文章",
+      "lab": "实验"
+    }
   },
   "en": {
     "html_lang": "en",
@@ -289,7 +301,6 @@
     "f_use": "Where to use it",
     "f_tech": "Design and technology",
     "f_demo": "Demo",
-    "f_cta": "Try it yourself",
     "f_demo_cap": "Screen recording of the real site",
     "stage": {
       "live": "Live",
@@ -311,6 +322,19 @@
     "h_catalog": "Full catalogue",
     "read": "Read ↗",
     "s_shots2": "Screenshots",
-    "s_stack": "Stack and platform"
+    "s_stack": "Stack and platform",
+    "cta_title": {
+      "try": "Try it yourself",
+      "download": "Download and install",
+      "follow": "Follow the development",
+      "explore": "Explore this project"
+    },
+    "f_related": "Related",
+    "rel_kind": {
+      "works": "Work",
+      "books": "Book",
+      "writing": "Writing",
+      "lab": "Lab"
+    }
   }
 }

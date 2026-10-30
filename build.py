@@ -175,9 +175,9 @@ def series_html():
 def featured_html(limit=None, lb=""):
     titles = {u: n for s in C["series"] for n, u in s["items"]}
     return '<div class="reads">' + "".join(
-        f'<a href="{x["url"]}"><span class="theme">{e(x["theme"])}</span><b>{e(titles[x["url"]])}</b>'
+        f'<a href="{x["url"]}"><span class="theme"><i>{n:02d}</i>{e(x["theme"])}</span><b>{e(titles[x["url"]])}</b>'
         f'<em>{e(x["desc"])}</em><span class="go">{T["read"]}</span></a>'
-        for x in C["writing_featured"][:limit]) + "</div>"
+        for n, x in enumerate(C["writing_featured"][:limit], 1)) + "</div>"
 
 
 def lab_rows(limit=None):
@@ -223,6 +223,24 @@ def home_works():
             f'<p class="more"><span>{T["more_works"]}</span> {more} <a class="all" href="works/">{T["all_works"]}</a></p></section>')
 
 
+def related_html(items):
+    """Hand-picked links from a project to works, books, writing or lab entries; each carries its reason."""
+    titles = {u: n for sr in C["series"] for n, u in sr["items"]}
+    titles.update({u: n for n, u, _ in C["lab"]})
+    rows = ""
+    for kind, ref, why in items:
+        if kind == "works":
+            href, title = f"../{ref}/", f'{project(ref)["title"]}'
+        elif kind == "books":
+            b = next(b for b in C["print_books"] + C["ebooks"] if b["slug"] == ref)
+            href, title = f"../../books/{ref}/", bt(b["title"])
+        else:
+            href, title = ref, titles[ref]
+        arrow = "" if kind in ("works", "books") else " ↗"
+        rows += (f'<a href="{href}"><span class="theme">{T["rel_kind"][kind]}</span><b>{e(title)}{arrow}</b><em>{e(why)}</em></a>')
+    return f'<div class="reads single">{rows}</div>'
+
+
 def project_detail(p, ab):
     """Project page: status, real media first, then sections for whichever fields the project has.
     Projects with a `feature` block (see Lookbook) add the problem, a screenshot walk, use cases and tech."""
@@ -262,6 +280,8 @@ def project_detail(p, ab):
         out.append(sec_(T["f_use"], '<ul class="plain">' + "".join(f"<li>{e(x)}</li>" for x in f["use"]) + "</ul>"))
     tech = "".join(f"<div><dt>{e(k)}</dt><dd>{e(v)}</dd></div>" for k, v in f.get("tech", []))
     out.append(sec_(T["f_tech"] if tech else T["s_stack"], (f'<dl class="tech">{tech}</dl>' if tech else "") + f'<dl class="meta">{meta}</dl>'))
+    if p.get("related"):
+        out.append(sec_(T["f_related"], related_html(p["related"])))
     return f"""<article class="feature">
 <header class="f-head"><nav class="crumbs" aria-label="breadcrumb"><a href="../">{T["h_works_short"]}</a> / <span>{e(p["title"])}</span></nav>
 <p class="kicker">{e(p["kind"])}</p><h1>{e(p["title"])}</h1><p class="zh">{e(p["sub"])}</p>
@@ -269,7 +289,7 @@ def project_detail(p, ab):
 <p class="stage-note">{chip(p["stage"]).strip()} {T["stage_note"][p["stage"]]}</p><div class="btns">{btns}</div></header>
 {media}
 {"".join(out)}
-<section class="f-cta"><h2>{T["f_cta"]}</h2><div class="btns">{btns}</div></section>
+<section class="f-cta"><h2>{T["cta_title"][p["cta"]]}</h2><div class="btns">{btns}</div></section>
 </article>"""
 
 

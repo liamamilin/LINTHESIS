@@ -19,6 +19,24 @@
     {
       "slug": "lookbook",
     "stage": "live",
+    "cta": "try",
+    "related": [
+      [
+        "writing",
+        "https://liamamilin.github.io/vibe-coding-2026/",
+        "Lookbook 导出的提示词和 CSS 变量，就是为了在用 AI 做界面时指定风格；这套教程讲怎样用 AI 把界面和产品做出来。"
+      ],
+      [
+        "books",
+        "claude-mastery",
+        "提示词可以交给 Claude 等 AI 编码助手使用；这本电子书讲怎样驾驭 Claude Code。"
+      ],
+      [
+        "works",
+        "atlas",
+        "同样是把一类对象整理成可以浏览和检索的资料库：设计系统，对应软件类型。"
+      ]
+    ],
       "title": "Lookbook",
       "kind": "网站 / 工具",
       "one_liner": "把 80 余套知名产品的设计系统渲染成可以直接看、直接比、直接拿走的页面。",
@@ -131,6 +149,24 @@
     {
       "slug": "aide",
     "stage": "dev",
+    "cta": "follow",
+    "related": [
+      [
+        "works",
+        "personalspace",
+        "同为本地优先的 macOS 应用：不依赖在线服务，数据留在本机。"
+      ],
+      [
+        "lab",
+        "https://github.com/liamamilin/goalsift",
+        "同样是本地优先的 AI 应用，用本地资源完成研究。"
+      ],
+      [
+        "writing",
+        "https://liamamilin.github.io/agent_tutorial/",
+        "Aide 让本地模型调用桌面工具；这套教程讲怎样给 Agent 装上工具系统。"
+      ]
+    ],
       "title": "Aide",
       "kind": "软件 / macOS 应用",
       "one_liner": "按下 ⌘⌃L，说出你想做的事，或先选中文本。本地 Ollama 模型，不上传。",
@@ -161,6 +197,24 @@
     {
       "slug": "research2video",
     "stage": "dev",
+    "cta": "follow",
+    "related": [
+      [
+        "lab",
+        "https://github.com/liamamilin/ai-research-system-",
+        "这个项目自动生成 AI 研究报告；研究报告正是 Research2Video 工作流的起点之一。"
+      ],
+      [
+        "lab",
+        "https://github.com/liamamilin/Narrative-Writing-Workbench",
+        "Research2Video 要从资料写成文稿；这个项目把写作中的隐性认知拆成可检查的步骤。"
+      ],
+      [
+        "works",
+        "atlas",
+        "同为本地运行的工作台：Atlas 是资料库，这里是研究到成片。"
+      ]
+    ],
       "title": "研映 Research2Video",
       "kind": "软件 / 工作流",
       "one_liner": "从资料调研、研究报告和文稿，到配音、画面、字幕、视频与发布管理的本地工作流。",
@@ -190,6 +244,24 @@
     {
       "slug": "atlas",
     "stage": "dev",
+    "cta": "follow",
+    "related": [
+      [
+        "works",
+        "lookbook",
+        "同样是把一类对象整理成可浏览的资料库，对象是设计系统。"
+      ],
+      [
+        "writing",
+        "https://liamamilin.github.io/vibe-coding-2026/",
+        "Atlas 的模板工厂把开发包交给 AI 实现；这套教程讲从需求到 Prompt、再到产品的做法。"
+      ],
+      [
+        "books",
+        "codex-mastery",
+        "开发包交给 AI 实现并验证；这本电子书讲怎样驾驭 Codex，把想法变成可验证的成果。"
+      ]
+    ],
       "title": "Application Atlas",
       "kind": "软件 / 资料库",
       "one_liner": "1,805 个软件类型、29 个大域的资料库及本地工作台。",
@@ -222,6 +294,7 @@
     {
       "slug": "personalspace",
     "stage": "dev",
+    "cta": "follow",
       "title": "PersonalSpace",
       "kind": "软件 / macOS 应用",
       "one_liner": "本地优先的个人资料库：只读授权文件夹，搜索预览，识别事务并提醒。",
@@ -252,6 +325,7 @@
     {
       "slug": "radar",
     "stage": "early",
+    "cta": "explore",
       "title": "Radar",
       "kind": "软件 / macOS 应用",
       "one_liner": "用自然语言建立关注，定期直接采集，给出带原始链接的事件。",
