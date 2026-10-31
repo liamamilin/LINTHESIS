@@ -378,12 +378,12 @@
     {
       "slug": "r-data-visualization",
       "title": "R语言数据可视化实战",
-      "year": 2021,
+      "year": 2020,
       "publisher": "机械工业出版社",
-      "isbn": "",
+      "isbn": "9787111667919",
       "cover": "img/books/r-viz.png",
       "intro": "从多个维度讲解 R 语言数据可视化技术，通过 500 多个可视化示例，全面展示 30 多类统计图形的绘制。",
-      "link": "https://www.hzmedia.com.cn/books11121329"
+      "link": "https://books.google.com/books/about/R%E8%AF%AD%E8%A8%80%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%AE%9E%E6%88%98.html?id=NIrZzgEACAAJ"
     },
     {
       "slug": "r-statistics",

@@ -380,12 +380,12 @@
       "slug": "r-data-visualization",
       "title": "Data Visualization with R in Practice",
       "sub": "R语言数据可视化实战",
-      "year": 2021,
+      "year": 2020,
       "publisher": "China Machine Press",
-      "isbn": "",
+      "isbn": "9787111667919",
       "cover": "img/books/r-viz.png",
       "intro": "A multi-angle guide to data visualization in R, with more than 500 worked examples covering over 30 families of statistical graphics.",
-      "link": "https://www.hzmedia.com.cn/books11121329"
+      "link": "https://books.google.com/books/about/R%E8%AF%AD%E8%A8%80%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%AE%9E%E6%88%98.html?id=NIrZzgEACAAJ"
     },
     {
       "slug": "r-statistics",
