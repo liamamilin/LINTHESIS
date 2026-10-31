@@ -11,37 +11,39 @@
   },
   "home": {
     "lead": "lookbook",
-    "secondary": ["aide", "atlas"],
+    "secondary": [
+      "aide",
+      "atlas"
+    ],
     "lab_count": 3,
     "writing_count": 4
   },
   "projects": [
     {
       "slug": "lookbook",
-    "stage": "live",
-    "cta": "try",
-    "related": [
-      [
-        "writing",
-        "https://liamamilin.github.io/vibe-coding-2026/",
-        "Lookbook's exported prompts and CSS variables exist to pin down a style when you build interfaces with AI; this guide covers building interfaces and products with AI."
+      "stage": "live",
+      "related": [
+        [
+          "writing",
+          "https://liamamilin.github.io/vibe-coding-2026/",
+          "Lookbook's exported prompts and CSS variables exist to pin down a style when you build interfaces with AI; this guide covers building interfaces and products with AI."
+        ],
+        [
+          "books",
+          "claude-mastery",
+          "The prompts can be handed to AI coding assistants such as Claude; this online book is about mastering Claude Code."
+        ],
+        [
+          "works",
+          "atlas",
+          "Also a browsable, searchable library for one kind of thing: design systems here, software types there."
+        ]
       ],
-      [
-        "books",
-        "claude-mastery",
-        "The prompts can be handed to AI coding assistants such as Claude; this online book is about mastering Claude Code."
-      ],
-      [
-        "works",
-        "atlas",
-        "Also a browsable, searchable library for one kind of thing: design systems here, software types there."
-      ]
-    ],
       "title": "Lookbook",
       "sub": "A visual index of design systems",
       "kind": "Website / Tool",
       "one_liner": "Over 80 design systems from well-known products, rendered as pages you can browse, compare and take away.",
-      "status": "Live",
+      "status": "Released",
       "platform": "Web",
       "tech": "JavaScript",
       "cover": "img/projects/lookbook.jpg",
@@ -49,83 +51,83 @@
         "img/projects/lookbook.jpg"
       ],
       "feature": {
-      "problem": "A design system is usually just a document: colors, type, radii and components described in prose. It is hard to see what it feels like in use, and harder still to compare a few of them. Lookbook renders those specs as pages, then turns them into formats you can copy into a project.",
-      "numbers": [
-        [
-          "80+",
-          "design systems"
+        "problem": "A design system is usually just a document: colors, type, radii and components described in prose. It is hard to see what it feels like in use, and harder still to compare a few of them. Lookbook renders those specs as pages, then turns them into formats you can copy into a project.",
+        "numbers": [
+          [
+            "80+",
+            "design systems"
+          ],
+          [
+            "10",
+            "categories"
+          ],
+          [
+            "2",
+            "interface languages"
+          ]
         ],
-        [
-          "10",
-          "categories"
+        "walk": [
+          [
+            "img/projects/lookbook.jpg",
+            "Browse",
+            "Grouped by category, searchable in Chinese or English, filterable by dark or light.",
+            "The gallery: every card carries a brand palette and a one-line summary."
+          ],
+          [
+            "img/projects/lookbook-preview.jpg",
+            "Preview",
+            "Every template rendered as a complete sample landing page: navigation, hero, buttons, cards and footer.",
+            "Stripe as an example: a page rendered from its design tokens."
+          ],
+          [
+            "img/projects/lookbook-tokens.jpg",
+            "Inspect",
+            "Palette, type scale, radii and spacing, and every component definition. Click a color to copy it.",
+            "Stripe as an example: all the colors in its tokens."
+          ],
+          [
+            "img/projects/lookbook-compare.jpg",
+            "Compare",
+            "Put two design systems side by side on the same page, swap them, or draw two at random.",
+            "Stripe next to 1win: the same page, different design systems."
+          ],
+          [
+            "img/projects/lookbook-export.jpg",
+            "Export",
+            "AI prompts, CSS variables, Tailwind config and more, bundled in one click.",
+            "Stripe as an example: the export tab with a ready-made AI prompt."
+          ]
         ],
-        [
-          "2",
-          "interface languages"
+        "use": [
+          "Hand it to an AI coding assistant such as Claude, Cursor or v0 and have it build interfaces in the chosen style",
+          "Drop the CSS variables or Tailwind config into your own project",
+          "Import into Figma's Tokens Studio (W3C Design Tokens JSON)",
+          "Keep DESIGN.md in the project root so your coding assistant can always refer to it"
+        ],
+        "tech": [
+          [
+            "Data",
+            "Each design system is one DESIGN.md; categories and summaries live in CATALOG.md, which drives the cards and filters."
+          ],
+          [
+            "Rendering",
+            "One sample landing page rendered from each set of design tokens, so the systems are actually comparable."
+          ],
+          [
+            "Front end",
+            "Vite and plain JavaScript, output as a static site."
+          ],
+          [
+            "Export",
+            "Formats are bundled into a .zip in the browser, with no backend."
+          ],
+          [
+            "Quality",
+            "Automated tests cover data parsing, every page render, export formats and text contrast; GitHub Actions deploys on push to main."
+          ]
         ]
-      ],
-      "walk": [
-        [
-          "img/projects/lookbook.jpg",
-          "Browse",
-          "Grouped by category, searchable in Chinese or English, filterable by dark or light.",
-          "The gallery: every card carries a brand palette and a one-line summary."
-        ],
-        [
-          "img/projects/lookbook-preview.jpg",
-          "Preview",
-          "Every template rendered as a complete sample landing page: navigation, hero, buttons, cards and footer.",
-          "Stripe as an example: a page rendered from its design tokens."
-        ],
-        [
-          "img/projects/lookbook-tokens.jpg",
-          "Inspect",
-          "Palette, type scale, radii and spacing, and every component definition. Click a color to copy it.",
-          "Stripe as an example: all the colors in its tokens."
-        ],
-        [
-          "img/projects/lookbook-compare.jpg",
-          "Compare",
-          "Put two design systems side by side on the same page, swap them, or draw two at random.",
-          "Stripe next to 1win: the same page, different design systems."
-        ],
-        [
-          "img/projects/lookbook-export.jpg",
-          "Export",
-          "AI prompts, CSS variables, Tailwind config and more, bundled in one click.",
-          "Stripe as an example: the export tab with a ready-made AI prompt."
-        ]
-      ],
-      "use": [
-        "Hand it to an AI coding assistant such as Claude, Cursor or v0 and have it build interfaces in the chosen style",
-        "Drop the CSS variables or Tailwind config into your own project",
-        "Import into Figma's Tokens Studio (W3C Design Tokens JSON)",
-        "Keep DESIGN.md in the project root so your coding assistant can always refer to it"
-      ],
-      "tech": [
-        [
-          "Data",
-          "Each design system is one DESIGN.md; categories and summaries live in CATALOG.md, which drives the cards and filters."
-        ],
-        [
-          "Rendering",
-          "One sample landing page rendered from each set of design tokens, so the systems are actually comparable."
-        ],
-        [
-          "Front end",
-          "Vite and plain JavaScript, output as a static site."
-        ],
-        [
-          "Export",
-          "Formats are bundled into a .zip in the browser, with no backend."
-        ],
-        [
-          "Quality",
-          "Automated tests cover data parsing, every page render, export formats and text contrast; GitHub Actions deploys on push to main."
-        ]
-      ]
-    },
-    "video": "video/lookbook.webm",
+      },
+      "video": "video/lookbook.webm",
       "poster": "video/lookbook.jpg",
       "intro": "Each design system lives in a single DESIGN.md: colors, type, radii, spacing and components. Lookbook renders the same sample page from those tokens, so you can see what Stripe, Linear or Notion feel like without reading the spec.",
       "features": [
@@ -136,42 +138,43 @@
         "Export: AI prompts, CSS variables, Tailwind config and more, bundled in one click"
       ],
       "links": [
-        [
-          "Live demo",
-          "https://liamamilin.github.io/Lookbook/"
-        ],
-        [
-          "GitHub",
-          "https://github.com/liamamilin/Lookbook"
-        ]
+        {
+          "kind": "demo",
+          "label": "Live demo",
+          "url": "https://liamamilin.github.io/Lookbook/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/Lookbook"
+        }
       ]
     },
     {
       "slug": "aide",
-    "stage": "dev",
-    "cta": "follow",
-    "related": [
-      [
-        "works",
-        "personalspace",
-        "Also a local-first macOS app: no online service needed, and data stays on the machine."
+      "stage": "live",
+      "related": [
+        [
+          "works",
+          "personalspace",
+          "Also a local-first macOS app: no online service needed, and data stays on the machine."
+        ],
+        [
+          "lab",
+          "https://github.com/liamamilin/goalsift",
+          "Another local-first AI application."
+        ],
+        [
+          "writing",
+          "https://liamamilin.github.io/agent_tutorial/",
+          "Aide lets a local model call desktop tools; this guide covers giving an agent a tool system."
+        ]
       ],
-      [
-        "lab",
-        "https://github.com/liamamilin/goalsift",
-        "Another local-first AI application."
-      ],
-      [
-        "writing",
-        "https://liamamilin.github.io/agent_tutorial/",
-        "Aide lets a local model call desktop tools; this guide covers giving an agent a tool system."
-      ]
-    ],
       "title": "Aide",
       "sub": "A local AI entry point for the desktop",
       "kind": "Software / macOS app",
       "one_liner": "Press ⌘⌃L and say what you want, or select text first. Local Ollama models, nothing uploaded.",
-      "status": "In development",
+      "status": "v1.4.0 · Released",
       "platform": "macOS 14+ · Apple silicon",
       "tech": "SwiftUI / AppKit · Python · Ollama",
       "cover": "img/projects/aide-1.jpg",
@@ -188,33 +191,39 @@
         "Changes show the exact action and run only after you confirm"
       ],
       "links": [
-        [
-          "GitHub",
-          "https://github.com/liamamilin/aide"
-        ]
-      ]
+        {
+          "kind": "download",
+          "label": "Download (GitHub Releases)",
+          "url": "https://github.com/liamamilin/aide/releases/latest"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/aide"
+        }
+      ],
+      "note": "Not notarized yet: on first launch macOS blocks it, and you open it once from System Settings → Privacy & Security."
     },
     {
       "slug": "research2video",
-    "stage": "dev",
-    "cta": "follow",
-    "related": [
-      [
-        "lab",
-        "https://github.com/liamamilin/ai-research-system-",
-        "It generates AI research reports automatically, and research reports are one starting point of the Research2Video workflow."
+      "stage": "dev",
+      "related": [
+        [
+          "lab",
+          "https://github.com/liamamilin/ai-research-system-",
+          "It generates AI research reports automatically, and research reports are one starting point of the Research2Video workflow."
+        ],
+        [
+          "lab",
+          "https://github.com/liamamilin/Narrative-Writing-Workbench",
+          "Research2Video turns material into a script; this project breaks the implicit thinking in writing into checkable steps."
+        ],
+        [
+          "works",
+          "atlas",
+          "Also a local workbench: Atlas for a library, this one for research to finished video."
+        ]
       ],
-      [
-        "lab",
-        "https://github.com/liamamilin/Narrative-Writing-Workbench",
-        "Research2Video turns material into a script; this project breaks the implicit thinking in writing into checkable steps."
-      ],
-      [
-        "works",
-        "atlas",
-        "Also a local workbench: Atlas for a library, this one for research to finished video."
-      ]
-    ],
       "title": "Research2Video",
       "sub": "研映 · From research to video",
       "kind": "Software / Workflow",
@@ -235,33 +244,33 @@
         "Remotion rendering, final delivery and publishing management"
       ],
       "links": [
-        [
-          "GitHub",
-          "https://github.com/liamamilin/Research2Video"
-        ]
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/Research2Video"
+        }
       ]
     },
     {
       "slug": "atlas",
-    "stage": "dev",
-    "cta": "follow",
-    "related": [
-      [
-        "works",
-        "lookbook",
-        "The same idea of a browsable library, for design systems."
+      "stage": "dev",
+      "related": [
+        [
+          "works",
+          "lookbook",
+          "The same idea of a browsable library, for design systems."
+        ],
+        [
+          "writing",
+          "https://liamamilin.github.io/vibe-coding-2026/",
+          "Atlas's template factory hands a dev pack to AI to implement; this guide covers going from need to prompt to product."
+        ],
+        [
+          "books",
+          "codex-mastery",
+          "A dev pack is handed to AI to implement and verify; this online book is about steering Codex toward verifiable results."
+        ]
       ],
-      [
-        "writing",
-        "https://liamamilin.github.io/vibe-coding-2026/",
-        "Atlas's template factory hands a dev pack to AI to implement; this guide covers going from need to prompt to product."
-      ],
-      [
-        "books",
-        "codex-mastery",
-        "A dev pack is handed to AI to implement and verify; this online book is about steering Codex toward verifiable results."
-      ]
-    ],
       "title": "Application Atlas",
       "sub": "A library of software application types",
       "kind": "Software / Library",
@@ -285,16 +294,16 @@
         "Template factory with trial scenarios such as bookmarks, personal budget and meeting notes"
       ],
       "links": [
-        [
-          "GitHub",
-          "https://github.com/liamamilin/atlas"
-        ]
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/atlas"
+        }
       ]
     },
     {
       "slug": "personalspace",
-    "stage": "dev",
-    "cta": "follow",
+      "stage": "dev",
       "title": "PersonalSpace",
       "sub": "A native macOS personal digital space",
       "kind": "Software / macOS app",
@@ -306,7 +315,7 @@
       "gallery": [
         "img/projects/personalspace-1.jpg"
       ],
-      "intro": "A native macOS app with no server, account or online API. Scanning is read-only, managed copies are copies rather than moves, and there is no way to delete source files. Manual workflows keep working when no model is available. Milestones M1–M8 are implemented locally.",
+      "intro": "A native macOS app with no server, account or online API. Scanning is read-only, managed copies are copies rather than moves, and there is no way to delete source files. Manual workflows keep working when no model is available. Milestones M1–M10 are implemented locally.",
       "features": [
         "Native file library with persistent folder authorization",
         "Search and system preview",
@@ -316,21 +325,22 @@
       ],
       "note": "This is currently a local, ad hoc signed development build. It has not been signed with a Developer ID or notarized.",
       "links": [
-        [
-          "GitHub",
-          "https://github.com/liamamilin/PersonalSpace"
-        ]
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/PersonalSpace"
+        }
       ]
     },
     {
       "slug": "radar",
-    "stage": "early",
-    "cta": "explore",
+      "stage": "early",
+      "cta": "explore",
       "title": "Radar",
       "sub": "An information radar",
       "kind": "Software / macOS app",
       "one_liner": "Describe what to follow in plain language, collect on a schedule, and get events that link back to the source.",
-      "status": "v0.1",
+      "status": "v0.2",
       "platform": "macOS 15+",
       "tech": "SwiftUI · GRDB · FeedKit · SwiftSoup",
       "cover": "img/projects/radar-1.jpg",
@@ -346,10 +356,11 @@
         "12 automated tests passing"
       ],
       "links": [
-        [
-          "GitHub",
-          "https://github.com/liamamilin/radar-lean"
-        ]
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/radar-lean"
+        }
       ]
     }
   ],

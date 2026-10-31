@@ -11,36 +11,38 @@
   },
   "home": {
     "lead": "lookbook",
-    "secondary": ["aide", "atlas"],
+    "secondary": [
+      "aide",
+      "atlas"
+    ],
     "lab_count": 3,
     "writing_count": 4
   },
   "projects": [
     {
       "slug": "lookbook",
-    "stage": "live",
-    "cta": "try",
-    "related": [
-      [
-        "writing",
-        "https://liamamilin.github.io/vibe-coding-2026/",
-        "Lookbook 导出的提示词和 CSS 变量，就是为了在用 AI 做界面时指定风格；这套教程讲怎样用 AI 把界面和产品做出来。"
+      "stage": "live",
+      "related": [
+        [
+          "writing",
+          "https://liamamilin.github.io/vibe-coding-2026/",
+          "Lookbook 导出的提示词和 CSS 变量，就是为了在用 AI 做界面时指定风格；这套教程讲怎样用 AI 把界面和产品做出来。"
+        ],
+        [
+          "books",
+          "claude-mastery",
+          "提示词可以交给 Claude 等 AI 编码助手使用；这本电子书讲怎样驾驭 Claude Code。"
+        ],
+        [
+          "works",
+          "atlas",
+          "同样是把一类对象整理成可以浏览和检索的资料库：设计系统，对应软件类型。"
+        ]
       ],
-      [
-        "books",
-        "claude-mastery",
-        "提示词可以交给 Claude 等 AI 编码助手使用；这本电子书讲怎样驾驭 Claude Code。"
-      ],
-      [
-        "works",
-        "atlas",
-        "同样是把一类对象整理成可以浏览和检索的资料库：设计系统，对应软件类型。"
-      ]
-    ],
       "title": "Lookbook",
       "kind": "网站 / 工具",
       "one_liner": "把 80 余套知名产品的设计系统渲染成可以直接看、直接比、直接拿走的页面。",
-      "status": "已上线",
+      "status": "已发布",
       "platform": "Web",
       "tech": "JavaScript",
       "cover": "img/projects/lookbook.jpg",
@@ -56,121 +58,122 @@
         "导出：AI 提示词、CSS 变量、Tailwind 配置等多种格式，一键打包"
       ],
       "links": [
-        [
-          "在线体验",
-          "https://liamamilin.github.io/Lookbook/"
-        ],
-        [
-          "GitHub",
-          "https://github.com/liamamilin/Lookbook"
-        ]
+        {
+          "kind": "demo",
+          "label": "在线体验",
+          "url": "https://liamamilin.github.io/Lookbook/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/Lookbook"
+        }
       ],
       "feature": {
-      "problem": "设计系统通常只是一份文档：颜色、字体、圆角、组件都写在字里行间，很难一眼看出用起来是什么样子，更难在几套之间比较。Lookbook 把这些规范直接渲染成页面，再整理成可以复制进项目的格式。",
-      "numbers": [
-        [
-          "80+",
-          "套设计系统"
+        "problem": "设计系统通常只是一份文档：颜色、字体、圆角、组件都写在字里行间，很难一眼看出用起来是什么样子，更难在几套之间比较。Lookbook 把这些规范直接渲染成页面，再整理成可以复制进项目的格式。",
+        "numbers": [
+          [
+            "80+",
+            "套设计系统"
+          ],
+          [
+            "10",
+            "个类别"
+          ],
+          [
+            "2",
+            "种界面语言"
+          ]
         ],
-        [
-          "10",
-          "个类别"
+        "walk": [
+          [
+            "img/projects/lookbook.jpg",
+            "浏览",
+            "按类别分组，可中英文搜索，按深色或浅色筛选。",
+            "模板库：每张卡片带有品牌色板与一句话简介。"
+          ],
+          [
+            "img/projects/lookbook-preview.jpg",
+            "预览",
+            "每套模板渲染成完整的示例落地页，包括导航、首屏、按钮、卡片和页脚。",
+            "以 Stripe 为例：用它的设计令牌渲染的示例页面。"
+          ],
+          [
+            "img/projects/lookbook-tokens.jpg",
+            "拆解",
+            "色板、字号层级、圆角与间距、组件定义，色值可点击复制。",
+            "以 Stripe 为例：设计令牌里的全部颜色。"
+          ],
+          [
+            "img/projects/lookbook-compare.jpg",
+            "对比",
+            "把两套设计系统放在同一个页面上并排比较，可以互换左右，也可以随机抽取。",
+            "Stripe 与 1win 并排：同一页面，不同的设计系统。"
+          ],
+          [
+            "img/projects/lookbook-export.jpg",
+            "导出",
+            "AI 提示词、CSS 变量、Tailwind 配置等多种格式，一键打包下载。",
+            "以 Stripe 为例：导出页与已写好的 AI 提示词。"
+          ]
         ],
-        [
-          "2",
-          "种界面语言"
+        "use": [
+          "交给 Claude、Cursor、v0 等 AI 编码助手，让它们按选定的风格写界面",
+          "把 CSS 变量或 Tailwind 配置放进自己的项目",
+          "导入 Figma 的 Tokens Studio（W3C Design Tokens JSON）",
+          "把 DESIGN.md 放在项目根目录，让 AI 编码助手随时参考"
+        ],
+        "tech": [
+          [
+            "数据",
+            "每套设计系统是一份 DESIGN.md；分类和简介集中写在 CATALOG.md，卡片与筛选都从这里读取。"
+          ],
+          [
+            "渲染",
+            "用设计令牌渲染同一个示例落地页，不同系统之间才有可比性。"
+          ],
+          [
+            "前端",
+            "Vite 加原生 JavaScript，输出静态站点。"
+          ],
+          [
+            "导出",
+            "在浏览器里把各种格式打包成 .zip，不需要后端。"
+          ],
+          [
+            "质量",
+            "自动测试覆盖数据解析、全部页面渲染、导出格式和文字对比度；推送到 main 后由 GitHub Actions 部署。"
+          ]
         ]
-      ],
-      "walk": [
-        [
-          "img/projects/lookbook.jpg",
-          "浏览",
-          "按类别分组，可中英文搜索，按深色或浅色筛选。",
-          "模板库：每张卡片带有品牌色板与一句话简介。"
-        ],
-        [
-          "img/projects/lookbook-preview.jpg",
-          "预览",
-          "每套模板渲染成完整的示例落地页，包括导航、首屏、按钮、卡片和页脚。",
-          "以 Stripe 为例：用它的设计令牌渲染的示例页面。"
-        ],
-        [
-          "img/projects/lookbook-tokens.jpg",
-          "拆解",
-          "色板、字号层级、圆角与间距、组件定义，色值可点击复制。",
-          "以 Stripe 为例：设计令牌里的全部颜色。"
-        ],
-        [
-          "img/projects/lookbook-compare.jpg",
-          "对比",
-          "把两套设计系统放在同一个页面上并排比较，可以互换左右，也可以随机抽取。",
-          "Stripe 与 1win 并排：同一页面，不同的设计系统。"
-        ],
-        [
-          "img/projects/lookbook-export.jpg",
-          "导出",
-          "AI 提示词、CSS 变量、Tailwind 配置等多种格式，一键打包下载。",
-          "以 Stripe 为例：导出页与已写好的 AI 提示词。"
-        ]
-      ],
-      "use": [
-        "交给 Claude、Cursor、v0 等 AI 编码助手，让它们按选定的风格写界面",
-        "把 CSS 变量或 Tailwind 配置放进自己的项目",
-        "导入 Figma 的 Tokens Studio（W3C Design Tokens JSON）",
-        "把 DESIGN.md 放在项目根目录，让 AI 编码助手随时参考"
-      ],
-      "tech": [
-        [
-          "数据",
-          "每套设计系统是一份 DESIGN.md；分类和简介集中写在 CATALOG.md，卡片与筛选都从这里读取。"
-        ],
-        [
-          "渲染",
-          "用设计令牌渲染同一个示例落地页，不同系统之间才有可比性。"
-        ],
-        [
-          "前端",
-          "Vite 加原生 JavaScript，输出静态站点。"
-        ],
-        [
-          "导出",
-          "在浏览器里把各种格式打包成 .zip，不需要后端。"
-        ],
-        [
-          "质量",
-          "自动测试覆盖数据解析、全部页面渲染、导出格式和文字对比度；推送到 main 后由 GitHub Actions 部署。"
-        ]
-      ]
-    },
-    "video": "video/lookbook.webm",
+      },
+      "video": "video/lookbook.webm",
       "poster": "video/lookbook.jpg",
       "sub": "设计系统图鉴"
     },
     {
       "slug": "aide",
-    "stage": "dev",
-    "cta": "follow",
-    "related": [
-      [
-        "works",
-        "personalspace",
-        "同为本地优先的 macOS 应用：不依赖在线服务，数据留在本机。"
+      "stage": "live",
+      "related": [
+        [
+          "works",
+          "personalspace",
+          "同为本地优先的 macOS 应用：不依赖在线服务，数据留在本机。"
+        ],
+        [
+          "lab",
+          "https://github.com/liamamilin/goalsift",
+          "同样是本地优先的 AI 应用，用本地资源完成研究。"
+        ],
+        [
+          "writing",
+          "https://liamamilin.github.io/agent_tutorial/",
+          "Aide 让本地模型调用桌面工具；这套教程讲怎样给 Agent 装上工具系统。"
+        ]
       ],
-      [
-        "lab",
-        "https://github.com/liamamilin/goalsift",
-        "同样是本地优先的 AI 应用，用本地资源完成研究。"
-      ],
-      [
-        "writing",
-        "https://liamamilin.github.io/agent_tutorial/",
-        "Aide 让本地模型调用桌面工具；这套教程讲怎样给 Agent 装上工具系统。"
-      ]
-    ],
       "title": "Aide",
       "kind": "软件 / macOS 应用",
       "one_liner": "按下 ⌘⌃L，说出你想做的事，或先选中文本。本地 Ollama 模型，不上传。",
-      "status": "开发中",
+      "status": "v1.4.0 已发布",
       "platform": "macOS 14+ · Apple silicon",
       "tech": "SwiftUI / AppKit · Python · Ollama",
       "cover": "img/projects/aide-1.jpg",
@@ -187,34 +190,40 @@
         "修改类操作先显示具体动作，经确认才执行"
       ],
       "links": [
-        [
-          "GitHub",
-          "https://github.com/liamamilin/aide"
-        ]
+        {
+          "kind": "download",
+          "label": "下载（GitHub Releases）",
+          "url": "https://github.com/liamamilin/aide/releases/latest"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/aide"
+        }
       ],
-      "sub": "本地 AI 桌面入口"
+      "sub": "本地 AI 桌面入口",
+      "note": "尚未公证：首次打开会被 macOS 拦截，需要在“系统设置 → 隐私与安全性”中选择“仍要打开”。"
     },
     {
       "slug": "research2video",
-    "stage": "dev",
-    "cta": "follow",
-    "related": [
-      [
-        "lab",
-        "https://github.com/liamamilin/ai-research-system-",
-        "这个项目自动生成 AI 研究报告；研究报告正是 Research2Video 工作流的起点之一。"
+      "stage": "dev",
+      "related": [
+        [
+          "lab",
+          "https://github.com/liamamilin/ai-research-system-",
+          "这个项目自动生成 AI 研究报告；研究报告正是 Research2Video 工作流的起点之一。"
+        ],
+        [
+          "lab",
+          "https://github.com/liamamilin/Narrative-Writing-Workbench",
+          "Research2Video 要从资料写成文稿；这个项目把写作中的隐性认知拆成可检查的步骤。"
+        ],
+        [
+          "works",
+          "atlas",
+          "同为本地运行的工作台：Atlas 是资料库，这里是研究到成片。"
+        ]
       ],
-      [
-        "lab",
-        "https://github.com/liamamilin/Narrative-Writing-Workbench",
-        "Research2Video 要从资料写成文稿；这个项目把写作中的隐性认知拆成可检查的步骤。"
-      ],
-      [
-        "works",
-        "atlas",
-        "同为本地运行的工作台：Atlas 是资料库，这里是研究到成片。"
-      ]
-    ],
       "title": "研映 Research2Video",
       "kind": "软件 / 工作流",
       "one_liner": "从资料调研、研究报告和文稿，到配音、画面、字幕、视频与发布管理的本地工作流。",
@@ -234,34 +243,34 @@
         "Remotion 渲染与成片交付、发布管理"
       ],
       "links": [
-        [
-          "GitHub",
-          "https://github.com/liamamilin/Research2Video"
-        ]
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/Research2Video"
+        }
       ],
       "sub": "从研究到视频"
     },
     {
       "slug": "atlas",
-    "stage": "dev",
-    "cta": "follow",
-    "related": [
-      [
-        "works",
-        "lookbook",
-        "同样是把一类对象整理成可浏览的资料库，对象是设计系统。"
+      "stage": "dev",
+      "related": [
+        [
+          "works",
+          "lookbook",
+          "同样是把一类对象整理成可浏览的资料库，对象是设计系统。"
+        ],
+        [
+          "writing",
+          "https://liamamilin.github.io/vibe-coding-2026/",
+          "Atlas 的模板工厂把开发包交给 AI 实现；这套教程讲从需求到 Prompt、再到产品的做法。"
+        ],
+        [
+          "books",
+          "codex-mastery",
+          "开发包交给 AI 实现并验证；这本电子书讲怎样驾驭 Codex，把想法变成可验证的成果。"
+        ]
       ],
-      [
-        "writing",
-        "https://liamamilin.github.io/vibe-coding-2026/",
-        "Atlas 的模板工厂把开发包交给 AI 实现；这套教程讲从需求到 Prompt、再到产品的做法。"
-      ],
-      [
-        "books",
-        "codex-mastery",
-        "开发包交给 AI 实现并验证；这本电子书讲怎样驾驭 Codex，把想法变成可验证的成果。"
-      ]
-    ],
       "title": "Application Atlas",
       "kind": "软件 / 资料库",
       "one_liner": "1,805 个软件类型、29 个大域的资料库及本地工作台。",
@@ -282,10 +291,11 @@
         "模板工厂：个人收藏夹、个人预算、会议笔记等试用场景"
       ],
       "links": [
-        [
-          "GitHub",
-          "https://github.com/liamamilin/atlas"
-        ]
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/atlas"
+        }
       ],
       "video": "video/atlas.webm",
       "poster": "video/atlas.jpg",
@@ -293,8 +303,7 @@
     },
     {
       "slug": "personalspace",
-    "stage": "dev",
-    "cta": "follow",
+      "stage": "dev",
       "title": "PersonalSpace",
       "kind": "软件 / macOS 应用",
       "one_liner": "本地优先的个人资料库：只读授权文件夹，搜索预览，识别事务并提醒。",
@@ -305,7 +314,7 @@
       "gallery": [
         "img/projects/personalspace-1.jpg"
       ],
-      "intro": "一个原生 macOS 应用，不依赖服务器、账号或在线 API。扫描只读，托管资料是复制而不是移动，不提供源文件删除功能；模型不可用时，手动流程仍然可用。当前里程碑 M1–M8 的本地能力已实现。",
+      "intro": "一个原生 macOS 应用，不依赖服务器、账号或在线 API。扫描只读，托管资料是复制而不是移动，不提供源文件删除功能；模型不可用时，手动流程仍然可用。当前里程碑 M1–M10 的本地能力已实现。",
       "features": [
         "原生文件资料库与授权持久化",
         "搜索与系统预览",
@@ -315,21 +324,22 @@
       ],
       "note": "目前是本地 ad hoc 签名的开发构建，尚未做 Developer ID 签名和公证。",
       "links": [
-        [
-          "GitHub",
-          "https://github.com/liamamilin/PersonalSpace"
-        ]
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/PersonalSpace"
+        }
       ],
       "sub": "原生 macOS 个人数字空间"
     },
     {
       "slug": "radar",
-    "stage": "early",
-    "cta": "explore",
+      "stage": "early",
+      "cta": "explore",
       "title": "Radar",
       "kind": "软件 / macOS 应用",
       "one_liner": "用自然语言建立关注，定期直接采集，给出带原始链接的事件。",
-      "status": "v0.1",
+      "status": "v0.2",
       "platform": "macOS 15+",
       "tech": "SwiftUI · GRDB · FeedKit · SwiftSoup",
       "cover": "img/projects/radar-1.jpg",
@@ -345,10 +355,11 @@
         "12 项自动化测试通过"
       ],
       "links": [
-        [
-          "GitHub",
-          "https://github.com/liamamilin/radar-lean"
-        ]
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/radar-lean"
+        }
       ],
       "sub": "信息雷达"
     }

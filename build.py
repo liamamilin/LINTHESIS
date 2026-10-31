@@ -241,11 +241,18 @@ def related_html(items):
     return f'<div class="reads single">{rows}</div>'
 
 
+# link kinds, in button order: demo = live try-out, download = installer or release, source = code, external = anything else
+LINK_KINDS = ["demo", "download", "source", "external"]
+
+
 def project_detail(p, ab):
     """Project page: status, real media first, then sections for whichever fields the project has.
     Projects with a `feature` block (see Lookbook) add the problem, a screenshot walk, use cases and tech."""
     f, ti = p.get("feature", {}), p["title"]
-    btns = "".join(f'<a class="btn{" primary" if i == 0 else ""}" href="{u}">{e(n)} ↗</a>' for i, (n, u) in enumerate(p["links"]))
+    links = sorted(p["links"], key=lambda l: LINK_KINDS.index(l["kind"]))
+    btns = "".join(f'<a class="btn{" primary" if i == 0 else ""}" href="{l["url"]}">{e(l["label"])} ↗</a>' for i, l in enumerate(links))
+    kinds = {l["kind"] for l in links}
+    cta = p.get("cta") or ("try" if "demo" in kinds else "download" if "download" in kinds else "follow")
     meta = "".join(f"<div><dt>{k}</dt><dd>{e(v)}</dd></div>" for k, v in
                    [(T["k_status"], p["status"]), (T["k_platform"], p["platform"]), (T["k_tech"], p["tech"])])
     gallery = list(p["gallery"])
@@ -289,7 +296,7 @@ def project_detail(p, ab):
 <p class="stage-note">{chip(p["stage"]).strip()} {T["stage_note"][p["stage"]]}</p><div class="btns">{btns}</div></header>
 {media}
 {"".join(out)}
-<section class="f-cta"><h2>{T["cta_title"][p["cta"]]}</h2><div class="btns">{btns}</div></section>
+<section class="f-cta"><h2>{T["cta_title"][cta]}</h2><div class="btns">{btns}</div></section>
 </article>"""
 
 

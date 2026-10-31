@@ -134,17 +134,17 @@
     "f_demo": "演示",
     "f_demo_cap": "真实操作录屏",
     "stage": {
-      "live": "已上线",
+      "live": "已发布",
       "dev": "开发中",
       "early": "早期版本"
     },
     "stage_note": {
-      "live": "已上线，可以直接访问。",
+      "live": "已发布，可以直接使用。",
       "dev": "仍在开发中，功能和界面会继续变化，不是正式发布的产品。",
       "early": "早期版本，功能有限，仍在完善。"
     },
     "h_stage": {
-      "live": "已上线",
+      "live": "已发布",
       "dev": "开发中",
       "early": "早期版本"
     },
@@ -303,17 +303,17 @@
     "f_demo": "Demo",
     "f_demo_cap": "Screen recording of the real site",
     "stage": {
-      "live": "Live",
+      "live": "Released",
       "dev": "In development",
       "early": "Early version"
     },
     "stage_note": {
-      "live": "Live and open to use.",
+      "live": "Released and ready to use.",
       "dev": "Still in development. Features and interface keep changing; this is not a released product.",
       "early": "An early version with limited features, still being refined."
     },
     "h_stage": {
-      "live": "Live",
+      "live": "Released",
       "dev": "In development",
       "early": "Early version"
     },

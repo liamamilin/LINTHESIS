@@ -46,17 +46,20 @@ for page in pages(ROOT):
         if not target.exists():
             errors.append(f"{page.relative_to(ROOT)}: broken ref {ref}")
 
-# a project's call to action must be backed by a real link, never inferred from its status
+# links carry an explicit kind; the call to action follows from the kinds present, never from a URL's domain
+KINDS = {"demo", "download", "source", "external"}
 cta = {}
 for lang in ("content.json", "content.en.json"):
     for p in json.loads((ROOT / "data" / lang).read_text(encoding="utf-8"))["projects"]:
-        hosts = [urlparse(u) for _, u in p["links"]]
-        if p["cta"] == "try" and not any(h.netloc != "github.com" for h in hosts):
-            errors.append(f"{p['slug']}: cta 'try' needs a live link, only has GitHub")
-        if p["cta"] == "download" and not any("/releases" in h.path or h.path.endswith((".dmg", ".zip", ".pkg")) for h in hosts):
-            errors.append(f"{p['slug']}: cta 'download' needs a release or installer link")
-        if cta.setdefault(p["slug"], p["cta"]) != p["cta"]:
-            errors.append(f"{p['slug']}: cta differs between zh and en")
+        kinds = {l["kind"] for l in p["links"]}
+        if not kinds <= KINDS:
+            errors.append(f"{p['slug']}: unknown link kind {kinds - KINDS}")
+        derived = "try" if "demo" in kinds else "download" if "download" in kinds else "follow"
+        got = (p.get("cta", derived), sorted(kinds))
+        if got[0] == "try" and "demo" not in kinds or got[0] == "download" and "download" not in kinds:
+            errors.append(f"{p['slug']}: cta '{got[0]}' needs a link of that kind")
+        if cta.setdefault(p["slug"], got) != got:
+            errors.append(f"{p['slug']}: cta or link kinds differ between zh and en")
 
 for f in ("sitemap.xml", "404.html", "robots.txt"):
     if not (ROOT / f).exists():
