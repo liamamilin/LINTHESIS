@@ -302,6 +302,58 @@
       ]
     },
     {
+      "slug": "patlas",
+      "stage": "live",
+      "related": [
+        [
+          "works",
+          "atlas",
+          "Another library that organizes one kind of thing for browsing: Application Atlas covers software types, P Atlas covers what a topic can be used to do."
+        ],
+        [
+          "books",
+          "codex-mastery",
+          "The library has topics such as Codex and Claude Code; this e-book is about driving Codex to turn ideas into verifiable results."
+        ],
+        [
+          "writing",
+          "https://liamamilin.github.io/agent_tutorial/",
+          "P Atlas covers LangChain Agent, MCP and Agent Harness; this tutorial covers an agent's tool system and runtime."
+        ]
+      ],
+      "title": "P Atlas",
+      "kind": "Software / Library",
+      "sub": "Possibility Library",
+      "one_liner": "Explore what a topic can be used to do: every possibility states its conditions and traces back to its sources.",
+      "status": "v0.1 · Released",
+      "platform": "Web",
+      "tech": "React · TypeScript · Vite",
+      "cover": "img/projects/patlas-1.jpg",
+      "gallery": [
+        "img/projects/patlas-2.jpg",
+        "img/projects/patlas-1.jpg"
+      ],
+      "intro": "It starts from achievable outcomes rather than feature lists. Each topic has a map of possibilities: what the outcome is, which conditions and components it needs, and which sources support it, all on one card. “Source-backed” does not mean tested in practice; the page states each item's evidence status, and directions still to be verified are marked separately.",
+      "features": [
+        "20 topics across 6 domains, each with a research report and source list",
+        "Browse by use, filter by capability path and evidence status, or search the whole library",
+        "Each possibility lists the outcome, conditions and limits, required components and source passages",
+        "Raw entries as JSON and Markdown, plus the research validation record"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "Try it online",
+          "url": "https://liamamilin.github.io/COP/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/COP"
+        }
+      ]
+    },
+    {
       "slug": "personalspace",
       "stage": "dev",
       "title": "PersonalSpace",

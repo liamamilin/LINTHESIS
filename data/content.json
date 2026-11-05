@@ -302,6 +302,58 @@
       "sub": "软件应用类型资料库"
     },
     {
+      "slug": "patlas",
+      "stage": "live",
+      "related": [
+        [
+          "works",
+          "atlas",
+          "同样是把一类对象整理成可浏览的资料库：Application Atlas 整理软件类型，P Atlas 整理一个主题能做成什么。"
+        ],
+        [
+          "books",
+          "codex-mastery",
+          "图书馆里有 Codex、Claude Code 等主题；这本电子书讲怎样驾驭 Codex，把想法变成可验证的成果。"
+        ],
+        [
+          "writing",
+          "https://liamamilin.github.io/agent_tutorial/",
+          "P Atlas 收录了 LangChain Agent、MCP、Agent Harness 等主题；这套教程讲 Agent 的工具系统与运行环境。"
+        ]
+      ],
+      "title": "P Atlas",
+      "kind": "软件 / 资料库",
+      "sub": "可能性图书馆",
+      "one_liner": "探索一个主题可以做成什么：每项可能性都写明条件，并追溯到原始来源。",
+      "status": "v0.1 · 已发布",
+      "platform": "Web",
+      "tech": "React · TypeScript · Vite",
+      "cover": "img/projects/patlas-1.jpg",
+      "gallery": [
+        "img/projects/patlas-2.jpg",
+        "img/projects/patlas-1.jpg"
+      ],
+      "intro": "从可实现的结果出发，而不是从功能列表出发。每个主题下是一张可能性地图：一项可能性是什么结果、需要什么条件与组件、有哪些来源支持，都写在同一张卡片里。“来源支持”不等于运行实测，页面会如实标出证据状态，仍待验证的方向单独标记。",
+      "features": [
+        "20 个主题、6 个领域，每个主题附研究报告与来源列表",
+        "按用途分类浏览，可按能力路径和证据状态筛选，也可全库搜索",
+        "每项可能性包含可实现的结果、条件与边界、必要组件和原文来源",
+        "可查看原始条目的 JSON 与 Markdown，以及研究校验记录"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "在线体验",
+          "url": "https://liamamilin.github.io/COP/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/COP"
+        }
+      ]
+    },
+    {
       "slug": "personalspace",
       "stage": "dev",
       "title": "PersonalSpace",
