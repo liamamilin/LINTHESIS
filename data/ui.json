@@ -31,7 +31,7 @@
     "music_p": "用 AI 创作的歌曲和 MV，这里放了其中几首。",
     "repo_h": "代码与研究实验",
     "lab_h": "Lab 实验室",
-    "lab_p": "尚在探索的想法、原型和实验项目，状态不一，多数仍在演进。",
+    "lab_p": "学习工具、研究资料库、写作系统，以及一些创作实验。",
     "about_h": "About 关于",
     "about_lead": "想清楚，写下来，做出来，再分享出去。",
     "about_intro": "我早期做数据科学、机器学习和统计，写过四本关于 R 与统计分析的书；现在更感兴趣的是 AI、区块链、软件开发、商业与创业。方向在变，做事的方式没变：先把问题想明白，再用文字和作品讲清楚，最后公开出来。",
@@ -75,7 +75,6 @@
     ],
     "about_brand": "LINTHESIS 是这些创作共用的署名：把思考、知识与技术，变成可用的作品。{en} {zh}",
     "about_contact": "联系我",
-    "k_status": "状态",
     "k_platform": "平台",
     "k_tech": "技术",
     "k_author": "作者",
@@ -133,21 +132,6 @@
     "f_tech": "关键设计与技术",
     "f_demo": "演示",
     "f_demo_cap": "真实操作录屏",
-    "stage": {
-      "live": "已发布",
-      "dev": "开发中",
-      "early": "早期版本"
-    },
-    "stage_note": {
-      "live": "已发布，可以直接使用。",
-      "dev": "仍在开发中，功能和界面会继续变化，不是正式发布的产品。",
-      "early": "早期版本，功能有限，仍在完善。"
-    },
-    "h_stage": {
-      "live": "已发布",
-      "dev": "开发中",
-      "early": "早期版本"
-    },
     "h_featured": "精选阅读",
     "featured_p": "第一次来，可以从这几本开始。",
     "h_catalog": "完整目录",
@@ -157,7 +141,7 @@
     "cta_title": {
       "try": "亲自试一试",
       "download": "下载与安装",
-      "follow": "查看开发进展",
+      "follow": "查看项目",
       "explore": "探索这个项目"
     },
     "f_related": "相关内容",
@@ -202,7 +186,7 @@
     "music_p": "Songs and music videos made with AI. A small selection is here.",
     "repo_h": "Code & research experiments",
     "lab_h": "Lab",
-    "lab_p": "Ideas, prototypes and experiments still being explored. They are at different stages, and most are still evolving.",
+    "lab_p": "Learning tools, research libraries, writing systems and creative experiments.",
     "about_h": "About",
     "about_lead": "Think it through, write it down, build it, and share it.",
     "about_intro": "I started in data science, machine learning and statistics, and wrote four books on R and statistical analysis. What interests me now is AI, blockchain, software development, business and entrepreneurship. The subject has changed; the way I work has not: understand the problem first, explain it with words and with things that work, then put it out in the open.",
@@ -246,7 +230,6 @@
     ],
     "about_brand": "LINTHESIS is the shared byline for all of this: turning thought, knowledge and technology into work that is usable. {en}",
     "about_contact": "Get in touch",
-    "k_status": "Status",
     "k_platform": "Platform",
     "k_tech": "Stack",
     "k_author": "Author",
@@ -304,21 +287,6 @@
     "f_tech": "Design and technology",
     "f_demo": "Demo",
     "f_demo_cap": "Screen recording of the real site",
-    "stage": {
-      "live": "Released",
-      "dev": "In development",
-      "early": "Early version"
-    },
-    "stage_note": {
-      "live": "Released and ready to use.",
-      "dev": "Still in development. Features and interface keep changing; this is not a released product.",
-      "early": "An early version with limited features, still being refined."
-    },
-    "h_stage": {
-      "live": "Released",
-      "dev": "In development",
-      "early": "Early version"
-    },
     "h_featured": "Start here",
     "featured_p": "If you are new here, begin with these.",
     "h_catalog": "Full catalogue",
@@ -328,7 +296,7 @@
     "cta_title": {
       "try": "Try it yourself",
       "download": "Download and install",
-      "follow": "Follow the development",
+      "follow": "View project",
       "explore": "Explore this project"
     },
     "f_related": "Related",

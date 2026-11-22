@@ -126,13 +126,9 @@ def tile(img, kind="shot"):
     return f'<div class="tile"><img src="{{a}}{img}" alt="" loading="lazy"></div>'
 
 
-def card(href, img, title, meta, kind="shot", stage=""):
+def card(href, img, title, meta, kind="shot"):
     return (f'<a class="card" href="{href}">{tile(img, kind)}'
-            f'<div class="cap"><b>{e(title)}</b><span>{e(meta)}{chip(stage)}</span></div></a>')
-
-
-def chip(stage):
-    return f' <i class="chip {stage}">{T["stage"][stage]}</i>' if stage else ""
+            f'<div class="cap"><b>{e(title)}</b><span>{e(meta)}</span></div></a>')
 
 
 def sec(n, title, link=None, text=None):
@@ -151,7 +147,7 @@ def bt(t):
 def project_cards(depth):
     lb = lbase(depth)
     return "".join(
-        card(f'{lb}works/{p["slug"]}/', p["cover"], f'{p["title"]} · {p["sub"]}', p["kind"], stage=p["stage"])
+        card(f'{lb}works/{p["slug"]}/', p["cover"], f'{p["title"]} · {p["sub"]}', p["kind"])
         for p in C["projects"])
 
 
@@ -161,7 +157,7 @@ def book_cards(depth, ebooks=True):
     for b in C["print_books"]:
         out += card(f'{lb}books/{b["slug"]}/', b["cover"], bt(b["title"]), f'{b["publisher"]} · {b["year"]}', "book")
     for b in C["ebooks"] if ebooks else []:
-        out += card(f'{lb}books/{b["slug"]}/', b["cover"], bt(b["title"]), f'{T["online"]} · {b["status"]}')
+        out += card(f'{lb}books/{b["slug"]}/', b["cover"], bt(b["title"]), T["online"])
     return out
 
 
@@ -214,11 +210,11 @@ def home_works():
     rest = [p for p in C["projects"] if p["slug"] not in [h["lead"], *h["secondary"]]]
     nums = "".join(f'<div><b>{e(n)}</b><span>{e(t)}</span></div>' for n, t in lead.get("feature", {}).get("numbers", []))
     lead_html = (f'<a class="lead-card" href="works/{lead["slug"]}/"><div class="lead-shot"><img src="{abase(0)}{lead["cover"]}" alt="{e(lead["title"])}"></div>'
-                 f'<div class="lead-info"><div><p class="kicker">{e(lead["kind"])}{chip(lead["stage"])}</p><h3>{e(lead["title"])}<span>{e(lead["sub"])}</span></h3></div>'
+                 f'<div class="lead-info"><div><p class="kicker">{e(lead["kind"])}</p><h3>{e(lead["title"])}<span>{e(lead["sub"])}</span></h3></div>'
                  f'<p>{e(lead["one_liner"])}</p><div class="nums">{nums}</div><span class="go">{T["open_project"]}</span></div></a>')
     sec_html = "".join(
         f'<a class="card wide" href="works/{p["slug"]}/"><div class="tile"><img src="{abase(0)}{p["cover"]}" alt="" loading="lazy"></div>'
-        f'<div class="cap"><b>{e(p["title"])} · {e(p["sub"])}</b><span>{e(p["kind"])}{chip(p["stage"])}</span><em>{e(p["one_liner"])}</em></div></a>'
+        f'<div class="cap"><b>{e(p["title"])} · {e(p["sub"])}</b><span>{e(p["kind"])}</span><em>{e(p["one_liner"])}</em></div></a>'
         for p in second)
     more = " · ".join(f'<a href="works/{p["slug"]}/">{e(p["title"])}</a>' for p in rest)
     return (f'<section class="block roomy">{sec("01", T["h_selected"], "works/", T["all_works"])}{lead_html}'
@@ -249,7 +245,7 @@ LINK_KINDS = ["demo", "download", "source", "external"]
 
 
 def project_detail(p, ab):
-    """Project page: status, real media first, then sections for whichever fields the project has.
+    """Project page: real media first, then sections for whichever fields the project has.
     Projects with a `feature` block (see Lookbook) add the problem, a screenshot walk, use cases and tech."""
     f, ti = p.get("feature", {}), p["title"]
     links = sorted(p["links"], key=lambda l: LINK_KINDS.index(l["kind"]))
@@ -257,7 +253,7 @@ def project_detail(p, ab):
     kinds = {l["kind"] for l in links}
     cta = p.get("cta") or ("try" if "demo" in kinds else "download" if "download" in kinds else "follow")
     meta = "".join(f"<div><dt>{k}</dt><dd>{e(v)}</dd></div>" for k, v in
-                   [(T["k_status"], p["status"]), (T["k_platform"], p["platform"]), (T["k_tech"], p["tech"])])
+                   [(T["k_platform"], p["platform"]), (T["k_tech"], p["tech"])])
     gallery = list(p["gallery"])
     if p.get("video"):
         media = (f'<div class="demo"><video controls muted playsinline preload="none" poster="{ab}{p["poster"]}" src="{ab}{p["video"]}"></video></div>')
@@ -296,7 +292,7 @@ def project_detail(p, ab):
 <header class="f-head"><nav class="crumbs" aria-label="breadcrumb"><a href="../">{T["h_works_short"]}</a> / <span>{e(p["title"])}</span></nav>
 <p class="kicker">{e(p["kind"])}</p><h1>{e(p["title"])}</h1><p class="zh">{e(p["sub"])}</p>
 <p class="one">{e(p["one_liner"])}</p>
-<p class="stage-note">{chip(p["stage"]).strip()} {T["stage_note"][p["stage"]]}</p><div class="btns">{btns}</div></header>
+<div class="btns">{btns}</div></header>
 {media}
 {"".join(out)}
 <section class="f-cta"><h2>{T["cta_title"][cta]}</h2><div class="btns">{btns}</div></section>
@@ -327,12 +323,11 @@ def generate():
 """
     page("index.html", f'{S["name"]} — {S["tagline_en"]}', fill(home, 0), 0)
 
-    groups = "".join(
-        f'<section class="block">{sec(f"0{i}", T["h_stage"][st])}<div class="grid">'
-        + "".join(card(f'{p["slug"]}/', p["cover"], f'{p["title"]} · {p["sub"]}', p["kind"], stage=st) for p in C["projects"] if p["stage"] == st)
-        + "</div></section>"
-        for i, st in enumerate(T["h_stage"], 1) if any(p["stage"] == st for p in C["projects"]))
-    body = f"""<div class="page-h"><h1>{T["works_h"]}</h1><p>{T["works_p"]}</p></div>{groups}"""
+    works = "".join(
+        card(f'{p["slug"]}/', p["cover"], f'{p["title"]} · {p["sub"]}', p["kind"])
+        for p in C["projects"])
+    body = f"""<div class="page-h"><h1>{T["works_h"]}</h1><p>{T["works_p"]}</p></div>
+<section class="block"><div class="grid">{works}</div></section>"""
     page("works/index.html", f"{T['works_h']} — {S['title_suffix']}", fill(body, 1), 1, "works")
 
     for p in C["projects"]:
@@ -340,7 +335,7 @@ def generate():
              p["one_liner"], p["cover"])
 
     pb = "".join(card(f'{b["slug"]}/', b["cover"], bt(b["title"]), f'{b["publisher"]} · {b["year"]}', "book") for b in C["print_books"])
-    eb = "".join(card(f'{b["slug"]}/', b["cover"], bt(b["title"]), b["status"]) for b in C["ebooks"])
+    eb = "".join(card(f'{b["slug"]}/', b["cover"], bt(b["title"]), T["online"]) for b in C["ebooks"])
     body = f"""<div class="page-h"><h1>{T["books_h"]}</h1><p>{T["books_p"]}</p></div>
 <section class="block">{sec("01", T["books_pub"])}<div class="grid four">{pb}</div></section>
 <section class="block">{sec("02", T["books_online"], "../writing/", T["books_more"])}<div class="grid">{eb}</div></section>"""
@@ -363,7 +358,7 @@ def generate():
 
     for b in C["ebooks"]:
         ab = abase(2)
-        rows = [(T["k_format"], T["v_format"]), (T["k_status"], b["status"]), (T["k_lang"], T["v_lang"])]
+        rows = [(T["k_format"], T["v_format"]), (T["k_lang"], T["v_lang"])]
         body = f"""<article class="detail">
 <aside><nav class="crumbs" aria-label="breadcrumb"><a href="../">{T["h_books_short"]}</a> / <span>{e(b["title"])}</span></nav><p class="kicker">{T["kick_guide"]}</p><h1>{e(b["title"])}</h1><p class="zh">{e(b["sub"])}</p>
 <dl class="meta">{meta_rows(rows)}</dl><div class="btns"><a class="btn primary" href="{b["link"]}">{T["b_read"]}</a></div></aside>

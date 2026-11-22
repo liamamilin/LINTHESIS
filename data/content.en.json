@@ -376,7 +376,8 @@
           "url": "https://github.com/liamamilin/aide/releases/tag/v1.4.0"
         }
       ],
-      "note": "This page describes the current native source. The public v1.4.0 installer is the older PyQt5 app; build the native app using the repository instructions. It is not notarized. Opt-in web search sends the model’s search queries to the configured provider."
+      "note": "The installer uses PyQt5. See the source repository for running the SwiftUI / AppKit version. Opt-in web search sends the model’s search queries to the configured provider.",
+      "maintenance_note": "This page describes the current native source. The public v1.4.0 installer is the older PyQt5 app; build the native app using the repository instructions. It is not notarized. Opt-in web search sends the model’s search queries to the configured provider."
     },
     {
       "slug": "research2video",
@@ -539,14 +540,14 @@
         "Local Ollama assistant for finding documents, preparing matters and native operations",
         "Sensitive-document protection, backup/restore and retained previous libraries"
       ],
-      "note": "A local development and trial build. Developer ID signing, notarization and independent-account public distribution checks are not complete.",
       "links": [
         {
           "kind": "source",
           "label": "GitHub",
           "url": "https://github.com/liamamilin/PersonalSpace"
         }
-      ]
+      ],
+      "maintenance_note": "A local development and trial build. Developer ID signing, notarization and independent-account public distribution checks are not complete."
     },
     {
       "slug": "radar",

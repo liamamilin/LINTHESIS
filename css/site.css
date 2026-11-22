@@ -229,14 +229,7 @@ dl.tech dd{margin:0}
   dl.tech div{grid-template-columns:1fr;gap:2px}
 }
 
-/* ---- P1: status chips, stage note, reading list, gallery ---- */
-.chip{display:inline-block;margin-left:8px;padding:0 9px;border:1px solid var(--lt-line);border-radius:999px;font-size:12px;font-style:normal;line-height:20px;color:var(--lt-muted);white-space:nowrap}
-.chip::before{content:"";display:inline-block;width:6px;height:6px;margin-right:6px;border-radius:50%;background:var(--lt-line);vertical-align:1px}
-.chip.live{color:var(--lt-accent-text);border-color:var(--lt-accent)}.chip.live::before{background:var(--lt-accent)}
-.chip.dev::before{background:var(--lt-muted)}
-.kicker .chip{text-transform:none;letter-spacing:0}
-.stage-note{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 24px;color:var(--lt-muted)}
-.stage-note .chip{margin:0}
+/* ---- P1: reading list, gallery ---- */
 .gal{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;align-items:start}
 .gal figure{margin:0;border-radius:10px;overflow:hidden;background:#E9E5DC;box-shadow:0 24px 48px -28px rgba(25,27,26,.35)}
 .gal img{width:100%;height:auto}
@@ -256,7 +249,6 @@ dl.tech dd{margin:0}
   .page-h{padding-top:40px}
   .f-sec p,.plain li{font-size:17px}
   .feature h1{letter-spacing:-.03em}
-  .chip{margin-left:6px}
 }
 .gal img{max-height:640px;object-fit:cover;object-position:top}
 
