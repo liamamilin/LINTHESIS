@@ -3,7 +3,7 @@
     "name": "LINTHESIS",
     "tagline_en": "From Thought to Form.",
     "tagline_zh": "从思考到创造。",
-    "intro": "我是米霖（Liam）。早年做数据科学、机器学习和统计，现在更关心 AI、区块链、软件开发、商业和创业。我喜欢写作和分享，也喜欢把想法做成东西：软件、书，还有一些仍在探索的实验。这里是它们的归处。",
+    "intro": "我是米霖（Liam）。写书与教程，是把问题想清楚；做软件与图谱，是把想法做出来；开源与实验，是把成果分享出去。",
     "author": "米霖 / Liam",
     "github": "https://github.com/liamamilin",
     "title_suffix": "LINTHESIS / Personal Studio",
@@ -681,11 +681,6 @@
       "desc": "设计、实现、调试、评估和生产化 Agent 系统，不依赖框架抽象，直接理解底层机制。"
     },
     {
-      "url": "https://liamamilin.github.io/Practical-LLM/",
-      "theme": "大模型",
-      "desc": "第一部分从零实现 Tokenizer、Transformer 和预训练，第二部分是微调实战。"
-    },
-    {
       "url": "https://liamamilin.github.io/vibe-coding-2026/",
       "theme": "AI 编程",
       "desc": "用 AI 开发个人工具：从把需求写成 Prompt，到环境搭建、界面、数据库和后端 API。"
@@ -696,9 +691,14 @@
       "desc": "这个系列的开篇：为什么代码不等于系统，以及缺少系统蓝图的代价（英文）。"
     },
     {
-      "url": "https://liamamilin.github.io/AB-tutorial/",
-      "theme": "数据分析",
-      "desc": "从 AB 测试的作用和应用，到正态、二项、Beta 分布等统计基础。"
+      "url": "https://liamamilin.github.io/AI-Driven-Business-Process-Transformation-and-Automation/",
+      "theme": "商业实践",
+      "desc": "从真实业务流程出发，理解 AI 如何落地为可执行的自动化转型方案。"
+    },
+    {
+      "url": "https://liamamilin.github.io/web3book/",
+      "theme": "Web3",
+      "desc": "系统梳理 Web3 与区块链的核心概念、底层机制与应用实践。"
     }
   ],
   "series": [

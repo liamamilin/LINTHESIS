@@ -3,7 +3,7 @@
     "name": "LINTHESIS",
     "tagline_en": "From Thought to Form.",
     "tagline_zh": "",
-    "intro": "I'm Mi Lin (Liam). I started in data science, machine learning and statistics, and now care most about AI, blockchain, software, business and startups. I like to write and to share, and to turn ideas into things: software, books, and a few experiments still in progress. This is where they live.",
+    "intro": "I'm Mi Lin (Liam). Writing books and guides is how I think problems through; building software and atlases is how I give ideas form; open-sourcing and experimenting is how I share them.",
     "author": "Mi Lin / Liam",
     "github": "https://github.com/liamamilin",
     "title_suffix": "LINTHESIS / Personal Studio",
@@ -685,11 +685,6 @@
       "desc": "How to design, build, debug, evaluate and productionize agent systems, understanding the mechanics without leaning on framework abstractions."
     },
     {
-      "url": "https://liamamilin.github.io/Practical-LLM/",
-      "theme": "LLMs",
-      "desc": "Part one builds the tokenizer, transformer and pretraining from scratch; part two is hands-on fine-tuning."
-    },
-    {
       "url": "https://liamamilin.github.io/vibe-coding-2026/",
       "theme": "AI coding",
       "desc": "Building personal tools with AI: from turning a need into a prompt to setup, UI, databases and backend APIs."
@@ -700,9 +695,14 @@
       "desc": "The opening of this series: why code is not the system, and what a missing system blueprint costs."
     },
     {
-      "url": "https://liamamilin.github.io/AB-tutorial/",
-      "theme": "Data analysis",
-      "desc": "From what A/B testing is for and where it applies, to the statistics behind it: normal, binomial and beta distributions."
+      "url": "https://liamamilin.github.io/AI-Driven-Business-Process-Transformation-and-Automation/",
+      "theme": "Business",
+      "desc": "Starting from real business processes, see how AI translates into practical workflow transformation and automation."
+    },
+    {
+      "url": "https://liamamilin.github.io/web3book/",
+      "theme": "Web3",
+      "desc": "A structured guide to the core concepts, underlying mechanics and practical applications of Web3 and blockchain."
     }
   ],
   "series": [

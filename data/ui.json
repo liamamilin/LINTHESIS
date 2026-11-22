@@ -25,7 +25,7 @@
     "books_online": "在线教程 Online",
     "books_more": "更多在线长篇 →",
     "writing_h": "Writing 文章",
-    "writing_p": "持续更新的在线教程、主题系列与思考笔记。从精选阅读开始，也可以按目录查找。",
+    "writing_p": "持续更新的在线教程、主题系列与思考笔记。从精选阅读开始，也可以按目录查找；部分架构与认知系列为英文原文。",
     "writing_todo": "短文与研究笔记栏目待补。",
     "music_h": "AI 音乐",
     "music_p": "用 AI 创作的歌曲和 MV，这里放了其中几首。",
@@ -50,7 +50,7 @@
         "写作",
         "Writing",
         "把复杂的东西讲清楚。",
-        "四本已出版的书，加上 100 多本在线电子书，从 R 与统计，到 AI、架构与语言，持续更新。",
+        "四本已出版的纸质书，加上 50 余个精选在线专题与教程（以及 130 余个公开文档站点），从 R 与统计，到 AI、Web3、架构与语言，持续更新。",
         "books/",
         "看我的书 →"
       ],
@@ -106,9 +106,9 @@
     "footer_extra": "A LINTHESIS Project",
     "title_book": "《{t}》",
     "hero_stage": [
-      "01 / Thought",
-      "02 / Structure",
-      "03 / Form"
+      "01 / Thought 思考",
+      "02 / Structure 结构",
+      "03 / Form 创造"
     ],
     "hero_cta": [
       [
@@ -205,7 +205,7 @@
         "Writing",
         "写作",
         "Make the complicated clear.",
-        "Four published books and more than a hundred online books, from R and statistics to AI, architecture and language, still growing.",
+        "Four published books and over fifty curated online guides and series (plus 130+ public doc sites), from R and statistics to AI, Web3, architecture and language, still growing.",
         "books/",
         "See the books →"
       ],

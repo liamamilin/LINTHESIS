@@ -162,11 +162,14 @@ def book_cards(depth, ebooks=True):
 
 
 def series_html():
+    nav = '<div class="series-nav">' + "".join(
+        f'<a href="#series-{i}">{e(s["name"])}<i>{len(s["items"])}</i></a>'
+        for i, s in enumerate(C["series"], 1)) + "</div>"
     cols = ""
-    for s in C["series"]:
+    for i, s in enumerate(C["series"], 1):
         lis = "".join(f'<li><a href="{u}">{e(n)}</a></li>' for n, u in s["items"])
-        cols += f'<div><h3>{e(s["name"])}</h3><ul>{lis}</ul></div>'
-    return f'<div class="series">{cols}</div>'
+        cols += f'<div id="series-{i}"><h3>{e(s["name"])}<span>{len(s["items"])}</span></h3><ul>{lis}</ul></div>'
+    return f'{nav}<div class="series">{cols}</div>'
 
 
 def featured_html(limit=None, lb=""):
@@ -178,10 +181,13 @@ def featured_html(limit=None, lb=""):
 
 
 def lab_rows(limit=None):
-    return '<div class="rows lab">' + "".join(
-        f'<a href="{e(u)}"><div><b>{e(n)}</b><em>{e(d)}</em></div>'
-        f'<span>{T["lab_source"] if urlparse(u).hostname == "github.com" else T["lab_visit"]}</span></a>'
-        for n, u, d in C["lab"][:limit]) + "</div>"
+    rows = []
+    for n, u, d in C["lab"][:limit]:
+        is_gh = urlparse(u).hostname == "github.com"
+        tag = "GitHub" if is_gh else "Web"
+        btn = T["lab_source"] if is_gh else T["lab_visit"]
+        rows.append(f'<a href="{e(u)}"><div><b>{e(n)}</b><i class="lab-tag">{tag}</i><em>{e(d)}</em></div><span>{btn} ↗</span></a>')
+    return '<div class="rows lab">' + "".join(rows) + "</div>"
 
 
 def music_grid(ab):
@@ -372,8 +378,8 @@ def generate():
     page("writing/index.html", f"{T['writing_h']} — {S['title_suffix']}", body, 1, "writing")
 
     body = f"""<div class="page-h"><h1>{T["lab_h"]}</h1><p>{T["lab_p"]}</p></div>
-<section class="block">{sec("01", T["music_h"])}<p class="music-p">{T["music_p"]}</p>{music_grid(abase(1))}</section>
-<section class="block">{sec("02", T["repo_h"])}{lab_rows()}</section>"""
+<section class="block">{sec("01", T["repo_h"])}{lab_rows()}</section>
+<section class="block">{sec("02", T["music_h"])}<p class="music-p">{T["music_p"]}</p>{music_grid(abase(1))}</section>"""
     page("lab/index.html", f"{T['lab_h']} — {S['title_suffix']}", body, 1, "lab")
 
     brand = T["about_brand"].format(en=S["tagline_en"], zh=S["tagline_zh"]).strip()
