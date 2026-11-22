@@ -25,11 +25,11 @@
     "books_online": "在线教程 Online",
     "books_more": "更多在线长篇 →",
     "writing_h": "Writing 文章",
-    "writing_p": "持续更新的在线长篇写作，按主题成系列。点开每个系列，进入对应的在线电子书。",
+    "writing_p": "持续更新的在线教程、主题系列与思考笔记。从精选阅读开始，也可以按目录查找。",
     "writing_todo": "短文与研究笔记栏目待补。",
     "music_h": "AI 音乐",
     "music_p": "用 AI 创作的歌曲和 MV，这里放了其中几首。",
-    "repo_h": "开源实验",
+    "repo_h": "代码与研究实验",
     "lab_h": "Lab 实验室",
     "lab_p": "尚在探索的想法、原型和实验项目，状态不一，多数仍在演进。",
     "about_h": "About 关于",
@@ -166,7 +166,9 @@
       "books": "书籍",
       "writing": "文章",
       "lab": "实验"
-    }
+    },
+    "lab_source": "查看源码",
+    "lab_visit": "访问网站"
   },
   "en": {
     "html_lang": "en",
@@ -194,11 +196,11 @@
     "books_online": "Online guides",
     "books_more": "More long-form online →",
     "writing_h": "Writing",
-    "writing_p": "Long-form writing published online, grouped into series. Each link opens the matching online book. The books themselves are in Chinese.",
+    "writing_p": "Online tutorials, thematic series and thinking notes. Start with the selected reading or browse the full catalogue. Source materials use Chinese, English or both.",
     "writing_todo": "Short essays and research notes: coming.",
     "music_h": "AI Music",
     "music_p": "Songs and music videos made with AI. A small selection is here.",
-    "repo_h": "Open-source experiments",
+    "repo_h": "Code & research experiments",
     "lab_h": "Lab",
     "lab_p": "Ideas, prototypes and experiments still being explored. They are at different stages, and most are still evolving.",
     "about_h": "About",
@@ -335,6 +337,8 @@
       "books": "Book",
       "writing": "Writing",
       "lab": "Lab"
-    }
+    },
+    "lab_source": "View source",
+    "lab_visit": "Visit website"
   }
 }

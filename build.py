@@ -5,6 +5,7 @@ import html
 import json
 import struct
 from pathlib import Path
+from urllib.parse import urlparse
 
 ROOT = Path(__file__).parent
 SITE_URL = "https://liamamilin.github.io/LINTHESIS/"
@@ -182,7 +183,9 @@ def featured_html(limit=None, lb=""):
 
 def lab_rows(limit=None):
     return '<div class="rows lab">' + "".join(
-        f'<a href="{u}"><div><b>{e(n)}</b><em>{e(d)}</em></div><span>GitHub ↗</span></a>' for n, u, d in C["lab"][:limit]) + "</div>"
+        f'<a href="{e(u)}"><div><b>{e(n)}</b><em>{e(d)}</em></div>'
+        f'<span>{T["lab_source"] if urlparse(u).hostname == "github.com" else T["lab_visit"]}</span></a>'
+        for n, u, d in C["lab"][:limit]) + "</div>"
 
 
 def music_grid(ab):

@@ -12,13 +12,187 @@
   "home": {
     "lead": "lookbook",
     "secondary": [
-      "aide",
-      "atlas"
+      "wenjian",
+      "prompt-taxonomy"
     ],
     "lab_count": 3,
     "writing_count": 4
   },
   "projects": [
+    {
+      "title": "问笺馆",
+      "sub": "让模型交出能打开的作品",
+      "intro": "主馆按作品任务组织：打开一项任务，就能看到要交什么文件、怎样打开，以及如何判断完成。已记录的运行区分成功、失败和部分验证，展示可检查的实际产物；另有短题供热身。",
+      "features": [
+        "按动画、三维场景、游戏、应用等产物类型浏览与检索",
+        "每题包含完整题面、产物格式、打开方式与验收点",
+        "运行记录关联实际产物，标明执行环境与验证状态",
+        "公开引用题与原创题分别标明来源，短题单独浏览"
+      ],
+      "slug": "wenjian",
+      "stage": "live",
+      "kind": "网站 / 参考工具",
+      "one_liner": "把动画、三维场景、游戏和应用交给模型制作，保留题面、产物、运行条件与验收记录。",
+      "status": "已上线 · 持续更新",
+      "platform": "Web",
+      "tech": "HTML · CSS · JavaScript",
+      "cover": "img/projects/wenjian.jpg",
+      "gallery": [
+        "img/projects/wenjian.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "访问网站",
+          "url": "https://liamamilin.github.io/AI-TASKS-TAXONOMY/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/AI-TASKS-TAXONOMY"
+        }
+      ],
+      "note": "当前展示包含 Cursor 辅助执行与工具使用，不代表模型裸接口的盲测排名。"
+    },
+    {
+      "title": "提示词图谱",
+      "sub": "从任务出发使用 Prompt",
+      "intro": "一个中英文提示词目录，覆盖研究、写作、学习、数据、开发、产品和日常工作。模板带有可填写的变量，工作流说明每一步怎样衔接；研究与公开案例的来源可以回查。",
+      "features": [
+        "224 条中文模板，配套英文目录，按 16 类任务组织",
+        "19 条工作流，可把上一步结果作为下一步输入",
+        "填写变量后复制模板，用分享链接保留模板入口",
+        "按任务与证据类型检索，支持 JSON 目录下载"
+      ],
+      "slug": "prompt-taxonomy",
+      "stage": "live",
+      "kind": "网站 / 参考工具",
+      "one_liner": "按任务查找 Prompt，填入自己的材料，再复制使用或分享；把多步工作串成可复用流程。",
+      "status": "已上线 · 持续更新",
+      "platform": "Web",
+      "tech": "Python · HTML · CSS · JavaScript",
+      "cover": "img/projects/prompt-taxonomy.jpg",
+      "gallery": [
+        "img/projects/prompt-taxonomy.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "访问网站",
+          "url": "https://liamamilin.github.io/Prompt-taxonomy/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/Prompt-taxonomy"
+        }
+      ],
+      "note": "来源标签说明同类任务的研究或案例依据；具体模板由本项目编写。"
+    },
+    {
+      "title": "Atlas Methods",
+      "sub": "可回查来源的 Skill 资料库",
+      "intro": "从已有 Skill 材料出发，保存具体做法、适用条件和重要限制，再逐步整理领域。公开资料库提供分类、搜索与来源筛选，方便发现方法、比较不同来源，并回到原文继续判断。",
+      "features": [
+        "按工程、专业、创作与办公等领域浏览",
+        "搜索 Skill，并按专题、来源仓库与排序方式筛选",
+        "查看公开整理摘要与多个来源的合并记录",
+        "回查 GitHub 固定版本，保留来源与转换记录"
+      ],
+      "slug": "atlas-methods",
+      "stage": "live",
+      "kind": "网站 / 参考工具",
+      "one_liner": "从真实 GitHub Skills 整理具体做法，按领域浏览摘要，并回查固定版本的原始来源。",
+      "status": "已上线 · 持续更新",
+      "platform": "Web",
+      "tech": "Python · HTML · CSS · JavaScript",
+      "cover": "img/projects/atlas-methods.jpg",
+      "gallery": [
+        "img/projects/atlas-methods.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "访问网站",
+          "url": "https://liamamilin.github.io/ATLAS-METHODS/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/ATLAS-METHODS"
+        }
+      ],
+      "note": "资料整理与结构检查不等于逐条执行验证，使用时仍需核对原文与适用条件。"
+    },
+    {
+      "title": "语言表达分类体系",
+      "sub": "目的、操作与风格",
+      "intro": "用 P 目的、O 操作、S 风格三个轴组织语言表达。既能查找告知、请求、协商和修复关系等交际功能，也能区分怎样组织表达、采用什么风格；相近条目保留边界说明。",
+      "features": [
+        "93 项交际目的、43 项表达操作、12 个风格维度分别浏览",
+        "按三轴、功能组与条目展开目录，支持全局搜索",
+        "目的与操作补充英文动作词、搭配和中英例句",
+        "阅读定义、近邻辨析、归组理由与案例来源"
+      ],
+      "slug": "communicative-acts",
+      "stage": "live",
+      "kind": "网站 / 参考工具",
+      "one_liner": "理解一句话正在做什么：按交际目的、表达操作和风格，查定义、近邻边界与中英例句。",
+      "status": "已上线 · 持续更新",
+      "platform": "Web",
+      "tech": "HTML · CSS · JavaScript",
+      "cover": "img/projects/communicative-acts.jpg",
+      "gallery": [
+        "img/projects/communicative-acts.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "访问网站",
+          "url": "https://liamamilin.github.io/communicative-acts-taxonomy/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/communicative-acts-taxonomy"
+        }
+      ],
+      "note": "目录规模是当前整理范围；教学例句与有出处的案例分开标明。"
+    },
+    {
+      "title": "语义方向分类体系",
+      "sub": "从方向理解表达",
+      "intro": "以“表达 = RU + 语义方向”为组织线索，将语义方向按层级展开成可阅读、可检索的目录。每个方向在正文中对应说明与表现形式，左侧目录帮助定位，适合查找和比较相近表达。",
+      "features": [
+        "15 个大类、35 个子类、201 个语义方向",
+        "整理 1,058 条表现形式，连接方向与具体表达",
+        "树状目录可展开、收起并定位正文",
+        "全局搜索与章节链接，手机端也可阅读"
+      ],
+      "slug": "semantic-directions",
+      "stage": "live",
+      "kind": "网站 / 参考工具",
+      "one_liner": "从存在、变化、运动、行动等方向，浏览表达的含义、表现形式与英文对应。",
+      "status": "已上线 · 持续更新",
+      "platform": "Web",
+      "tech": "HTML · CSS · JavaScript",
+      "cover": "img/projects/semantic-directions.jpg",
+      "gallery": [
+        "img/projects/semantic-directions.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "访问网站",
+          "url": "https://liamamilin.github.io/semantic-direction-taxonomy/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/semantic-direction-taxonomy"
+        }
+      ]
+    },
     {
       "slug": "lookbook",
       "stage": "live",
@@ -152,7 +326,7 @@
     },
     {
       "slug": "aide",
-      "stage": "live",
+      "stage": "dev",
       "related": [
         [
           "works",
@@ -172,8 +346,8 @@
       ],
       "title": "Aide",
       "kind": "软件 / macOS 应用",
-      "one_liner": "按下 ⌘⌃L，说出你想做的事，或先选中文本。本地 Ollama 模型，不上传。",
-      "status": "v1.4.0 已发布",
+      "one_liner": "在 Mac 上用快捷键唤起本机 AI，处理选中文字、截图和桌面任务。",
+      "status": "原生版开发中 · 历史 Qt 版 v1.4.0",
       "platform": "macOS 14+ · Apple silicon",
       "tech": "SwiftUI / AppKit · Python · Ollama",
       "cover": "img/projects/aide-1.jpg",
@@ -181,28 +355,28 @@
         "img/projects/aide-1.jpg",
         "img/projects/aide-2.jpg"
       ],
-      "intro": "SwiftUI / AppKit 外壳，加上一个无界面的 Python 核心。快捷键唤起 Quick Panel，用本地桌面工具执行请求；选中文本可以翻译、解释、总结、改写；框选截图会带着图片开启一段新对话。会改动数据的操作，都先给出确认。",
+      "intro": "SwiftUI / AppKit 原生外壳与 Python 核心，使用本机 Ollama 模型。Quick Panel 处理选中文字和桌面工具请求，Workspace 保存对话与搜索；新增朗读、日历操作，以及按会话主动开启的联网搜索和命令行。会改动数据的操作先显示具体内容，等待确认。",
       "features": [
-        "Quick Panel：⌘⌃L 一句话调用本地桌面工具",
-        "选中文本后选择动作，或输入自己的指令",
-        "⌘⌃S 框选截图并附带到新对话",
-        "Workspace：对话历史与搜索、流式 Markdown、重新生成",
-        "修改类操作先显示具体动作，经确认才执行"
+        "⌘⌃L 唤起 Quick Panel，处理选中文字或桌面请求",
+        "⌘⌃S 框选截图进入对话，⌘⌃R 朗读选中文字",
+        "Workspace：对话搜索、流式 Markdown、重新生成与自定义 Agent",
+        "笔记、提醒事项和日历操作，修改前确认",
+        "按会话主动开启搜索或命令行，凭据保存在系统钥匙串"
       ],
       "links": [
         {
-          "kind": "download",
-          "label": "下载（GitHub Releases）",
-          "url": "https://github.com/liamamilin/aide/releases/latest"
+          "kind": "source",
+          "label": "原生版源码",
+          "url": "https://github.com/liamamilin/aide"
         },
         {
-          "kind": "source",
-          "label": "GitHub",
-          "url": "https://github.com/liamamilin/aide"
+          "kind": "external",
+          "label": "历史 Qt 版下载",
+          "url": "https://github.com/liamamilin/aide/releases/tag/v1.4.0"
         }
       ],
       "sub": "本地 AI 桌面入口",
-      "note": "尚未公证：首次打开会被 macOS 拦截，需要在“系统设置 → 隐私与安全性”中选择“仍要打开”。"
+      "note": "这里介绍的是当前原生版源码。公开 v1.4.0 安装包仍为旧 PyQt5 版本；原生版请按仓库说明本地构建，尚未公证。启用联网搜索后，模型的搜索查询会发送至所配置的提供方。"
     },
     {
       "slug": "research2video",
@@ -226,21 +400,24 @@
       ],
       "title": "研映 Research2Video",
       "kind": "软件 / 工作流",
-      "one_liner": "从资料调研、研究报告和文稿，到配音、画面、字幕、视频与发布管理的本地工作流。",
+      "one_liner": "围绕栏目持续研究、写稿、制作视频，并管理多平台投稿的本地创作工作台。",
       "status": "开发中",
       "platform": "本地服务 · Web 控制台",
       "tech": "Python · FastAPI · Remotion · React",
-      "cover": "img/projects/research2video-1.jpg",
+      "cover": "img/projects/research2video-matrix.jpg",
       "gallery": [
-        "img/projects/research2video-1.jpg",
-        "img/projects/research2video-2.jpg"
+        "img/projects/research2video-matrix.jpg",
+        "img/projects/research2video-columns.jpg",
+        "img/projects/research2video-assistant.jpg"
       ],
-      "intro": "由两个模块组成：研究控制台负责研究任务、信息源、周期调度、文稿配方和视频工作流；AutoVideo 负责配音、视觉规划、Remotion 渲染、字幕、片头片尾和成片交付。",
+      "intro": "以矩阵与栏目组织受众、来源、观看收获与制作设置。从具体问题、研究报告或已有文稿出发，将底稿和原始素材转成口播、配音、画面、字幕与成片；内嵌助手可以调用同一套业务能力，日常操作也可通过网页完成。",
       "features": [
-        "研究任务、信息源与周期调度",
-        "文稿配方与视频工作流管理控制台",
-        "配音、视觉规划、字幕与片头片尾",
-        "Remotion 渲染与成片交付、发布管理"
+        "按矩阵与栏目管理研究任务、信息源和周期调度",
+        "研究底稿结合原始素材写稿，保留文稿版本和成片记录",
+        "来源截图、局部聚焦、数据图形与旁白字幕同步",
+        "整期节目或独立单条，定稿后可沿原稿重新出片",
+        "B 站、抖音、快手、小红书的发布包、投稿队列与作品记录",
+        "研映助手直接查询和管理来源、研究、制作与发布工作"
       ],
       "links": [
         {
@@ -249,7 +426,8 @@
           "url": "https://github.com/liamamilin/Research2Video"
         }
       ],
-      "sub": "从研究到视频"
+      "sub": "从研究到视频",
+      "note": "完整生产环境主要在 macOS / Apple silicon 上验证；模型、配音服务与平台账号需自行配置。"
     },
     {
       "slug": "atlas",
@@ -259,36 +437,24 @@
           "works",
           "lookbook",
           "同样是把一类对象整理成可浏览的资料库，对象是设计系统。"
-        ],
-        [
-          "writing",
-          "https://liamamilin.github.io/vibe-coding-2026/",
-          "Atlas 的模板工厂把开发包交给 AI 实现；这套教程讲从需求到 Prompt、再到产品的做法。"
-        ],
-        [
-          "books",
-          "codex-mastery",
-          "开发包交给 AI 实现并验证；这本电子书讲怎样驾驭 Codex，把想法变成可验证的成果。"
         ]
       ],
       "title": "Application Atlas",
       "kind": "软件 / 资料库",
-      "one_liner": "1,805 个软件类型、29 个大域的资料库及本地工作台。",
+      "one_liner": "从软件类型和具体用途出发，寻找真实开源项目，查看能力、适用条件与来源。",
       "status": "开发中",
       "platform": "Web · 本地 API",
       "tech": "React · TypeScript · Vite · Python",
-      "cover": "img/projects/atlas-1.jpg",
+      "cover": "img/projects/atlas-discover.jpg",
       "gallery": [
-        "img/projects/atlas-3.jpg",
-        "img/projects/atlas-4.jpg",
-        "img/projects/atlas-1.jpg"
+        "img/projects/atlas-discover.jpg"
       ],
-      "intro": "英文档案是内容真相源，配套研究笔记、分类目录和持久化的翻译记录。在此之上有一个模板工厂：从场景模板导出标准开发包，再交给 AI 实现并验证浏览器旅程。",
+      "intro": "沿软件类型、应用场景和真实项目建立资料之间的联系。可以浏览类型、搜索项目、查看适用条件与许可证状态、收藏和回查来源；资料任务用于记录新增研究与更新建议。",
       "features": [
-        "1,805 个类型、29 个大域、270 个目录节点、33 个产品实例",
-        "正式英文档案，对应研究笔记与边界依据",
-        "本地草稿 API 与 React 前端工作台",
-        "模板工厂：个人收藏夹、个人预算、会议笔记等试用场景"
+        "按软件类型、场景和具体用途发现项目",
+        "项目卡片标明来源、许可证状态、适用条件与待补资料",
+        "搜索、筛选、收藏与来源回查",
+        "资料任务保留运行进度、更新建议与恢复入口"
       ],
       "links": [
         {
@@ -297,9 +463,7 @@
           "url": "https://github.com/liamamilin/atlas"
         }
       ],
-      "video": "video/atlas.webm",
-      "poster": "video/atlas.jpg",
-      "sub": "软件应用类型资料库"
+      "sub": "以场景寻找真实项目"
     },
     {
       "slug": "patlas",
@@ -325,17 +489,16 @@
       "kind": "软件 / 资料库",
       "sub": "可能性图书馆",
       "one_liner": "探索一个主题可以做成什么：每项可能性都写明条件，并追溯到原始来源。",
-      "status": "v0.1 · 已发布",
+      "status": "已上线 · 持续更新",
       "platform": "Web",
       "tech": "React · TypeScript · Vite",
-      "cover": "img/projects/patlas-1.jpg",
+      "cover": "img/projects/patlas-20261122.jpg",
       "gallery": [
-        "img/projects/patlas-2.jpg",
-        "img/projects/patlas-1.jpg"
+        "img/projects/patlas-20261122.jpg"
       ],
       "intro": "从可实现的结果出发，而不是从功能列表出发。每个主题下是一张可能性地图：一项可能性是什么结果、需要什么条件与组件、有哪些来源支持，都写在同一张卡片里。“来源支持”不等于运行实测，页面会如实标出证据状态，仍待验证的方向单独标记。",
       "features": [
-        "20 个主题、6 个领域，每个主题附研究报告与来源列表",
+        "38 个主题、11 个领域，主题附研究报告与来源列表",
         "按用途分类浏览，可按能力路径和证据状态筛选，也可全库搜索",
         "每项可能性包含可实现的结果、条件与边界、必要组件和原文来源",
         "可查看原始条目的 JSON 与 Markdown，以及研究校验记录"
@@ -359,22 +522,23 @@
       "title": "PersonalSpace",
       "kind": "软件 / macOS 应用",
       "one_liner": "本地优先的个人资料库：只读授权文件夹，搜索预览，识别事务并提醒。",
-      "status": "开发中 · 本地构建",
+      "status": "v0.10.9 · 本地开发构建",
       "platform": "macOS 26+",
       "tech": "SwiftUI · AppKit · SQLite / GRDB",
       "cover": "img/projects/personalspace-1.jpg",
       "gallery": [
         "img/projects/personalspace-1.jpg"
       ],
-      "intro": "一个原生 macOS 应用，不依赖服务器、账号或在线 API。扫描只读，托管资料是复制而不是移动，不提供源文件删除功能；模型不可用时，手动流程仍然可用。当前里程碑 M1–M10 的本地能力已实现。",
+      "intro": "一个原生 macOS 应用，把文件资料、个人对象、订单、合同、保修和订阅关联到同一空间。授权文件夹只读，收纳资料会复制到本地资料库；支持搜索预览、事实校对、行动提醒和备份恢复。应用级 AI 助手连接本机 Ollama，也可继续手动操作。",
       "features": [
-        "原生文件资料库与授权持久化",
-        "搜索与系统预览",
-        "个人对象、关联与托管副本",
-        "四类事务、按需识别、事实校对、待办与本地系统提醒",
-        "敏感标记、备份恢复、快速收纳"
+        "授权文件夹先统计再确认建立索引，文件变化自动更新",
+        "名称搜索、显式允许的正文搜索与系统预览",
+        "个人对象、资料关联、托管副本与快速收纳",
+        "订单、合同、保修、订阅的事实校对、多个行动与本地提醒",
+        "本机 Ollama 助手：查资料、准备事务与调用原生操作",
+        "敏感资料保护、备份恢复与保留旧资料库"
       ],
-      "note": "目前是本地 ad hoc 签名的开发构建，尚未做 Developer ID 签名和公证。",
+      "note": "当前为本地开发与试用构建，尚未完成 Developer ID 签名、公证和独立账户公开分发验收。",
       "links": [
         {
           "kind": "source",
@@ -394,17 +558,18 @@
       "status": "v0.2",
       "platform": "macOS 15+",
       "tech": "SwiftUI · GRDB · FeedKit · SwiftSoup",
-      "cover": "img/projects/radar-1.jpg",
+      "cover": "img/projects/radar-briefing.jpg",
       "gallery": [
-        "img/projects/radar-1.jpg"
+        "img/projects/radar-briefing.jpg",
+        "img/projects/radar-watch.jpg"
       ],
-      "intro": "从自然语言建立关注，到发现并试读信息源、定期采集、基线与去重，最后给出带原始链接的事件。无需任何 API Key。新建的关注只记录基线，之后出现的新内容才会提醒。",
+      "intro": "用自然语言建立关注，试读来源后定期采集，区分首次读取的历史基线和之后的新变化。事件保留原始链接，多来源报道可合并；需要时主动使用本机 Ollama 生成带出处的简报，或向已采集的内容提问。",
       "features": [
-        "四种采集：GitHub Releases、GitHub 仓库发现、RSS / Atom、静态 HTML",
-        "来源试读与确认，Feed 自动发现，CSS 选择器预览",
-        "事件唯一键去重，ETag / 304，限流与网络错误可追踪",
-        "菜单栏、系统通知、进程内定时检查与唤醒补查",
-        "12 项自动化测试通过"
+        "GitHub、RSS、网页、JSON 接口与 Hacker News 等来源",
+        "首次只建基线，新事件去重、合并并保留原始链接",
+        "菜单栏运行、系统通知、定时检查与唤醒补查",
+        "本机 Ollama 简报与问答，结论可回查原文",
+        "来源覆盖与漏报分析、来源状态和信息源导出"
       ],
       "links": [
         {
@@ -495,6 +660,16 @@
   ],
   "writing_featured": [
     {
+      "url": "https://liamamilin.github.io/thoughts/",
+      "theme": "思考",
+      "desc": "保存观察、推理、证据和结论，让深入讨论成为可以回查与修订的文章。"
+    },
+    {
+      "url": "https://liamamilin.github.io/AI-SYSTEM-ENGINE/",
+      "theme": "AI 工程",
+      "desc": "从 LLM 请求、工具和评测，到 Agent、RAG、推理服务与后训练，理解怎样把模型做成真实系统。"
+    },
+    {
       "url": "https://liamamilin.github.io/cognitive-language-engineering/",
       "theme": "认知",
       "desc": "让语言更有效地服务于思考、表达、协作与行动：七项原则、四个模型，以及可以直接调用的算子。"
@@ -503,11 +678,6 @@
       "url": "https://liamamilin.github.io/Agent-Engineering-From-Runtime-to-Production/",
       "theme": "Agent",
       "desc": "设计、实现、调试、评估和生产化 Agent 系统，不依赖框架抽象，直接理解底层机制。"
-    },
-    {
-      "url": "https://liamamilin.github.io/agent_tutorial/",
-      "theme": "Agent",
-      "desc": "从第一个 API 调用开始，一章一章做到工具、记忆、RAG、多智能体协作和评估，共 12 章。"
     },
     {
       "url": "https://liamamilin.github.io/Practical-LLM/",
@@ -525,17 +695,21 @@
       "desc": "这个系列的开篇：为什么代码不等于系统，以及缺少系统蓝图的代价（英文）。"
     },
     {
-      "url": "https://liamamilin.github.io/Self-Understanding/",
-      "theme": "自我",
-      "desc": "把自我当作被认识的对象：为什么自我难以看清，如何把欲望、恐惧和需要当作自我的证据（英文）。"
-    },
-    {
       "url": "https://liamamilin.github.io/AB-tutorial/",
       "theme": "数据分析",
       "desc": "从 AB 测试的作用和应用，到正态、二项、Beta 分布等统计基础。"
     }
   ],
   "series": [
+    {
+      "name": "思考与研究笔记",
+      "items": [
+        [
+          "Thoughts · 思考档案",
+          "https://liamamilin.github.io/thoughts/"
+        ]
+      ]
+    },
     {
       "name": "数据科学与分析",
       "items": [
@@ -574,6 +748,10 @@
         [
           "ODPS SQL",
           "https://liamamilin.github.io/ODPS_SQL/"
+        ],
+        [
+          "Driven by Data (R)",
+          "https://liamamilin.github.io/Driven-by-Data-The-Power-of-Insights-with-R/"
         ]
       ]
     },
@@ -619,6 +797,30 @@
         [
           "AI Engineer",
           "https://liamamilin.github.io/AI-Engineer/"
+        ],
+        [
+          "LLM 服务基础设施",
+          "https://liamamilin.github.io/LLM-Service-Infrastructure/"
+        ],
+        [
+          "LLM 系统架构",
+          "https://liamamilin.github.io/LLM-Systems-Architecture/"
+        ],
+        [
+          "工具使用与 Agent 系统",
+          "https://liamamilin.github.io/Tool-Use-and-Agent-Systems/"
+        ],
+        [
+          "AI 编程：从意图到执行",
+          "https://liamamilin.github.io/AI-Programming-From-Intent-to-Execution/"
+        ],
+        [
+          "上下文与提示词架构",
+          "https://liamamilin.github.io/Context-and-Prompt-Architecture/"
+        ],
+        [
+          "AI 系统工程",
+          "https://liamamilin.github.io/AI-SYSTEM-ENGINE/"
         ]
       ]
     },
@@ -640,6 +842,30 @@
         [
           "World Architecture",
           "https://liamamilin.github.io/Discipline-Architecture/"
+        ],
+        [
+          "World-System Architecture",
+          "https://liamamilin.github.io/World-System-Architecture/"
+        ],
+        [
+          "Industry Architecture",
+          "https://liamamilin.github.io/Industry-Architecture/"
+        ],
+        [
+          "Institution Architecture",
+          "https://liamamilin.github.io/Institution-Architecture/"
+        ],
+        [
+          "Technology Architecture",
+          "https://liamamilin.github.io/Technology-Architecture/"
+        ],
+        [
+          "Power Architecture",
+          "https://liamamilin.github.io/Power-Architecture/"
+        ],
+        [
+          "Architecture Patterns",
+          "https://liamamilin.github.io/Architecture-Patterns/"
         ]
       ]
     },
@@ -671,9 +897,82 @@
           "https://liamamilin.github.io/IELTS_DOMAIN_LANG/"
         ]
       ]
+    },
+    {
+      "name": "工程基础与商业实践",
+      "items": [
+        [
+          "Python 教程 2025",
+          "https://liamamilin.github.io/Python_Tutorial_2025/"
+        ],
+        [
+          "Python 设计模式",
+          "https://liamamilin.github.io/Python-Design-Patterns/"
+        ],
+        [
+          "Docker 教程",
+          "https://liamamilin.github.io/Docker-Tutorial/"
+        ],
+        [
+          "Shell 系统思维",
+          "https://liamamilin.github.io/Shell-as-a-System/"
+        ],
+        [
+          "UI 编程",
+          "https://liamamilin.github.io/ui-coding/"
+        ],
+        [
+          "AI 驱动的业务流程转型与自动化",
+          "https://liamamilin.github.io/AI-Driven-Business-Process-Transformation-and-Automation/"
+        ],
+        [
+          "商业与管理",
+          "https://liamamilin.github.io/BusinessAndManagment/"
+        ]
+      ]
+    },
+    {
+      "name": "Web3 与区块链",
+      "items": [
+        [
+          "Web3 指南",
+          "https://liamamilin.github.io/web3book/"
+        ],
+        [
+          "Web3 实战",
+          "https://liamamilin.github.io/Practical-web3/"
+        ],
+        [
+          "链上数据分析 2025",
+          "https://liamamilin.github.io/ChainAnalysis2025/"
+        ],
+        [
+          "DeFi 入门",
+          "https://liamamilin.github.io/Defi-introduction/"
+        ],
+        [
+          "Token Economy：Web3 如何重塑互联网",
+          "https://liamamilin.github.io/Token-Economy-How-the-Web3-reinvents-the-Internet-/"
+        ]
+      ]
     }
   ],
   "lab": [
+    [
+      "SaaS Grove",
+      "https://github.com/liamamilin/Saas-Grove",
+      "SaaS 应用发现与调研平台：按类型寻找真实开源项目与商业选择，查看产品资料并比较同类应用。"
+    ],
+    [
+      "World Classification Atlas",
+      "https://github.com/liamamilin/World-Classification-Atlas",
+      "从现有分类标准建立世界分类图谱，保存原始结构、版本与来源，按领域比较并回查目录。"
+    ],
+    [
+      "Skills",
+      "https://liamamilin.github.io/skills/",
+      "个人可复用技能库，收录记忆编码、音乐视频创作、独立判断等 Skill 与示例。"
+    ],
     [
       "COP Studio",
       "https://github.com/liamamilin/COP",
@@ -703,6 +1002,16 @@
       "AI Research System",
       "https://github.com/liamamilin/ai-research-system-",
       "自动化 AI 研究报告生成器和 Web 控制台：用 YAML 定义研究任务，由研究智能体检索并成文。"
+    ],
+    [
+      "PCOS",
+      "https://github.com/liamamilin/PCOS",
+      "Personal Capability OS：本地 AI 工程驾驶舱与个人能力操作系统。"
+    ],
+    [
+      "vibe_os",
+      "https://github.com/liamamilin/vibe_os",
+      "管理 AI coding agents 的 Vibe CLI 工具，支持原子步骤与 Git 自动快照。"
     ]
   ],
   "music": [

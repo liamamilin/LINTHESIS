@@ -12,13 +12,187 @@
   "home": {
     "lead": "lookbook",
     "secondary": [
-      "aide",
-      "atlas"
+      "wenjian",
+      "prompt-taxonomy"
     ],
     "lab_count": 3,
     "writing_count": 4
   },
   "projects": [
+    {
+      "title": "Wenjian · AI Task Gallery",
+      "sub": "AI tasks with inspectable outputs",
+      "intro": "The main collection is organized around artifact-making tasks. Each task explains the required file, how to open it and how to assess completion. Recorded runs distinguish success, failure and partial verification and include inspectable outputs. Short questions remain as a warm-up collection.",
+      "features": [
+        "Browse and search by output: animation, 3D scene, game, app and more",
+        "Full task prompts, file formats, opening instructions and acceptance criteria",
+        "Run records link to actual outputs and state execution conditions and verification status",
+        "Referenced and original tasks identify their sources; short questions have their own collection"
+      ],
+      "slug": "wenjian",
+      "stage": "live",
+      "kind": "Website / reference tool",
+      "one_liner": "Tasks that ask AI to make animations, 3D scenes, games and apps, with prompts, artifacts, run conditions and acceptance records.",
+      "status": "Live · continuously updated",
+      "platform": "Web",
+      "tech": "HTML · CSS · JavaScript",
+      "cover": "img/projects/wenjian.jpg",
+      "gallery": [
+        "img/projects/wenjian.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "Visit website",
+          "url": "https://liamamilin.github.io/AI-TASKS-TAXONOMY/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/AI-TASKS-TAXONOMY"
+        }
+      ],
+      "note": "Displayed runs include Cursor assistance and tool use. They are not a ranking from blind tests of bare model APIs."
+    },
+    {
+      "title": "Prompt Taxonomy",
+      "sub": "Find a prompt for the task",
+      "intro": "A bilingual prompt directory for research, writing, learning, data, development, product work and everyday tasks. Templates have fillable variables, workflows explain how steps connect, and research and public-case references can be traced to their sources.",
+      "features": [
+        "224 Chinese templates with a matching English catalog across 16 task categories",
+        "19 workflows that connect the output of one step to the next",
+        "Fill template variables, copy the result and share a link to the template",
+        "Search by task and evidence type; download the machine-readable JSON catalog"
+      ],
+      "slug": "prompt-taxonomy",
+      "stage": "live",
+      "kind": "Website / reference tool",
+      "one_liner": "Find a prompt by task, fill in your own material, then copy or share it. Follow reusable workflows for multi-step work.",
+      "status": "Live · continuously updated",
+      "platform": "Web",
+      "tech": "Python · HTML · CSS · JavaScript",
+      "cover": "img/projects/prompt-taxonomy.jpg",
+      "gallery": [
+        "img/projects/prompt-taxonomy.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "Visit website",
+          "url": "https://liamamilin.github.io/Prompt-taxonomy/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/Prompt-taxonomy"
+        }
+      ],
+      "note": "Evidence labels describe research or public cases for similar tasks. The templates themselves are written for this project."
+    },
+    {
+      "title": "Atlas Methods",
+      "sub": "A traceable Skill library",
+      "intro": "The library starts with existing Skill material, preserving concrete methods, conditions and limitations before organizing it into domains. Categories, search and source filters help readers discover methods, compare sources and return to the original material.",
+      "features": [
+        "Browse engineering, professional, creative and office-work domains",
+        "Search Skills and filter by topic, repository and sort order",
+        "Read public summaries and records combining multiple sources",
+        "Trace entries to fixed GitHub revisions and conversion records"
+      ],
+      "slug": "atlas-methods",
+      "stage": "live",
+      "kind": "Website / reference tool",
+      "one_liner": "Explore concrete methods drawn from real GitHub Skills, browse summaries by domain and trace them to fixed source versions.",
+      "status": "Live · continuously updated",
+      "platform": "Web",
+      "tech": "Python · HTML · CSS · JavaScript",
+      "cover": "img/projects/atlas-methods.jpg",
+      "gallery": [
+        "img/projects/atlas-methods.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "Visit website",
+          "url": "https://liamamilin.github.io/ATLAS-METHODS/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/ATLAS-METHODS"
+        }
+      ],
+      "note": "Organization and structural checks do not establish that every Skill has been executed. Check the original source and conditions before use."
+    },
+    {
+      "title": "Communicative Acts",
+      "sub": "Purpose, operation and style",
+      "intro": "Three axes organize expression: P for purpose, O for local operations and S for style. Browse functions such as informing, requesting, negotiating and repairing relationships, then examine how the expression is organized and styled. Neighboring entries explain their differences.",
+      "features": [
+        "Browse 93 purposes, 43 operations and 12 style dimensions as separate axes",
+        "Expandable axis, group and entry navigation with global search",
+        "English action words, collocations and bilingual examples for purposes and operations",
+        "Read definitions, boundary comparisons, grouping reasons and case sources"
+      ],
+      "slug": "communicative-acts",
+      "stage": "live",
+      "kind": "Website / reference tool",
+      "one_liner": "Understand what an utterance does through communicative purpose, local operations and style, with definitions, boundaries and bilingual examples.",
+      "status": "Live · continuously updated",
+      "platform": "Web",
+      "tech": "HTML · CSS · JavaScript",
+      "cover": "img/projects/communicative-acts.jpg",
+      "gallery": [
+        "img/projects/communicative-acts.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "Visit website",
+          "url": "https://liamamilin.github.io/communicative-acts-taxonomy/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/communicative-acts-taxonomy"
+        }
+      ],
+      "note": "The counts describe the current working catalog. Constructed teaching examples are distinguished from sourced cases."
+    },
+    {
+      "title": "Semantic Direction Taxonomy",
+      "sub": "Explore directions of meaning",
+      "intro": "Organized around “expression = RU + semantic direction,” this searchable reference unfolds directions into a hierarchy. Entries connect explanations with expression forms, while the sidebar supports navigation and comparison of related meanings.",
+      "features": [
+        "15 main categories, 35 subcategories and 201 semantic directions",
+        "1,058 expression forms connect directions to concrete language",
+        "Expandable tree navigation linked to the reading pane",
+        "Global search, section links and mobile reading"
+      ],
+      "slug": "semantic-directions",
+      "stage": "live",
+      "kind": "Website / reference tool",
+      "one_liner": "Explore the meanings, expression forms and English equivalents of directions such as existence, change, movement and action.",
+      "status": "Live · continuously updated",
+      "platform": "Web",
+      "tech": "HTML · CSS · JavaScript",
+      "cover": "img/projects/semantic-directions.jpg",
+      "gallery": [
+        "img/projects/semantic-directions.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "Visit website",
+          "url": "https://liamamilin.github.io/semantic-direction-taxonomy/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/semantic-direction-taxonomy"
+        }
+      ]
+    },
     {
       "slug": "lookbook",
       "stage": "live",
@@ -152,7 +326,7 @@
     },
     {
       "slug": "aide",
-      "stage": "live",
+      "stage": "dev",
       "related": [
         [
           "works",
@@ -173,8 +347,8 @@
       "title": "Aide",
       "sub": "A local AI entry point for the desktop",
       "kind": "Software / macOS app",
-      "one_liner": "Press ⌘⌃L and say what you want, or select text first. Local Ollama models, nothing uploaded.",
-      "status": "v1.4.0 · Released",
+      "one_liner": "Call up local AI with a Mac shortcut for selected text, screenshots and desktop tasks.",
+      "status": "Native app in development · legacy Qt v1.4.0",
       "platform": "macOS 14+ · Apple silicon",
       "tech": "SwiftUI / AppKit · Python · Ollama",
       "cover": "img/projects/aide-1.jpg",
@@ -182,27 +356,27 @@
         "img/projects/aide-1.jpg",
         "img/projects/aide-2.jpg"
       ],
-      "intro": "A SwiftUI / AppKit shell around a headless Python core. A hotkey opens the Quick Panel, which runs requests with local desktop tools. Selected text can be translated, explained, summarized or rewritten, and a screenshot region opens a new chat with the image attached. Anything that changes data asks for confirmation first.",
+      "intro": "A native SwiftUI / AppKit shell with a Python core using local Ollama models. Quick Panel handles selected text and desktop-tool requests; Workspace preserves searchable conversations. Current source adds read-aloud, Calendar operations and per-conversation opt-in web search and command-line tools. Data-changing actions show their details and wait for confirmation.",
       "features": [
-        "Quick Panel: ⌘⌃L runs a request with local desktop tools",
-        "Pick an action for selected text, or type your own instruction",
-        "⌘⌃S captures a region into a new chat",
-        "Workspace: chat history and search, streaming Markdown, regenerate",
-        "Changes show the exact action and run only after you confirm"
+        "⌘⌃L opens Quick Panel for selected text or desktop requests",
+        "⌘⌃S captures a region for chat; ⌘⌃R reads selected text aloud",
+        "Workspace with search, streaming Markdown, regeneration and custom agents",
+        "Notes, Reminders and Calendar operations with confirmation before changes",
+        "Per-conversation opt-in search and command-line tools, with credentials in Keychain"
       ],
       "links": [
         {
-          "kind": "download",
-          "label": "Download (GitHub Releases)",
-          "url": "https://github.com/liamamilin/aide/releases/latest"
+          "kind": "source",
+          "label": "Native app source",
+          "url": "https://github.com/liamamilin/aide"
         },
         {
-          "kind": "source",
-          "label": "GitHub",
-          "url": "https://github.com/liamamilin/aide"
+          "kind": "external",
+          "label": "Legacy Qt releases",
+          "url": "https://github.com/liamamilin/aide/releases/tag/v1.4.0"
         }
       ],
-      "note": "Not notarized yet: on first launch macOS blocks it, and you open it once from System Settings → Privacy & Security."
+      "note": "This page describes the current native source. The public v1.4.0 installer is the older PyQt5 app; build the native app using the repository instructions. It is not notarized. Opt-in web search sends the model’s search queries to the configured provider."
     },
     {
       "slug": "research2video",
@@ -227,21 +401,24 @@
       "title": "Research2Video",
       "sub": "研映 · From research to video",
       "kind": "Software / Workflow",
-      "one_liner": "A local workflow from research and drafting through voice-over, visuals, subtitles and video to publishing.",
+      "one_liner": "A local creative workspace for recurring research, scripts, video production and multi-platform publishing.",
       "status": "In development",
       "platform": "Local services · Web console",
       "tech": "Python · FastAPI · Remotion · React",
-      "cover": "img/projects/research2video-1.jpg",
+      "cover": "img/projects/research2video-matrix.jpg",
       "gallery": [
-        "img/projects/research2video-1.jpg",
-        "img/projects/research2video-2.jpg"
+        "img/projects/research2video-matrix.jpg",
+        "img/projects/research2video-columns.jpg",
+        "img/projects/research2video-assistant.jpg"
       ],
-      "intro": "Two modules. The research console handles research tasks, sources, scheduling, script recipes and the video workflow. AutoVideo handles voice-over, visual planning, Remotion rendering, subtitles, intros and outros, and final delivery.",
+      "intro": "Matrices and columns organize audiences, sources, intended takeaways and production settings. Start with a question, research report or script, then turn the research and original material into narration, visuals, subtitles and video. An embedded assistant uses the same application capabilities as the web workspace.",
       "features": [
-        "Research tasks, sources and scheduled runs",
-        "Script recipes and a management console for the video workflow",
-        "Voice-over, visual planning, subtitles, intros and outros",
-        "Remotion rendering, final delivery and publishing management"
+        "Manage research jobs, sources and schedules by matrix and column",
+        "Write from research and original material while preserving script versions and video records",
+        "Source screenshots, focused details and data graphics synchronized with narration and subtitles",
+        "Produce full episodes or individual items and remake videos from an approved script",
+        "Publishing packages, queues and records for Bilibili, Douyin, Kuaishou and Xiaohongshu",
+        "Use the embedded assistant to query and manage sources, research, production and publishing"
       ],
       "links": [
         {
@@ -249,7 +426,8 @@
           "label": "GitHub",
           "url": "https://github.com/liamamilin/Research2Video"
         }
-      ]
+      ],
+      "note": "The complete production environment has primarily been validated on macOS / Apple silicon. Model, speech-service and platform accounts require configuration."
     },
     {
       "slug": "atlas",
@@ -259,39 +437,25 @@
           "works",
           "lookbook",
           "The same idea of a browsable library, for design systems."
-        ],
-        [
-          "writing",
-          "https://liamamilin.github.io/vibe-coding-2026/",
-          "Atlas's template factory hands a dev pack to AI to implement; this guide covers going from need to prompt to product."
-        ],
-        [
-          "books",
-          "codex-mastery",
-          "A dev pack is handed to AI to implement and verify; this online book is about steering Codex toward verifiable results."
         ]
       ],
       "title": "Application Atlas",
-      "sub": "A library of software application types",
+      "sub": "Find real projects by scenario",
       "kind": "Software / Library",
-      "one_liner": "A library and local workbench covering 1,805 software types across 29 top-level domains.",
+      "one_liner": "Find real open-source projects by software type and use case, with capabilities, conditions and source references.",
       "status": "In development",
       "platform": "Web · local API",
       "tech": "React · TypeScript · Vite · Python",
-      "cover": "img/projects/atlas-1.jpg",
+      "cover": "img/projects/atlas-discover.jpg",
       "gallery": [
-        "img/projects/atlas-3.jpg",
-        "img/projects/atlas-4.jpg",
-        "img/projects/atlas-1.jpg"
+        "img/projects/atlas-discover.jpg"
       ],
-      "video": "video/atlas.webm",
-      "poster": "video/atlas.jpg",
-      "intro": "The English entries are the source of truth, backed by research notes, a category tree and persisted translations. On top sits a template factory that exports a standard development pack from a scenario template, hands it to an AI to implement, and verifies the browser journeys.",
+      "intro": "Connect software types, application scenarios and real projects. Browse types, search projects, inspect conditions and license status, save favorites and trace sources. Research tasks retain new research and update suggestions.",
       "features": [
-        "1,805 types, 29 domains, 270 directory nodes, 33 product instances",
-        "Formal English entries with matching research notes and boundaries",
-        "Local drafts API and a React workbench",
-        "Template factory with trial scenarios such as bookmarks, personal budget and meeting notes"
+        "Discover projects by software type, scenario and concrete use",
+        "Project cards state sources, license status, conditions and missing information",
+        "Search, filters, favorites and source references",
+        "Research tasks preserve progress, update suggestions and recovery paths"
       ],
       "links": [
         {
@@ -325,17 +489,16 @@
       "kind": "Software / Library",
       "sub": "Possibility Library",
       "one_liner": "Explore what a topic can be used to do: every possibility states its conditions and traces back to its sources.",
-      "status": "v0.1 · Released",
+      "status": "Live · continuously updated",
       "platform": "Web",
       "tech": "React · TypeScript · Vite",
-      "cover": "img/projects/patlas-1.jpg",
+      "cover": "img/projects/patlas-20261122.jpg",
       "gallery": [
-        "img/projects/patlas-2.jpg",
-        "img/projects/patlas-1.jpg"
+        "img/projects/patlas-20261122.jpg"
       ],
       "intro": "It starts from achievable outcomes rather than feature lists. Each topic has a map of possibilities: what the outcome is, which conditions and components it needs, and which sources support it, all on one card. “Source-backed” does not mean tested in practice; the page states each item's evidence status, and directions still to be verified are marked separately.",
       "features": [
-        "20 topics across 6 domains, each with a research report and source list",
+        "38 topics across 11 domains, with topic research reports and source lists",
         "Browse by use, filter by capability path and evidence status, or search the whole library",
         "Each possibility lists the outcome, conditions and limits, required components and source passages",
         "Raw entries as JSON and Markdown, plus the research validation record"
@@ -360,22 +523,23 @@
       "sub": "A native macOS personal digital space",
       "kind": "Software / macOS app",
       "one_liner": "A local-first personal library: read-only access to folders you authorize, search and preview, and reminders for what needs doing.",
-      "status": "In development · local build",
+      "status": "v0.10.9 · local development build",
       "platform": "macOS 26+",
       "tech": "SwiftUI · AppKit · SQLite / GRDB",
       "cover": "img/projects/personalspace-1.jpg",
       "gallery": [
         "img/projects/personalspace-1.jpg"
       ],
-      "intro": "A native macOS app with no server, account or online API. Scanning is read-only, managed copies are copies rather than moves, and there is no way to delete source files. Manual workflows keep working when no model is available. Milestones M1–M10 are implemented locally.",
+      "intro": "A native macOS app connecting documents, personal objects, orders, contracts, warranties and subscriptions. Authorized folders are read-only; imported files are copied into a local library. Search, preview, fact review, action reminders and backup/restore work alongside an application-wide assistant using local Ollama.",
       "features": [
-        "Native file library with persistent folder authorization",
-        "Search and system preview",
-        "Personal objects, links and managed copies",
-        "Four kinds of matters with on-demand recognition, fact checking, to-dos and local system reminders",
-        "Sensitive markers, backup and restore, quick capture"
+        "Count a folder before confirming indexing; track subsequent file changes",
+        "Name search, explicitly permitted full-text search and system previews",
+        "Personal objects, document links, managed copies and quick import",
+        "Review facts for orders, contracts, warranties and subscriptions; manage multiple actions and local reminders",
+        "Local Ollama assistant for finding documents, preparing matters and native operations",
+        "Sensitive-document protection, backup/restore and retained previous libraries"
       ],
-      "note": "This is currently a local, ad hoc signed development build. It has not been signed with a Developer ID or notarized.",
+      "note": "A local development and trial build. Developer ID signing, notarization and independent-account public distribution checks are not complete.",
       "links": [
         {
           "kind": "source",
@@ -395,17 +559,18 @@
       "status": "v0.2",
       "platform": "macOS 15+",
       "tech": "SwiftUI · GRDB · FeedKit · SwiftSoup",
-      "cover": "img/projects/radar-1.jpg",
+      "cover": "img/projects/radar-briefing.jpg",
       "gallery": [
-        "img/projects/radar-1.jpg"
+        "img/projects/radar-briefing.jpg",
+        "img/projects/radar-watch.jpg"
       ],
-      "intro": "From a plain-language watch, Radar finds and trial-reads sources, collects periodically, keeps a baseline and removes duplicates, then reports events with links to the original. No API key is needed. A new watch only records a baseline; only later content raises alerts.",
+      "intro": "Describe what to follow, preview sources and collect updates on a schedule. Radar distinguishes the initial baseline from later changes, preserves original links and can merge reports of the same event. On request, local Ollama produces sourced briefings or answers questions about collected material.",
       "features": [
-        "Four collectors: GitHub Releases, GitHub repo discovery, RSS / Atom, static HTML",
-        "Source trial reads and confirmation, feed auto-discovery, CSS selector preview",
-        "Unique event keys for dedup, ETag / 304, rate limits and network errors tracked per source",
-        "Menu bar, system notifications, in-process timer with catch-up on wake",
-        "12 automated tests passing"
+        "Sources include GitHub, RSS, web pages, JSON endpoints and Hacker News",
+        "Build an initial baseline, then deduplicate and merge new events with source links",
+        "Menu-bar operation, notifications, scheduled checks and catch-up after wake",
+        "Local Ollama briefings and Q&A with traceable source references",
+        "Source coverage, missed-event analysis, source status and source export"
       ],
       "links": [
         {
@@ -499,6 +664,16 @@
   ],
   "writing_featured": [
     {
+      "url": "https://liamamilin.github.io/thoughts/",
+      "theme": "Thoughts",
+      "desc": "An evolving archive of observations, reasoning, evidence and conclusions, written as articles that can be revisited and revised."
+    },
+    {
+      "url": "https://liamamilin.github.io/AI-SYSTEM-ENGINE/",
+      "theme": "AI engineering",
+      "desc": "From model calls, tools and evaluation to agents, RAG, serving and post-training: how to turn a model into a working AI system."
+    },
+    {
       "url": "https://liamamilin.github.io/cognitive-language-engineering/",
       "theme": "Cognition",
       "desc": "Language that serves thinking, expression, collaboration and action: seven principles, four models, and operators you can apply directly."
@@ -507,11 +682,6 @@
       "url": "https://liamamilin.github.io/Agent-Engineering-From-Runtime-to-Production/",
       "theme": "Agents",
       "desc": "How to design, build, debug, evaluate and productionize agent systems, understanding the mechanics without leaning on framework abstractions."
-    },
-    {
-      "url": "https://liamamilin.github.io/agent_tutorial/",
-      "theme": "Agents",
-      "desc": "From a first API call to tools, memory, RAG, multi-agent collaboration and evaluation, in 12 chapters."
     },
     {
       "url": "https://liamamilin.github.io/Practical-LLM/",
@@ -529,17 +699,21 @@
       "desc": "The opening of this series: why code is not the system, and what a missing system blueprint costs."
     },
     {
-      "url": "https://liamamilin.github.io/Self-Understanding/",
-      "theme": "Self",
-      "desc": "Treating the self as an object of knowledge: why it is hard to see, and how desire, fear and need serve as evidence of it."
-    },
-    {
       "url": "https://liamamilin.github.io/AB-tutorial/",
       "theme": "Data analysis",
       "desc": "From what A/B testing is for and where it applies, to the statistics behind it: normal, binomial and beta distributions."
     }
   ],
   "series": [
+    {
+      "name": "Thoughts & research notes",
+      "items": [
+        [
+          "Thoughts · Personal thinking archive",
+          "https://liamamilin.github.io/thoughts/"
+        ]
+      ]
+    },
     {
       "name": "Data science and analytics",
       "items": [
@@ -578,6 +752,10 @@
         [
           "ODPS SQL",
           "https://liamamilin.github.io/ODPS_SQL/"
+        ],
+        [
+          "Driven by Data (R)",
+          "https://liamamilin.github.io/Driven-by-Data-The-Power-of-Insights-with-R/"
         ]
       ]
     },
@@ -623,6 +801,30 @@
         [
           "AI Engineer",
           "https://liamamilin.github.io/AI-Engineer/"
+        ],
+        [
+          "LLM Service Infrastructure",
+          "https://liamamilin.github.io/LLM-Service-Infrastructure/"
+        ],
+        [
+          "LLM Systems Architecture",
+          "https://liamamilin.github.io/LLM-Systems-Architecture/"
+        ],
+        [
+          "Tool Use and Agent Systems",
+          "https://liamamilin.github.io/Tool-Use-and-Agent-Systems/"
+        ],
+        [
+          "AI Programming: From Intent to Execution",
+          "https://liamamilin.github.io/AI-Programming-From-Intent-to-Execution/"
+        ],
+        [
+          "Context and Prompt Architecture",
+          "https://liamamilin.github.io/Context-and-Prompt-Architecture/"
+        ],
+        [
+          "AI Systems Engineering",
+          "https://liamamilin.github.io/AI-SYSTEM-ENGINE/"
         ]
       ]
     },
@@ -644,6 +846,30 @@
         [
           "World Architecture",
           "https://liamamilin.github.io/Discipline-Architecture/"
+        ],
+        [
+          "World-System Architecture",
+          "https://liamamilin.github.io/World-System-Architecture/"
+        ],
+        [
+          "Industry Architecture",
+          "https://liamamilin.github.io/Industry-Architecture/"
+        ],
+        [
+          "Institution Architecture",
+          "https://liamamilin.github.io/Institution-Architecture/"
+        ],
+        [
+          "Technology Architecture",
+          "https://liamamilin.github.io/Technology-Architecture/"
+        ],
+        [
+          "Power Architecture",
+          "https://liamamilin.github.io/Power-Architecture/"
+        ],
+        [
+          "Architecture Patterns",
+          "https://liamamilin.github.io/Architecture-Patterns/"
         ]
       ]
     },
@@ -675,9 +901,82 @@
           "https://liamamilin.github.io/IELTS_DOMAIN_LANG/"
         ]
       ]
+    },
+    {
+      "name": "Engineering & business",
+      "items": [
+        [
+          "Python Tutorial 2025",
+          "https://liamamilin.github.io/Python_Tutorial_2025/"
+        ],
+        [
+          "Python Design Patterns",
+          "https://liamamilin.github.io/Python-Design-Patterns/"
+        ],
+        [
+          "Docker Tutorial",
+          "https://liamamilin.github.io/Docker-Tutorial/"
+        ],
+        [
+          "Shell as a System",
+          "https://liamamilin.github.io/Shell-as-a-System/"
+        ],
+        [
+          "UI Coding",
+          "https://liamamilin.github.io/ui-coding/"
+        ],
+        [
+          "AI-Driven Business Process Transformation and Automation",
+          "https://liamamilin.github.io/AI-Driven-Business-Process-Transformation-and-Automation/"
+        ],
+        [
+          "Business and Management",
+          "https://liamamilin.github.io/BusinessAndManagment/"
+        ]
+      ]
+    },
+    {
+      "name": "Web3 and blockchain",
+      "items": [
+        [
+          "Web3 Book",
+          "https://liamamilin.github.io/web3book/"
+        ],
+        [
+          "Practical Web3",
+          "https://liamamilin.github.io/Practical-web3/"
+        ],
+        [
+          "Chain Analysis 2025",
+          "https://liamamilin.github.io/ChainAnalysis2025/"
+        ],
+        [
+          "DeFi Introduction",
+          "https://liamamilin.github.io/Defi-introduction/"
+        ],
+        [
+          "Token Economy: How Web3 Reinvents the Internet",
+          "https://liamamilin.github.io/Token-Economy-How-the-Web3-reinvents-the-Internet-/"
+        ]
+      ]
     }
   ],
   "lab": [
+    [
+      "SaaS Grove",
+      "https://github.com/liamamilin/Saas-Grove",
+      "A SaaS discovery and research platform for finding real open-source and commercial products by type and comparing alternatives."
+    ],
+    [
+      "World Classification Atlas",
+      "https://github.com/liamamilin/World-Classification-Atlas",
+      "Build a world classification atlas from existing standards, preserving original structures, versions and sources for domain-by-domain comparison."
+    ],
+    [
+      "Skills",
+      "https://liamamilin.github.io/skills/",
+      "A personal library of reusable Skills and examples for mnemonic encoding, music-video creation and independent judgment."
+    ],
     [
       "COP Studio",
       "https://github.com/liamamilin/COP",
@@ -707,6 +1006,16 @@
       "AI Research System",
       "https://github.com/liamamilin/ai-research-system-",
       "An automated AI research report generator with a web console: define jobs in YAML and an agent searches and writes the report."
+    ],
+    [
+      "PCOS",
+      "https://github.com/liamamilin/PCOS",
+      "Personal Capability OS: a local AI engineering cockpit and personal capability operating system."
+    ],
+    [
+      "vibe_os",
+      "https://github.com/liamamilin/vibe_os",
+      "Vibe CLI for managing AI coding agents with atomic steps and automatic Git snapshots."
     ]
   ],
   "music": [
