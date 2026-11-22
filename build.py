@@ -210,7 +210,7 @@ def project(slug):
 
 
 def home_works():
-    """Selected work: one lead project, two secondary, the rest as a text list."""
+    """Selected work: one lead project, supporting projects, then a text list."""
     h = C["home"]
     lead, second = project(h["lead"]), [project(s) for s in h["secondary"]]
     rest = [p for p in C["projects"] if p["slug"] not in [h["lead"], *h["secondary"]]]

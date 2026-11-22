@@ -12,8 +12,10 @@
   "home": {
     "lead": "lookbook",
     "secondary": [
-      "wenjian",
-      "prompt-taxonomy"
+      "aide",
+      "research2video",
+      "radar",
+      "personalspace"
     ],
     "lab_count": 3,
     "writing_count": 4
