@@ -181,6 +181,10 @@ section.block.roomy:first-of-type{padding-top:40px}
 .card.wide .cap{margin-top:16px}
 .card.wide .cap b{font-size:20px;letter-spacing:-.01em}
 .card.wide .cap em{display:block;font-style:normal;margin-top:8px;max-width:32em}
+@media (min-width:861px){
+  .grid.two>.card.wide:last-child:nth-child(odd){grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:center}
+  .grid.two>.card.wide:last-child:nth-child(odd) .cap{margin-top:0}
+}
 
 /* feature detail */
 .feature{padding:40px 0 0}

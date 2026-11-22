@@ -15,12 +15,60 @@
       "aide",
       "research2video",
       "radar",
-      "personalspace"
+      "personalspace",
+      "discovery-taxonomy"
     ],
     "lab_count": 3,
     "writing_count": 4
   },
   "projects": [
+    {
+      "slug": "discovery-taxonomy",
+      "title": "DISCOVERY-TAXONOMY",
+      "sub": "打破未知的未知",
+      "kind": "网站 / 探索工具",
+      "one_liner": "发现值得继续追问的方向：对照旧假设与新变化，带着可填写的 AI 母题展开探索。",
+      "intro": "把工具、商业、内容、认知、职业和生活中的探索方向整理成卡片。每张卡片对照旧共识与新现实，附上现实信号与破冰母题；可以填入自己的条件、复制问题，继续研究一个此前没有想到的方向。",
+      "features": [
+        "六个探索领域，结合成本坍塌、角色反转、隐形摩擦等五种认知透镜筛选",
+        "对照旧共识与新现实，查看相关信号、链接和检索标签",
+        "在母题中填写变量，一键复制，或交给 ChatGPT、Claude、Gemini、Perplexity",
+        "随机破盲、中英文切换，以及保留筛选或卡片位置的分享链接"
+      ],
+      "stage": "live",
+      "status": "已上线",
+      "platform": "Web",
+      "tech": "HTML · CSS · JavaScript",
+      "cover": "img/projects/discovery-taxonomy.jpg",
+      "gallery": [
+        "img/projects/discovery-taxonomy.jpg",
+        "img/projects/discovery-taxonomy-detail.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "访问网站",
+          "url": "https://liamamilin.github.io/DISCOVERY-TAXONOMY/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/DISCOVERY-TAXONOMY"
+        }
+      ],
+      "related": [
+        [
+          "works",
+          "wenjian",
+          "用具体作品任务检验 AI 的交付：题面、产物和验收记录可以一起查看。"
+        ],
+        [
+          "works",
+          "prompt-taxonomy",
+          "找到探索方向之后，按任务查找可填写、可复制的提示词模板。"
+        ]
+      ]
+    },
     {
       "title": "问笺馆",
       "sub": "让模型交出能打开的作品",
