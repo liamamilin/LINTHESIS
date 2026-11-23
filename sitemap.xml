@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url><loc>https://liamamilin.github.io/LINTHESIS/</loc><xhtml:link rel="alternate" hreflang="en" href="https://liamamilin.github.io/LINTHESIS/en/"/></url>
 <url><loc>https://liamamilin.github.io/LINTHESIS/works/</loc><xhtml:link rel="alternate" hreflang="en" href="https://liamamilin.github.io/LINTHESIS/en/works/"/></url>
+<url><loc>https://liamamilin.github.io/LINTHESIS/works/super-individual-toolbox/</loc><xhtml:link rel="alternate" hreflang="en" href="https://liamamilin.github.io/LINTHESIS/en/works/super-individual-toolbox/"/></url>
+<url><loc>https://liamamilin.github.io/LINTHESIS/works/ai-interactive-playground/</loc><xhtml:link rel="alternate" hreflang="en" href="https://liamamilin.github.io/LINTHESIS/en/works/ai-interactive-playground/"/></url>
 <url><loc>https://liamamilin.github.io/LINTHESIS/works/discovery-taxonomy/</loc><xhtml:link rel="alternate" hreflang="en" href="https://liamamilin.github.io/LINTHESIS/en/works/discovery-taxonomy/"/></url>
 <url><loc>https://liamamilin.github.io/LINTHESIS/works/wenjian/</loc><xhtml:link rel="alternate" hreflang="en" href="https://liamamilin.github.io/LINTHESIS/en/works/wenjian/"/></url>
 <url><loc>https://liamamilin.github.io/LINTHESIS/works/prompt-taxonomy/</loc><xhtml:link rel="alternate" hreflang="en" href="https://liamamilin.github.io/LINTHESIS/en/works/prompt-taxonomy/"/></url>
@@ -28,6 +30,8 @@
 <url><loc>https://liamamilin.github.io/LINTHESIS/about/</loc><xhtml:link rel="alternate" hreflang="en" href="https://liamamilin.github.io/LINTHESIS/en/about/"/></url>
 <url><loc>https://liamamilin.github.io/LINTHESIS/en/</loc><xhtml:link rel="alternate" hreflang="zh-CN" href="https://liamamilin.github.io/LINTHESIS/"/></url>
 <url><loc>https://liamamilin.github.io/LINTHESIS/en/works/</loc><xhtml:link rel="alternate" hreflang="zh-CN" href="https://liamamilin.github.io/LINTHESIS/works/"/></url>
+<url><loc>https://liamamilin.github.io/LINTHESIS/en/works/super-individual-toolbox/</loc><xhtml:link rel="alternate" hreflang="zh-CN" href="https://liamamilin.github.io/LINTHESIS/works/super-individual-toolbox/"/></url>
+<url><loc>https://liamamilin.github.io/LINTHESIS/en/works/ai-interactive-playground/</loc><xhtml:link rel="alternate" hreflang="zh-CN" href="https://liamamilin.github.io/LINTHESIS/works/ai-interactive-playground/"/></url>
 <url><loc>https://liamamilin.github.io/LINTHESIS/en/works/discovery-taxonomy/</loc><xhtml:link rel="alternate" hreflang="zh-CN" href="https://liamamilin.github.io/LINTHESIS/works/discovery-taxonomy/"/></url>
 <url><loc>https://liamamilin.github.io/LINTHESIS/en/works/wenjian/</loc><xhtml:link rel="alternate" hreflang="zh-CN" href="https://liamamilin.github.io/LINTHESIS/works/wenjian/"/></url>
 <url><loc>https://liamamilin.github.io/LINTHESIS/en/works/prompt-taxonomy/</loc><xhtml:link rel="alternate" hreflang="zh-CN" href="https://liamamilin.github.io/LINTHESIS/works/prompt-taxonomy/"/></url>

@@ -23,6 +23,92 @@
   },
   "projects": [
     {
+      "title": "超级个体工具箱",
+      "sub": "一人成军，顺手兵器库",
+      "kind": "网站 / 工具箱",
+      "one_liner": "按九种工作角色挑选提示词、技能、模板与工作流，装配自己的工具组合。",
+      "intro": "把个人操作系统、战略、产品、工程、设计、内容、增长、运营及法务财务所需的能力整理成工具卡片。每张卡说明使用时机、核心机制、交付物与误用边界，并提供可衔接的工具组合；选中的装配清单保存在本地浏览器。",
+      "features": [
+        "36 张能力工具卡，按九种工作角色浏览",
+        "抽屉与 X 光双视图，查看思考、记忆、建造、自动化和分发能力",
+        "按关键词、载体及时间、质量、风险等维度筛选",
+        "卡片附使用时机、操作机制、交付物与连招推荐",
+        "建立个人装配清单，查看角色覆盖并导出 Markdown；支持中英文切换"
+      ],
+      "related": [
+        [
+          "works",
+          "prompt-taxonomy",
+          "按任务寻找可填写的提示词模板，把选中的工具转成一次具体行动。"
+        ]
+      ],
+      "slug": "super-individual-toolbox",
+      "stage": "live",
+      "status": "已上线",
+      "platform": "Web",
+      "tech": "HTML · CSS · JavaScript",
+      "cover": "img/projects/super-individual-toolbox.jpg",
+      "gallery": [
+        "img/projects/super-individual-toolbox.jpg",
+        "img/projects/super-individual-toolbox-detail.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "访问网站",
+          "url": "https://liamamilin.github.io/SUPER-INDIVIDUAL-TOOLBOX/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/SUPER-INDIVIDUAL-TOOLBOX"
+        }
+      ]
+    },
+    {
+      "title": "现代 AI 原理互动科普馆",
+      "sub": "亲手理解模型与智能体",
+      "kind": "网站 / 互动学习",
+      "one_liner": "用滑块、按钮和小游戏，直观探索大模型、训练、推理、RAG 与智能体的工作方式。",
+      "intro": "一组在浏览器中运行的 AI 原理教学模拟。通过概率转盘、注意力聚光灯、显存调度、检索与权限闸门等互动场景，把抽象机制变成可以操作和观察的过程；可按主题搜索、连续试玩并保存探索进度。",
+      "features": [
+        "16 个主题、48 个互动玩具，覆盖模型、训练、微调、推理及 Agent Harness",
+        "通过按钮、滑块和可视化观察参数、选择与运行结果之间的关系",
+        "扩展到 Token、RAG、安全、MoE、MCP、多智能体、多模态、记忆与评测",
+        "主题筛选与搜索，在站内直接试玩并切换上一项、下一项",
+        "本地保存探索进度；教学演示无需配置模型 API"
+      ],
+      "related": [
+        [
+          "writing",
+          "https://liamamilin.github.io/AI-SYSTEM-ENGINE/",
+          "互动体验之后，继续阅读 AI 系统工程的工具、评测、Agent 与推理服务章节。"
+        ]
+      ],
+      "slug": "ai-interactive-playground",
+      "stage": "live",
+      "status": "已上线",
+      "platform": "Web",
+      "tech": "HTML · CSS · JavaScript",
+      "cover": "img/projects/ai-interactive-playground.jpg",
+      "gallery": [
+        "img/projects/ai-interactive-playground.jpg",
+        "img/projects/ai-interactive-playground-demo.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "访问网站",
+          "url": "https://liamamilin.github.io/ai-interactive-playground/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/ai-interactive-playground"
+        }
+      ]
+    },
+    {
       "slug": "discovery-taxonomy",
       "title": "DISCOVERY-TAXONOMY",
       "sub": "打破未知的未知",

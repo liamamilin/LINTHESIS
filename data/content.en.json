@@ -23,6 +23,92 @@
   },
   "projects": [
     {
+      "title": "Super Individual Toolbox",
+      "sub": "Equip One. Run Like a Team.",
+      "kind": "Website / toolkit",
+      "one_liner": "Choose prompts, Skills, templates and workflows across nine work roles, then assemble your own toolkit.",
+      "intro": "A collection of capability cards for personal operations, strategy, product, engineering, design, content, growth, operations, and legal/finance work. Each card explains when to use it, how it works, the intended output and common misuses, with links to complementary tools. Your selected toolkit stays in the local browser.",
+      "features": [
+        "36 capability cards organized across nine work roles",
+        "Drawer and X-Ray views for thinking, memory, building, automation and distribution",
+        "Filter by keyword, tool format and time, quality or risk leverage",
+        "Cards explain triggers, mechanisms, deliverables and complementary tool chains",
+        "Build a personal loadout, inspect role coverage and export Markdown; switch between Chinese and English"
+      ],
+      "related": [
+        [
+          "works",
+          "prompt-taxonomy",
+          "Find a fillable prompt for the task and turn a selected tool into a concrete action."
+        ]
+      ],
+      "slug": "super-individual-toolbox",
+      "stage": "live",
+      "status": "Live",
+      "platform": "Web",
+      "tech": "HTML · CSS · JavaScript",
+      "cover": "img/projects/super-individual-toolbox.jpg",
+      "gallery": [
+        "img/projects/super-individual-toolbox.jpg",
+        "img/projects/super-individual-toolbox-detail.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "Visit website",
+          "url": "https://liamamilin.github.io/SUPER-INDIVIDUAL-TOOLBOX/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/SUPER-INDIVIDUAL-TOOLBOX"
+        }
+      ]
+    },
+    {
+      "title": "AI Interactive Playground",
+      "sub": "Explore AI by interacting",
+      "kind": "Website / interactive learning",
+      "one_liner": "Explore models, training, inference, RAG and agents through sliders, buttons and small interactive games.",
+      "intro": "Browser-based teaching simulations of AI principles. Probability wheels, attention spotlights, GPU scheduling, retrieval and permission gates turn abstract mechanisms into processes you can manipulate and observe. Search by topic, move between activities and keep track of your exploration progress.",
+      "features": [
+        "16 topics and 48 interactive activities covering models, training, fine-tuning, inference and agent harnesses",
+        "Use buttons, sliders and visualizations to explore how settings and choices affect outcomes",
+        "Topics also include tokens, RAG, security, MoE, MCP, multi-agent systems, multimodality, memory and evaluation",
+        "Filter and search topics, play within the site and move between activities",
+        "Keep exploration progress locally; teaching demos do not require a model API"
+      ],
+      "related": [
+        [
+          "writing",
+          "https://liamamilin.github.io/AI-SYSTEM-ENGINE/",
+          "After exploring the demos, read further about tools, evaluation, agents and serving in AI Systems Engineering."
+        ]
+      ],
+      "slug": "ai-interactive-playground",
+      "stage": "live",
+      "status": "Live",
+      "platform": "Web",
+      "tech": "HTML · CSS · JavaScript",
+      "cover": "img/projects/ai-interactive-playground.jpg",
+      "gallery": [
+        "img/projects/ai-interactive-playground.jpg",
+        "img/projects/ai-interactive-playground-demo.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "Visit website",
+          "url": "https://liamamilin.github.io/ai-interactive-playground/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/ai-interactive-playground"
+        }
+      ]
+    },
+    {
       "slug": "discovery-taxonomy",
       "title": "DISCOVERY-TAXONOMY",
       "sub": "Break Unknown Unknown",
