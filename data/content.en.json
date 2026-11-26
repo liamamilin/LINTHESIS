@@ -23,6 +23,184 @@
   },
   "projects": [
     {
+      "title": "Glint",
+      "sub": "Cognitive routing and ambient discovery",
+      "kind": "Software / macOS app",
+      "one_liner": "Recall cognitive cards where you are typing, or discover unfamiliar methods and perspectives through an ambient desktop window.",
+      "intro": "Use a shortcut in the current app to retrieve prompts, checklists and resources for your task, or browse new perspectives in an ambient cognitive-seed window. Fill variables, copy or insert content and continue workflows. A local console manages the resource shelf and retrieval records.",
+      "features": [
+        "A shortcut recalls three cognitive cards with prompt insertion, checklists and resource actions",
+        "Local hybrid retrieval and reranking draw on Cognitive Language Engineering and several taxonomy libraries",
+        "Browse ambient cognitive seeds, skip or hide cards, or expand them for reading",
+        "Fill variables in place, copy content or open it in an AI tool",
+        "A local console manages shelves, content supply, usage feedback and discovery settings"
+      ],
+      "related": [
+        [
+          "works",
+          "discovery-taxonomy",
+          "Browse seed questions for directions you have not yet considered."
+        ],
+        [
+          "works",
+          "atlas-methods",
+          "Find concrete methods by domain and trace them to fixed Skill source revisions."
+        ]
+      ],
+      "slug": "glint",
+      "stage": "dev",
+      "status": "Source and local build",
+      "platform": "macOS 14+ · Apple silicon",
+      "tech": "SwiftUI · AppKit · Python · FastAPI · Ollama · MPS",
+      "cover": "img/projects/glint-router.jpg",
+      "gallery": [
+        "img/projects/glint-router.jpg",
+        "img/projects/glint-seed-reader.jpg",
+        "img/projects/glint-admin.jpg"
+      ],
+      "links": [
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/Glint"
+        }
+      ]
+    },
+    {
+      "title": "Primal OS",
+      "sub": "A primal language for everyday thinking",
+      "kind": "Website / interactive experience",
+      "one_liner": "Explore home, goals and long-term effort through the concrete metaphors of caves, hunting and farming.",
+      "intro": "An interactive experience combining language, music and simulated scenes. Five chapters recast modern concepts as observable facts, actions and time horizons. Move sliders, flip word cards, explore a campfire setting and compose your own survival tablet and cave-wall archive.",
+      "features": [
+        "Five interactive chapters: cave view, word workshop, territory lexicon, campfire simulation and survival tablet",
+        "Use sliders, bubbles and cards to compare abstract expressions with concrete anchors",
+        "Search a hunting-and-farming lexicon and create custom cards locally",
+        "A theme song accompanies Canvas camp scenes, weather and action interactions",
+        "Save personal tablets and archive entries locally and export PNG images"
+      ],
+      "related": [
+        [
+          "writing",
+          "https://liamamilin.github.io/cognitive-language-engineering/",
+          "Read a systematic approach to using language for thinking, expression, collaboration and action."
+        ]
+      ],
+      "slug": "primal-os",
+      "stage": "live",
+      "status": "Live",
+      "platform": "Web",
+      "tech": "HTML · CSS · JavaScript · Canvas",
+      "cover": "img/projects/primal-os.jpg",
+      "gallery": [
+        "img/projects/primal-os.jpg",
+        "img/projects/primal-os-map.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "Visit website",
+          "url": "https://liamamilin.github.io/primal-os/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/primal-os"
+        }
+      ]
+    },
+    {
+      "title": "Web3 Interactive Atlas",
+      "sub": "Explanations and interactive sandboxes",
+      "kind": "Website / interactive learning",
+      "one_liner": "Understand wallets, transactions, DeFi, consensus and on-chain security through explanations and parameter sandboxes.",
+      "intro": "Readable explanations paired with hands-on teaching simulations of Web3 mechanisms. Follow learning routes through wallets, gas, AMMs, stablecoins, liquidation, bridges, privacy and account abstraction. Adjust parameters, inspect outcomes and connect concepts through the glossary, prerequisite links and quizzes.",
+      "features": [
+        "21 modules and 42 interactive experiment pages covering foundations, DeFi, infrastructure and newer applications",
+        "Four recommended learning routes with stage filters and prerequisite guidance",
+        "Parameter sandboxes illustrate pricing, slippage, approvals, liquidation and other mechanisms",
+        "A glossary and 20-question scenario quiz with an exportable result sheet",
+        "Local learning progress, backup/restore and sequential lesson navigation"
+      ],
+      "related": [
+        [
+          "writing",
+          "https://liamamilin.github.io/Practical-web3/",
+          "Continue with a written introduction to Web3 concepts and applications."
+        ]
+      ],
+      "slug": "web3-interactive-atlas",
+      "stage": "live",
+      "status": "Live",
+      "platform": "Web",
+      "tech": "HTML · CSS · JavaScript",
+      "cover": "img/projects/web3-interactive-atlas.jpg",
+      "gallery": [
+        "img/projects/web3-interactive-atlas.jpg",
+        "img/projects/web3-interactive-atlas-demo.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "Visit website",
+          "url": "https://liamamilin.github.io/web3-interactive-atlas/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/web3-interactive-atlas"
+        }
+      ]
+    },
+    {
+      "title": "Human Knowledge Interactive Atlas",
+      "sub": "Explore disciplines around human experience",
+      "kind": "Website / interactive learning",
+      "one_liner": "Explore ten fields through interactive activities, from body, mind and design to society, business, science and AI.",
+      "intro": "Knowledge is organized around people in three rings: inner life and expression, collaboration and value, and science and building. Expand domains and branches in the overview or switch to category exploration, search topics, open activities within the site and track your progress.",
+      "features": [
+        "Ten core fields organized into three concentric knowledge rings",
+        "Overview and category views with expandable domains, branches and topics",
+        "Explore abstract mechanisms through sliders, switches and visual feedback",
+        "Curated AI learning sequences, random discovery and in-site activities",
+        "Topic search, light/dark themes and locally saved exploration progress"
+      ],
+      "related": [
+        [
+          "works",
+          "ai-interactive-playground",
+          "Start with interactive examples of models, training and agents."
+        ],
+        [
+          "works",
+          "web3-interactive-atlas",
+          "Explore Web3 transaction and infrastructure mechanisms through another set of teaching sandboxes."
+        ]
+      ],
+      "slug": "human-knowledge-atlas",
+      "stage": "live",
+      "status": "Live",
+      "platform": "Web",
+      "tech": "HTML · CSS · JavaScript",
+      "cover": "img/projects/human-knowledge-atlas.jpg",
+      "gallery": [
+        "img/projects/human-knowledge-atlas.jpg",
+        "img/projects/human-knowledge-atlas-explore.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "Visit website",
+          "url": "https://liamamilin.github.io/AI-interactive-taxonomy/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/AI-interactive-taxonomy"
+        }
+      ]
+    },
+    {
       "title": "Super Individual Toolbox",
       "sub": "Equip One. Run Like a Team.",
       "kind": "Website / toolkit",

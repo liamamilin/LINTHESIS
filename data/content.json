@@ -23,6 +23,184 @@
   },
   "projects": [
     {
+      "title": "Glint · 微光",
+      "sub": "Mac 上的认知路由与灵感发现",
+      "kind": "软件 / macOS 应用",
+      "one_liner": "在当前输入位置召回认知卡片，或通过桌面小窗，遇见尚未想到的方法与视角。",
+      "intro": "用快捷键在当前应用中找回适合任务的提示词、清单与资料，也可以通过桌面上的认知种子小窗浏览新的视角。支持就地填写变量、复制或注入内容、继续工作流，并通过本地管理台整理资料货架与召回记录。",
+      "features": [
+        "快捷键呼出三张认知卡片，支持注入提示词、查看清单与打开资料",
+        "本机混合检索与重排，结合认知语言工程及多个图谱资料库",
+        "桌面认知种子轮播，可跳过、暂时隐藏、屏蔽或展开阅读",
+        "卡片变量就地填写，一键复制或跳转至 AI 工具",
+        "本地管理台统一整理货架、供给、使用反馈与轮播策略"
+      ],
+      "related": [
+        [
+          "works",
+          "discovery-taxonomy",
+          "从未知的方向出发，浏览可继续追问的探索母题。"
+        ],
+        [
+          "works",
+          "atlas-methods",
+          "按领域查找具体方法，并回到固定版本的 Skill 来源。"
+        ]
+      ],
+      "slug": "glint",
+      "stage": "dev",
+      "status": "源码与本地构建",
+      "platform": "macOS 14+ · Apple silicon",
+      "tech": "SwiftUI · AppKit · Python · FastAPI · Ollama · MPS",
+      "cover": "img/projects/glint-router.jpg",
+      "gallery": [
+        "img/projects/glint-router.jpg",
+        "img/projects/glint-seed-reader.jpg",
+        "img/projects/glint-admin.jpg"
+      ],
+      "links": [
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/Glint"
+        }
+      ]
+    },
+    {
+      "title": "Primal OS",
+      "sub": "原始人认知语言体系",
+      "kind": "网站 / 交互体验",
+      "one_liner": "把住所、目标与长期积累，放回洞穴、狩猎和农耕的直观比喻中探索。",
+      "intro": "一个结合语言、音乐与模拟场景的交互体验。通过五个翻页章节，把现代概念转成可观察的事实、动作和时间尺度：拖动滑块、翻看词卡、观察篝火营地，再整理自己的生存石板与洞壁档案。",
+      "features": [
+        "五个互动章节：洞穴视界、词汇打磨、领地图谱、篝火模拟与生存石板",
+        "使用滑块、气泡与词卡，比较抽象表达和具体认知锚点",
+        "狩猎与农耕双周期词库，支持搜索和本地自定义词卡",
+        "主题曲《原始人不慌》配合 Canvas 营地、天气与动作联动",
+        "本地保存个人石板和洞壁记录，并导出 PNG 图片"
+      ],
+      "related": [
+        [
+          "writing",
+          "https://liamamilin.github.io/cognitive-language-engineering/",
+          "继续阅读语言怎样帮助思考、表达、协作与行动的系统方法。"
+        ]
+      ],
+      "slug": "primal-os",
+      "stage": "live",
+      "status": "已上线",
+      "platform": "Web",
+      "tech": "HTML · CSS · JavaScript · Canvas",
+      "cover": "img/projects/primal-os.jpg",
+      "gallery": [
+        "img/projects/primal-os.jpg",
+        "img/projects/primal-os-map.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "访问网站",
+          "url": "https://liamamilin.github.io/primal-os/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/primal-os"
+        }
+      ]
+    },
+    {
+      "title": "Web3 Interactive Atlas",
+      "sub": "原理讲解与交互沙盒",
+      "kind": "网站 / 互动学习",
+      "one_liner": "通过原理讲解与参数沙盒，理解钱包、交易、DeFi、共识和链上安全。",
+      "intro": "将 Web3 机制拆成可阅读的解释与可操作的教学模拟。沿推荐路线学习钱包、Gas、AMM、稳定币、清算、跨链、隐私和账户抽象，调整参数观察结果，并通过术语速查、前置知识链接与综合测验串起概念。",
+      "features": [
+        "21 个模块、42 个互动实验页，覆盖链上基础、DeFi、底层机制与前沿应用",
+        "四条推荐学习路线，配套阶段筛选与前置知识指引",
+        "参数沙盒展示定价、滑点、授权、清算及其他机制",
+        "术语速查与 20 道综合场景测验，可导出测验成绩单",
+        "本地学习进度、备份恢复与连续课程导航"
+      ],
+      "related": [
+        [
+          "writing",
+          "https://liamamilin.github.io/Practical-web3/",
+          "结合在线写作继续阅读 Web3 的基础概念与应用。"
+        ]
+      ],
+      "slug": "web3-interactive-atlas",
+      "stage": "live",
+      "status": "已上线",
+      "platform": "Web",
+      "tech": "HTML · CSS · JavaScript",
+      "cover": "img/projects/web3-interactive-atlas.jpg",
+      "gallery": [
+        "img/projects/web3-interactive-atlas.jpg",
+        "img/projects/web3-interactive-atlas-demo.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "访问网站",
+          "url": "https://liamamilin.github.io/web3-interactive-atlas/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/web3-interactive-atlas"
+        }
+      ]
+    },
+    {
+      "title": "人类知识交互式分类图谱",
+      "sub": "围绕人的跨学科探索",
+      "kind": "网站 / 互动学习",
+      "one_liner": "从身体、心智和审美，到社会、商业、科学与 AI，用交互玩具探索十个知识领域。",
+      "intro": "以“人”为圆心，把知识组织成内在与表达、协作与价值、科学与构建三个圈层。既可以从全景图谱展开领域和分支，也可以切换分类探索，搜索主题、进入站内互动体验，并记录自己的探索进度。",
+      "features": [
+        "十个核心领域，按三个同心圈层组织知识与分支",
+        "全景知识图谱与分类探索双视图，可展开或折叠主题",
+        "用滑块、开关与可视化反馈体验抽象机制",
+        "精选 AI 连玩路线、随机探索与站内沉浸试玩",
+        "主题搜索、亮暗主题切换与本地探索进度保存"
+      ],
+      "related": [
+        [
+          "works",
+          "ai-interactive-playground",
+          "先从现代 AI 的模型、训练与智能体互动示例开始。"
+        ],
+        [
+          "works",
+          "web3-interactive-atlas",
+          "用另一组教学沙盒继续理解 Web3 的交易与基础机制。"
+        ]
+      ],
+      "slug": "human-knowledge-atlas",
+      "stage": "live",
+      "status": "已上线",
+      "platform": "Web",
+      "tech": "HTML · CSS · JavaScript",
+      "cover": "img/projects/human-knowledge-atlas.jpg",
+      "gallery": [
+        "img/projects/human-knowledge-atlas.jpg",
+        "img/projects/human-knowledge-atlas-explore.jpg"
+      ],
+      "links": [
+        {
+          "kind": "demo",
+          "label": "访问网站",
+          "url": "https://liamamilin.github.io/AI-interactive-taxonomy/"
+        },
+        {
+          "kind": "source",
+          "label": "GitHub",
+          "url": "https://github.com/liamamilin/AI-interactive-taxonomy"
+        }
+      ]
+    },
+    {
       "title": "超级个体工具箱",
       "sub": "一人成军，顺手兵器库",
       "kind": "网站 / 工具箱",
