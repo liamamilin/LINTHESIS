@@ -53,11 +53,12 @@
       "status": "源码与本地构建",
       "platform": "macOS 14+ · Apple silicon",
       "tech": "SwiftUI · AppKit · Python · FastAPI · Ollama · MPS",
-      "cover": "img/projects/glint-router.jpg",
+      "cover": "img/projects/glint-home-20261128.jpg",
       "gallery": [
-        "img/projects/glint-router.jpg",
-        "img/projects/glint-seed-reader.jpg",
-        "img/projects/glint-admin.jpg"
+        "img/projects/glint-home-20261128.jpg",
+        "img/projects/glint-card-detail-20261128.jpg",
+        "img/projects/glint-companion-20261128.jpg",
+        "img/projects/glint-seed-hud-20261128.jpg"
       ],
       "links": [
         {
@@ -74,8 +75,8 @@
           "选择思考方法",
           "补齐结构，交给 AI"
         ],
-        "image": "img/projects/glint-router.jpg",
-        "caption": "快捷键召回三张认知卡片 · 实机界面",
+        "image": "img/projects/glint-card-detail-20261128.jpg",
+        "caption": "从适用场景到完整指令 · 实机界面",
         "cta": "了解 Glint"
       }
     },

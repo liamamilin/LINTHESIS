@@ -53,11 +53,12 @@
       "status": "Source and local build",
       "platform": "macOS 14+ · Apple silicon",
       "tech": "SwiftUI · AppKit · Python · FastAPI · Ollama · MPS",
-      "cover": "img/projects/glint-router.jpg",
+      "cover": "img/projects/glint-home-20261128.jpg",
       "gallery": [
-        "img/projects/glint-router.jpg",
-        "img/projects/glint-seed-reader.jpg",
-        "img/projects/glint-admin.jpg"
+        "img/projects/glint-home-20261128.jpg",
+        "img/projects/glint-card-detail-20261128.jpg",
+        "img/projects/glint-companion-20261128.jpg",
+        "img/projects/glint-seed-hud-20261128.jpg"
       ],
       "links": [
         {
@@ -74,8 +75,8 @@
           "Choose a method",
           "Add context and ask AI"
         ],
-        "image": "img/projects/glint-router.jpg",
-        "caption": "Three cognitive cards, one shortcut · actual app interface",
+        "image": "img/projects/glint-card-detail-20261128.jpg",
+        "caption": "From the right context to a complete instruction · actual interface",
         "cta": "Explore Glint"
       }
     },
