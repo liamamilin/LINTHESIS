@@ -10,8 +10,9 @@
     "email": "lin.mi.official@gmail.com"
   },
   "home": {
-    "lead": "lookbook",
+    "lead": "glint",
     "secondary": [
+      "lookbook",
       "aide",
       "research2video",
       "radar",
@@ -24,10 +25,10 @@
   "projects": [
     {
       "title": "Glint",
-      "sub": "Cognitive routing and ambient discovery",
+      "sub": "From scattered thoughts to structured tasks",
       "kind": "Software / macOS app",
-      "one_liner": "Recall cognitive cards where you are typing, or discover unfamiliar methods and perspectives through an ambient desktop window.",
-      "intro": "Use a shortcut in the current app to retrieve prompts, checklists and resources for your task, or browse new perspectives in an ambient cognitive-seed window. Fill variables, copy or insert content and continue workflows. A local console manages the resource shelf and retrieval records.",
+      "one_liner": "Choose a useful thinking method where you work, and turn a vague intent into a structured task for AI.",
+      "intro": "“Help me think this through” can mean breaking down a problem, testing an assumption or comparing options. Glint retrieves cognitive cards locally, right where you work. Choose a method, add the question and constraints, then copy or insert a fillable prompt, checklist or resource. Ambient cognitive seeds introduce perspectives you have not yet thought to seek.",
       "features": [
         "A shortcut recalls three cognitive cards with prompt insertion, checklists and resource actions",
         "Local hybrid retrieval and reranking draw on Cognitive Language Engineering and several taxonomy libraries",
@@ -64,7 +65,19 @@
           "label": "GitHub",
           "url": "https://github.com/liamamilin/Glint"
         }
-      ]
+      ],
+      "home_feature": {
+        "headline": "Give scattered thoughts a structure AI can act on.",
+        "desc": "“Does this plan make sense?” can start with testing assumptions, finding counterexamples and designing a check. Glint brings useful thinking structures to where you work.",
+        "steps": [
+          "Start with a thought",
+          "Choose a method",
+          "Add context and ask AI"
+        ],
+        "image": "img/projects/glint-router.jpg",
+        "caption": "Three cognitive cards, one shortcut · actual app interface",
+        "cta": "Explore Glint"
+      }
     },
     {
       "title": "Primal OS",

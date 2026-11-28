@@ -172,6 +172,18 @@ section.block.roomy:first-of-type{padding-top:40px}
 .lead-info h3 span{display:block;margin-top:10px;font-size:clamp(16px,1.6vw,20px);letter-spacing:0;font-weight:400;color:var(--lt-muted)}
 .lead-info>p{margin:0;font-size:18px;max-width:30em}
 .lead-info .go{grid-column:1/-1;color:var(--lt-foreground);text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
+.spotlight{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:48px;align-items:center;padding:48px;border-radius:14px;background:var(--lt-foreground);color:var(--lt-background)}
+.spotlight .kicker{color:var(--lt-accent-soft);margin-bottom:14px}
+.spotlight h3{font-family:var(--lt-font-display);font-size:clamp(40px,4.5vw,68px);line-height:1.05;letter-spacing:-.035em;font-weight:600;margin:0}
+.spotlight-headline{font-size:clamp(28px,3.4vw,46px);line-height:1.22;letter-spacing:-.025em;font-weight:500;margin:24px 0 20px;max-width:15em}
+.spotlight-desc{font-size:17px;line-height:1.75;color:#D7D8D3;margin:0;max-width:32em}
+.spotlight-steps{display:flex;flex-wrap:wrap;gap:12px 20px;list-style:none;margin:24px 0 28px;padding:0}
+.spotlight-steps li{font-size:14px;padding-bottom:8px;border-bottom:1px solid #60645F}
+.spotlight-go{display:inline-block;padding:10px 20px;border-radius:999px;background:var(--lt-background);color:var(--lt-foreground);font-size:16px}
+.spotlight:hover .spotlight-go{text-decoration:underline;text-underline-offset:4px}
+.spotlight-media{min-width:0;margin:0}
+.spotlight-media img{width:100%;height:auto;border-radius:12px;box-shadow:0 24px 48px -24px #0009}
+.spotlight-media figcaption{margin-top:16px;color:#C0C5BF;font-size:14px;line-height:1.5}
 .nums{display:flex;gap:32px}
 .nums div{display:flex;flex-direction:column}
 .nums b{font-family:var(--lt-font-display);font-size:34px;line-height:1;letter-spacing:-.03em;font-weight:600}
@@ -225,6 +237,7 @@ dl.tech dd{margin:0}
   .hero-foot{grid-template-columns:1fr;margin-top:32px}
   section.block.roomy{padding-top:64px}
   .lead-info{grid-template-columns:1fr;gap:16px}
+  .spotlight{grid-template-columns:1fr;gap:32px;padding:32px}
   .grid.two{grid-template-columns:1fr;margin-top:48px}
   .f-sec{grid-template-columns:1fr;gap:16px;padding-top:48px}
   .f-sec h2{position:static}
@@ -232,6 +245,7 @@ dl.tech dd{margin:0}
 }
 @media (max-width:560px){
   .lead-shot{aspect-ratio:4/3}
+  .spotlight{padding:24px}
   .lead-shot img{object-position:top left}
   .nums{gap:24px}
   .grid.four{grid-template-columns:repeat(2,1fr);gap:24px 16px}

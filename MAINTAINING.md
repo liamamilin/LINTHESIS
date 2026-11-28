@@ -22,6 +22,7 @@ Optional: `video` + `poster`, `note`, `feature` (long-form page, see Lookbook), 
 - Experiment: append `[name, url, description]` to `lab`. `home.lab_count` and `home.writing_count` set how many show on the home page.
 - A usable public website can have its own project page with a verified `demo` link and real screenshots. Remove its duplicate Lab entry when promoting it. GitHub experiment links display “View source”; website links display “Visit website”.
 - Home lead and secondary works: `home.lead` and `home.secondary` (slugs).
+- A lead project can add `home_feature` (`headline`, `desc`, `steps`, `image`, `caption`, `cta`) for a text-and-screenshot spotlight. Use real product media and describe supported actions; keep lifecycle status hidden.
 
 ## Update a project's status
 Edit `stage`, `status`, `links` and, if needed, `note` in both languages. Check facts at the source (repo README, GitHub Releases) before writing them. Do not claim a release that has no release link.

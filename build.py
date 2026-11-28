@@ -218,6 +218,14 @@ def home_works():
     lead_html = (f'<a class="lead-card" href="works/{lead["slug"]}/"><div class="lead-shot"><img src="{abase(0)}{lead["cover"]}" alt="{e(lead["title"])}"></div>'
                  f'<div class="lead-info"><div><p class="kicker">{e(lead["kind"])}</p><h3>{e(lead["title"])}<span>{e(lead["sub"])}</span></h3></div>'
                  f'<p>{e(lead["one_liner"])}</p><div class="nums">{nums}</div><span class="go">{T["open_project"]}</span></div></a>')
+    if spotlight := lead.get("home_feature"):
+        steps = "".join(f'<li>{e(step)}</li>' for step in spotlight["steps"])
+        lead_html = (f'<a class="lead-card spotlight" href="works/{lead["slug"]}/">'
+                     f'<div class="spotlight-story"><p class="kicker">{e(lead["kind"])}</p><h3>{e(lead["title"])}</h3>'
+                     f'<p class="spotlight-headline">{e(spotlight["headline"])}</p><p class="spotlight-desc">{e(spotlight["desc"])}</p>'
+                     f'<ol class="spotlight-steps">{steps}</ol><span class="spotlight-go">{e(spotlight["cta"])}</span></div>'
+                     f'<figure class="spotlight-media">{img(spotlight["image"], lead["title"], abase(0))}'
+                     f'<figcaption>{e(spotlight["caption"])}</figcaption></figure></a>')
     sec_html = "".join(
         f'<a class="card wide" href="works/{p["slug"]}/"><div class="tile"><img src="{abase(0)}{p["cover"]}" alt="" loading="lazy"></div>'
         f'<div class="cap"><b>{e(p["title"])} · {e(p["sub"])}</b><span>{e(p["kind"])}</span><em>{e(p["one_liner"])}</em></div></a>'
